@@ -1,0 +1,13 @@
+.ad{
+    /*background-color: grey; */
+    height: 50vh;
+    width: 50vw;
+    background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/airstream/upnav/T2/T2_latest_1x._CB529542814_.jpg'); 
+    background-color: #F6F6F6;
+     text-align: left;
+      background-position: top left;
+       height: 55px;
+        background-repeat: no-repeat;
+         background-size: 1920px;
+          min-width: 1000px;
+}
