@@ -1,0 +1,22 @@
+.footer-nav-link-col {
+    color: #fff;
+    font-size: 13px;
+    margin-top: 34px;
+    padding: 0 10px;
+    padding-right: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-link-title {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 6px 0 14px 0;
+    white-space: nowrap;
+}
+
+.footer-nav-link-col a {
+    color: #e6e6e6;
+    font-size: 12px;
+    margin: 0 0 10px;
+}

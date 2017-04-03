@@ -90,7 +90,7 @@ app.get('/api/cart', cartController.getCart);
 app.post('/api/cart/checkout', /*authController.authorize,*/ dbController.checkoutCart); //AUTHORIZE MAKES IT REQUIRE LOGIN
 app.post('/api/cart/clear', cartController.clearCart);
 app.post('/api/cart/delete', cartController.deleteCartElement);
-app.post('/api/cart/update', cartContoller.updateCartElement);
+app.post('/api/cart/update', cartController.updateCartElement);
 
 //TEST METHODS
 
