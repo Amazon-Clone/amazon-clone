@@ -1,0 +1,34 @@
+.dmenu{
+    z-index: 9;
+    background-color: grey;
+    opacity: .6;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    /*margin-top: 15vh;*/
+
+
+}
+.menu1{
+      position: absolute;
+    height: 70vh;
+    width: 250px;
+
+    background-color: white;
+       margin-top: -1vh;
+    margin-left: 1.5vw;
+    z-index: 10;
+    border-radius: 3px;
+    padding: 5px;
+    line-height: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+.menu1 h1{
+color: #333333;
+font-size: 13px;
+}
+.dmenuBorder{
+    border-bottom: 1px solid lightgray;
+}
