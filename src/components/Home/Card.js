@@ -7,7 +7,7 @@ class Card extends Component {
     return (
       <div className='home-pop-dep-card'>
         <div className='home-pop-dep-pic-container'>
-          <img src="{this.props.image}"/>
+          <img className='home-pop-actual-image'src={require(this.props.image)}/>
         </div>
         <h3>{this.props.title}</h3>
       </div>

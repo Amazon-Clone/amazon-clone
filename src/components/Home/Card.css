@@ -1,16 +1,21 @@
-.home-pop-dep-pic-container {
-  height: 9vw;
-  width: 9vw;
-  border-radius: 50%;
-  background: white;
-  min-height: 80px;
-  min-width: 80px;
-  margin-bottom: 10px;
-  margin-top: 15px;
-}
 .home-pop-dep-card {
   display:flex;
   flex-direction: column;
   align-content: center;
   align-items: center;
+}
+.home-pop-dep-pic-container {
+  height: 9vw;
+  width: 9vw;
+  border-radius: 50%;
+  background:white;
+  min-height: 80px;
+  min-width: 80px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+.home-pop-actual-image {
+  height: 9vw;
+  min-height: 80px;
+  size: contain;
 }

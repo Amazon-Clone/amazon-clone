@@ -8,10 +8,10 @@ class PopularDepartments extends Component {
       <div className='home-pop-dep'>
         <h1>Popular departments</h1>
         <div className='chunks'>
-        <Card title='Kindle' image='kindle.jpg'/>
-        <Card title='Amazon' image='amazon.jpg'/>
-        <Card title='Music' image='music.jpg'/>
-        <Card title='Grocery' image='grocery.jpg'/>
+        <Card title='Kindle' image='./kindle.png'/>
+        <Card title='Amazon' image='./amazon.png'/>
+        <Card title='Music' image='./music.png'/>
+        <Card title='Grocery' image='./grocery.png'/>
         </div>
       </div>
     )
