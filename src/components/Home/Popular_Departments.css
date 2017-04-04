@@ -1,0 +1,15 @@
+.home-pop-dep {
+  display: flex;
+  width: 23.448%;
+  height: 450px;
+  background: #f6f6f5;
+  position:relative;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+.home-pop-dep h1{
+  font-size: 24px;
+  width: 100%;
+  padding:15px;
+}
