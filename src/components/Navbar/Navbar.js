@@ -14,7 +14,8 @@ class Navbar extends Component {
                 <div className='ad'></div>
                 <div className='headerBlue'>
                     <div className="navBelt">
-                        <span className='navLogo'></span>
+                        <Link to='/'><span className='navLogo'></span></Link>
+                        
                         <div className='nav-search'>
                         <div className='nav-all-dropdown'>All</div>
                         <input type="text" value="" name="field-keywords" autocomplete="off" placeholder="" className="nav-input" tabindex="19"></input>
@@ -30,7 +31,7 @@ class Navbar extends Component {
                     <NavLeft/>
                     
                 </div>
-                {/*{/*<Link to='/'>Home</Link>*/}
+                {/*<Link to='/'></Link>
                 <Link to='/product'>Product</Link>*/}
                 
             </div>
