@@ -1,0 +1,35 @@
+.smallNav{
+    display: flex;
+    align-items: center;
+
+    background-color: #FAFAFA;
+    height: 32px;
+}
+
+.smallNav > Link:hover{
+    color: orange;
+}
+
+.productContainer{
+    font-family: 'Arial';
+    font-size: 14px;
+}
+
+.categoryGroup{
+    padding: 0 10px 0 10px;
+}
+
+.statusBar{
+    display: flex;
+    align-items: center;
+
+    height: 40px;
+    box-shadow: 0px 1px 7px 1px #ccc;
+}
+
+.mainBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}
