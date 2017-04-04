@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
+import FooterNav from './FooterNav'
+import './Footer.css'
 
 class Footer extends Component {
     render() {
         return (
-            <div>
-                
-            </div>
+            <footer>
+                <a href='#'>
+                    <div className='footer-back-top'>
+                        <p>Back to top</p>
+                    </div>
+                </a>
+                <FooterNav/>
+            </footer>
         );
     }
 }
