@@ -4,6 +4,7 @@ import './Home.css'
 import Carousel from './Carousel';
 import HomeSignIn from './Home_sign_in';
 import PopularDepartments from './Popular_Departments';
+import TheDressShop from './The_dress_shop.js'
 
 class Home extends Component {
     render() {
@@ -15,7 +16,7 @@ class Home extends Component {
                 <div className='home-segments'>
                     <HomeSignIn />
                     <PopularDepartments />
-                    <PopularDepartments />
+                    <TheDressShop />
                     <PopularDepartments />
                 </div>
                 

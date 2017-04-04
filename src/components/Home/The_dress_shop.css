@@ -1,0 +1,21 @@
+.the-dress-shop-main-container {
+  display:flex;
+  flex-direction: column;
+    width: 23.448%;
+  height: 500px;
+  background: #f6f6f5;
+}
+.dress-shop-video {
+  height: 350px;
+  width: 250px;
+  /*background:#f6f6f5;*/
+}
+.dress-shop-vid-cont {
+  left: 0px; 
+  top: 0px; 
+  overflow: hidden; 
+  height: 100%; 
+  width: 100%;
+  size: contain;
+  background-color: blue;
+}
