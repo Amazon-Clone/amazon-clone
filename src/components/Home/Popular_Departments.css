@@ -1,15 +1,23 @@
 .home-pop-dep {
-  display: flex;
   width: 23.448%;
-  height: 450px;
+  height: 500px;
   background: #f6f6f5;
-  position:relative;
-  justify-content: space-around;
-  flex-wrap: wrap;
-
+  /*position:relative;*/
 }
 .home-pop-dep h1{
-  font-size: 24px;
+  font-size: 20px;
   width: 100%;
   padding:15px;
+}
+.chunks {
+  margin-top:30px;
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.home-pop-dep-base-link {
+  width: 100%;
+  padding:60px 20px 0px 20px;
 }
