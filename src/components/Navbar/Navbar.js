@@ -16,8 +16,8 @@ class Navbar extends Component {
                     <div className="navBelt">
                         <span className='navLogo'></span>
                         <div className='nav-search'>
-                            <div className='nav-all-dropdown'>All</div>
-                            <input type="text" value="" name="field-keywords" autocomplete="off" placeholder="" className="nav-input" tabindex="19"></input>
+                        <div className='nav-all-dropdown'>All</div>
+                        <input type="text" value="" name="field-keywords" autocomplete="off" placeholder="" className="nav-input" tabindex="19"></input>
                             <div className="nav-searchBtn">
                                 <div className='searchIcon'></div>
                             </div>
@@ -25,9 +25,10 @@ class Navbar extends Component {
                         <div>
                             <h1 className='nav-quote'>Catch college hoops fever</h1>
                         </div>
+                        <NavRight/>
                     </div>
                     <NavLeft/>
-                    <NavRight/>
+                    
                 </div>
                 {/*{/*<Link to='/'>Home</Link>*/}
                 <Link to='/product'>Product</Link>*/}
