@@ -5,11 +5,11 @@ import './Card.css'
 class Card extends Component {
   render() {
     return (
-      <div>
+      <div className='home-pop-dep-card'>
         <div className='home-pop-dep-pic-container'>
-          <img src="{this.props.image}"/>
+          <img className='home-pop-actual-image'src={require(this.props.image)}/>
         </div>
-        <h1>{this.props.title}</h1>
+        <h3>{this.props.title}</h3>
       </div>
     );
   }
