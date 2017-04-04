@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
 .ad{
     /*background-color: grey; */
     height: 50vh;
@@ -10,4 +12,104 @@
         background-repeat: no-repeat;
          background-size: 1920px;
           min-width: 1000px;
+}
+
+.headerBlue{
+    background-color: #232f3e;
+     position: relative;
+    top: 0;
+    left: 0;
+    z-index: 198;
+    font-family: arial,sans-serif;
+    font-size: 12px;
+    line-height: 1em;
+    margin: 0 -8px;
+    display: block;
+    zoom: 1;
+    min-width: 1000px;
+    height: 100%;
+
+}
+.navBelt{
+    background-color: #232f3e;
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+    z-index: 5;
+    /*height: 10vh;*/
+    padding-top: 10px;
+}
+
+
+
+.navLogo{
+        background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global_bluebeacon-1x_optimized._CB281044790_.png);
+    float: left;
+    text-indent: -500px;
+    background-position: 22px -51px;
+    width: 142px;
+    height: 35px;
+    /*margin-top: 13px;*/
+    
+        
+}
+
+.nav-search{
+width: 50vw;
+height: 37px;
+background-color: white;
+margin-left: 220px;
+border-radius: 3px;
+    
+}
+.nav-all-dropdown{
+    float: left;
+
+    width: 55px;
+    height: 100%; 
+    background-color: #F3F3F3;
+    z-index: 1000;
+    text-align: center;
+    border-radius: 3px 0px 0px 3px;
+  
+    
+
+}
+.nav-input{
+    width: 70%;
+    height: 100%;
+    border: none;
+     
+    
+}
+.search-button{
+    width: 55px;
+}
+.nav-searchBtn{
+        background-color: #febd69;
+    background-image: none;
+    border: none;
+    width: 45px;
+    height: 100%;
+    float: right;
+    border-radius: 0px 3px 3px 0px;
+}
+.nav-quote{
+   font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    line-height: 12px;
+    color: white;
+    margin-top: -29px;
+    margin-right: 20px;
+    float: right;
+    letter-spacing: 2px;
+    
+}
+.searchIcon{
+   background-image:  url('https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global_bluebeacon-1x_optimized._CB281044790_.png');
+       background-position: -10px -290px;
+    width: 21px;
+    height: 21px;
+    margin: auto;
+    margin-top: 7px;
 }
