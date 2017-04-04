@@ -24,7 +24,9 @@
     "redux-promise": "^0.5.3"
   },
   "devDependencies": {
-    "react-scripts": "0.9.5"
+    "fs": "0.0.1-security",
+    "react-scripts": "0.9.5",
+    "xlsx": "^0.9.9"
   },
   "scripts": {
     "start": "react-scripts start",
