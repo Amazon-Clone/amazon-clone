@@ -5,7 +5,16 @@ class NavRight extends Component {
     render() {
         return (
           <div className="navRight">
-              Right Working;
+             <div>language</div>
+             <div>
+                 <h2>Hello. Sign in</h2>
+                 <h1>Account & Lists</h1>
+             </div>
+             <div>Orders</div>
+             <div>Try Prime</div>
+             <div>Cart
+                 
+             </div>
           </div>
         );
     }
