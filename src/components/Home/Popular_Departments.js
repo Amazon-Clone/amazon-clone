@@ -7,12 +7,18 @@ class PopularDepartments extends Component {
     return (
       <div className='home-pop-dep'>
         <h1>Popular departments</h1>
-        <Card name='Kindle' image='kindle.jpg'/>
-        <Card name='Amazon' image='amazon.jpg'/>
-        <Card name='Music' image='music.jpg'/>
-        <Card name='Grocery' image='grocery.jpg'/>
+        <div className='chunks'>
+        <Card title='Kindle' image='./kindle.png'/>
+        <Card title='Amazon' image='./amazon.png'/>
+        <Card title='Music' image='./music.png'/>
+        <Card title='Grocery' image='./grocery.png'/>
+        </div>
+        <div className='home-pop-dep-base-link'>
+          <hr></hr>
+          <a href='#'>Shop all departements</a>
+        </div>
       </div>
-    );
+    )
   }
 }
 
