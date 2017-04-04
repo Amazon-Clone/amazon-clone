@@ -101,9 +101,5 @@ input, select {
     vertical-align:middle;
 }
 *, *:before, *:after {
-<<<<<<< HEAD
- box-sizing: border-box;
-=======
-  box-sizing: border-box;
->>>>>>> master
+    box-sizing: border-box;
 }
