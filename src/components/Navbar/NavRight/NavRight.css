@@ -1,3 +1,78 @@
 .navRight{
     float: right;
+    display: flex;
+    color: white;
+    margin-top: 37px;
+}
+.words{
+margin-right: 24px;
+display: flex;
+}
+.navBorder{
+        border-right: 1px solid #555;
+    display: inline-block;
+    margin-bottom: 5px;
+    width: 1px;
+    height: 29px;
+}
+
+.globe   {
+    position: relative;
+    top: 15px;
+    left: 24px;
+    background: url('https://images-na.ssl-images-amazon.com/images/G/01/AUIClients/Internationa…DesktopAssets-icp_sprite-6b737a23dc2fdf9eef2fe592c2f05017215df7e7._V2_.png');
+    background-position: -77px -24px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    }
+.account{
+    /*text-align: center;*/
+    margin-top: -23px;
+    margin-right: 5px;
+}
+.account h2 {
+    font-size: 12px;
+    line-height: 14px;
+    height: 14px;
+    font-weight: 400;
+    margin-top: 9px;
+    color: #CCCCCC;
+}
+.en{
+    color: #CCCCCC;
+    margin-top: -1px;
+    /*change this margin back to -8px when globe works*/
+}
+.globeBorder{
+   border-right: 1px solid #555;
+    display: inline-block;
+    margin-top: -16px;
+    width: 1px;
+    height: 29px;
+    margin-right: 13px;
+    
+    margin-left: -10px;
+}
+   
+   .navArrow {
+       /*float: right;*/
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global_bluebeacon-1x_optimized._CB281044790_.png);
+    background-position: 0 1000px;
+    background-repeat: repeat-x;
+    border-top-color: #a7acb2;
+    /* visibility: visible; */
+    display: inline-block;
+    border-style: solid;
+    _border-style: dashed;
+    border-width: 4px;
+    border-color: transparent;
+    border-top: 4px solid #606060;
+    border-bottom-width: 0;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    margin: 4px 0 2px 5px;
+    
 }

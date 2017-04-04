@@ -43,3 +43,8 @@
     background-color: transparent;
     border: none;
 }
+.left-text{
+    display: flex;
+
+    margin-top: 8px;
+}
