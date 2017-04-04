@@ -4,10 +4,12 @@
   width: 23.448%;
   height: 500px;
   background: #f6f6f5;
+  padding: 15px;
+  position: relative;
 }
 .the-dress-shop-main-container h3 {
   font-size: 20px;
-  margin: 15px;
+  margin-bottom: 30px;
 }
 .dress-shop-video {
   size: contain;
@@ -22,9 +24,7 @@
   size: contain;
 }
 .dress-shop-base-link {
-  height: 50px;
-  line-height: 4px;
-}
-.dress-shop-base-link2 {
-  margin-top: -50px;
+  position: absolute;
+  bottom: 10px;
+  width: 90%
 }

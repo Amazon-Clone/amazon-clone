@@ -5,6 +5,7 @@ import Carousel from './Carousel';
 import HomeSignIn from './Home_sign_in';
 import PopularDepartments from './Popular_Departments';
 import TheDressShop from './The_dress_shop.js'
+import LastSection from './Last_Section'
 
 class Home extends Component {
     render() {
@@ -17,7 +18,7 @@ class Home extends Component {
                     <HomeSignIn />
                     <PopularDepartments />
                     <TheDressShop />
-                    <PopularDepartments />
+                    <LastSection />
                 </div>
                 
                     {/*<div className='home-popular-departements'>
