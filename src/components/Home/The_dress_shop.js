@@ -7,7 +7,11 @@ class TheDressShop extends Component {
       <div className='the-dress-shop-main-container'>
         <h3>The dress shop</h3>
         <div className='dress-shop-video'>
-          <video preload="auto" src="https://images-na.ssl-images-amazon.com/images/G/01/gateway/yiyiz/A1n7tUBAEvS._CB531406799_.mp4" className='dress-shop-vid-cont' controls></video>
+          <video preload="auto" autoplay='' src="https://images-na.ssl-images-amazon.com/images/G/01/gateway/yiyiz/A1n7tUBAEvS._CB531406799_.mp4" className='dress-shop-vid-cont'></video>
+        </div>
+        <div className='dress-shop-base-link'>
+          <hr></hr>
+          <a className='dress-shop-base-link2'href='#'>Shop women's dresses</a>
         </div>
       </div>
     );

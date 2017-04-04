@@ -17,3 +17,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
+.home-pop-dep-base-link {
+  width: 100%;
+  padding:60px 20px 0px 20px;
+}

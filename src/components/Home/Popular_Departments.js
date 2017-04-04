@@ -13,6 +13,10 @@ class PopularDepartments extends Component {
         <Card title='Music' image='./music.png'/>
         <Card title='Grocery' image='./grocery.png'/>
         </div>
+        <div className='home-pop-dep-base-link'>
+          <hr></hr>
+          <a href='#'>Shop all departements</a>
+        </div>
       </div>
     )
   }
