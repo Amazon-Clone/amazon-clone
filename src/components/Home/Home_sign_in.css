@@ -1,0 +1,40 @@
+.home-welcome-sign-in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 23.448%;
+  height: 450px;
+  background: #f6f6f5;
+  position:relative
+}
+.home-welcome-sign-in button {
+  width:90%;
+  background: #f0c14b;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+  height: 30px;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
+  text-align: center;
+  text-decoration: none!important;
+  /*vertical-align: middle;*/
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+.home-welcome-sign-in h1 {
+  font-size: 30px;
+  margin:60px 0 40px 0;
+}
+.home-welcome-sign-in {
+  margin-bottom: 40px;
+}
+.home-segments-base-link {
+  display: flex;
+  height: 30px;
+  position: absolute;
+  bottom: 14px;
+}

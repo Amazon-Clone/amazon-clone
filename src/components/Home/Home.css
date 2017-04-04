@@ -1,0 +1,8 @@
+.home-segments {
+  display: flex;
+  width: 100vw;
+  height: 500px;
+  min-width: 1000px;
+  justify-content: space-between;
+  margin:10px 0 10px 10px;
+}

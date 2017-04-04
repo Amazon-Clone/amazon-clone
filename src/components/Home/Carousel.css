@@ -1,0 +1,9 @@
+.home-main-advertisement {
+  height: 300px;
+  width: 100vw;
+  min-width: 1000px;
+  background: url(./home_main_ad_sample.jpg) center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+}
