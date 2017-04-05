@@ -3,7 +3,7 @@
 # dependencies
 /node_modules
 keys.js
-
+importCsvFiles.sql
 
 # testing
 /coverage

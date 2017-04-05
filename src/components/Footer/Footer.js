@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import FooterNav from './FooterNav'
+import FooterNav from './FooterNav/FooterNav'
 import './Footer.css'
 
 class Footer extends Component {

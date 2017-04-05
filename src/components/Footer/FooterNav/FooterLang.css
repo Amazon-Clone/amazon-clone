@@ -1,0 +1,12 @@
+.footer-language-container {
+    width: 100%;
+}
+
+.footer-language-box {
+    width: 100%;
+    height: 80px;
+    border-top-width: 2px;
+    border-style: solid;
+    border-color: lightgray;
+    background-color: #232F3E;
+}
