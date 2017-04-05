@@ -5,8 +5,8 @@
 .footer-language-box {
     width: 100%;
     height: 80px;
-    border-top-width: 2px;
+    border-top-width: 0.5px;
     border-style: solid;
-    border-color: lightgray;
+    border-color: dimgray;
     background-color: #232F3E;
 }
