@@ -11,7 +11,7 @@
        height: 55px;
         background-repeat: no-repeat;
          background-size: 1920px;
-          min-width: 1000px;
+          width: 100%;
 }
 
 .headerBlue{
@@ -64,7 +64,7 @@ border-radius: 3px;
 }
 .nav-all-dropdown{
     float: left;
-
+    padding-top: 10px;
     width: 55px;
     height: 100%; 
     background-color: #F3F3F3;

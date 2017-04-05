@@ -1,8 +1,15 @@
 .home-segments {
   display: flex;
-  width: 100vw;
-  height: 500px;
+  width: 98vw;
+  height: 550px;
   min-width: 1000px;
   justify-content: space-between;
   margin:10px 0px 10px 10px;
+}
+.home-main-everything {
+  font-family: arial;
+  font-weight: 100;
+}
+.home-main-everything h1, .home-main-everything h2, .home-main-everything h3,.home-main-everything h4,.home-main-everything h5,.home-main-everything h6 {
+  font-weight: 100
 }

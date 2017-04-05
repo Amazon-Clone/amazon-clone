@@ -5,17 +5,22 @@
   align-items: center;
 }
 .home-pop-dep-pic-container {
-  height: 9vw;
-  width: 9vw;
+  height: 8vw;
+  width: 8vw;
+  max-height: 140px;
+  max-width:140px;
   border-radius: 50%;
   background:white;
-  min-height: 80px;
+  min-height:80px;
   min-width: 80px;
   margin-bottom: 10px;
   margin-top: 15px;
+  margin-right: 13px;
+  margin-left:13px;
 }
 .home-pop-actual-image {
-  height: 9vw;
+  height: 8vw;
   min-height: 80px;
+  max-height:140px;
   size: contain;
 }
