@@ -20,3 +20,6 @@
     font-size: 12px;
     margin: 0 0 10px;
 }
+.footer-nav-link-col a:hover {
+    text-decoration: underline;
+}
