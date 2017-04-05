@@ -11,7 +11,7 @@
        height: 55px;
         background-repeat: no-repeat;
          background-size: 1920px;
-          min-width: 1000px;
+          width: 100%;
 }
 
 .headerBlue{
