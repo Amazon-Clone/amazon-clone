@@ -86,8 +86,12 @@ display: flex;
     display: none;
   
 }
-.tryPrimeMenu{
+.words .tryPrimeMenu{
   
     display: none;
   
+}
+
+.words:hover .tryPrimeMenu{
+    display: block;
 }

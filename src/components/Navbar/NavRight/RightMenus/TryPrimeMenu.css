@@ -48,3 +48,16 @@
     padding-top: 11px;
     font-size: 18px;
 }
+.dmenu{
+    z-index: 9;
+    background-color: grey;
+    opacity: .6;
+    position: absolute;
+    width: 100vw;
+    height: 300vh;
+    margin-top: 2.5vh;
+    margin-left: -100vw;
+    position: absolute;
+
+
+}
