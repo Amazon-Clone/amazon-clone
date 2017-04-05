@@ -22,6 +22,8 @@ class NavLeft extends Component {
                 </div>
                 </div>
                 <div className='depMenu'><DepartmentMenu/></div>
+             
+
             </div>
         );
     }

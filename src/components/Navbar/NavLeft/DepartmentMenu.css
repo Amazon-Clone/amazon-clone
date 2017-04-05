@@ -4,7 +4,7 @@
     opacity: .6;
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 150vh;
     /*margin-top: 15vh;*/
 
 
@@ -19,7 +19,9 @@
     margin-left: 1.5vw;
     z-index: 10;
     border-radius: 3px;
-    padding: 5px;
+    padding-left: 14px;
+    padding-top: 20px;
+    padding-bottom: 16px;
     line-height: 15px;
     display: flex;
     flex-direction: column;
@@ -31,4 +33,6 @@ font-size: 13px;
 }
 .dmenuBorder{
     border-bottom: 1px solid lightgray;
+    width: 90%;
+    padding-bottom: 10px;
 }
