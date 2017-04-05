@@ -11,6 +11,7 @@ class NavLeft extends Component {
                    <button className="depBtn">
                         <h1>Departments</h1>
                         <div className='navArrow'></div>
+                        <div className='depMenu'><DepartmentMenu/></div>
                     </button>
                 </div>
                 <div className='left-text'>
@@ -21,7 +22,7 @@ class NavLeft extends Component {
                     <h1>Help</h1>
                 </div>
                 </div>
-                <div className='depMenu'><DepartmentMenu/></div>
+                
              
 
             </div>
