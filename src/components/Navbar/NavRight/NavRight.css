@@ -76,3 +76,18 @@ display: flex;
     margin: 4px 0 2px 5px;
     
 }
+
+.languageMenu{
+
+    display: none;
+}
+.signInMenu{
+  
+    display: none;
+  
+}
+.tryPrimeMenu{
+  
+    display: none;
+  
+}

@@ -1,0 +1,50 @@
+.tryPrimeOverlay{
+    position: absolute;
+    background-color: grey;
+    width: 100vw;
+    height: 100vw;
+    margin-top: 10vh;
+    opacity: .6;
+}
+.tryPrimeMen{
+    height: 70vh;
+    width: 28.5vw;
+    background-color: white;
+    position: absolute;
+    right: 1.5vw;
+    z-index: 10;
+    top: 16vh;
+    border-radius: 3px;
+    background-size: cover;
+}
+.nav-content-img {
+    width: 340px;
+    height: 472px;
+    background: url('https://images-na.ssl-images-amazon.com/images/G/01/digital/video/merch/gateway/PIN/AVD-3523-PIN_flyout_340x540._CB520888926_.jpg');
+    display: inline-block;
+    text-align: center;
+    margin: 12px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.pin-header{
+    color: white;
+    margin-top: 10vh;
+    font-size: 22px;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    line-height: 20px;
+
+}
+.cta-button{
+    background-color: #F49511;
+    color: white;
+    margin-top: 3vh;
+    width: 180px;
+    height: 35px;
+    padding-top: 11px;
+    font-size: 18px;
+}
