@@ -1,7 +1,7 @@
 .the-dress-shop-main-container {
   display:flex;
   flex-direction: column;
-  width: 23.448%;
+  width: 22.448%;
   height: 500px;
   background: #f6f6f5;
   padding: 15px;
@@ -13,7 +13,8 @@
 }
 .dress-shop-video {
   size: contain;
-  /*background:#f6f6f5;*/
+  position:relative;
+  background:#f6f6f5;
 }
 .dress-shop-vid-cont {
   left: 0px; 
@@ -22,9 +23,26 @@
   height: 100%; 
   width: 100%;
   size: contain;
-}
+  max-height: 385px;
+  }
 .dress-shop-base-link {
   position: absolute;
   bottom: 10px;
   width: 90%
+}
+.leftcover-home {
+  position: absolute;
+  background:#f6f6f5;
+  height: 100%;
+  width:27%;
+  left: 0px;
+  top: 0px
+}
+.rightcover-home {
+  position: absolute;
+  background:#f6f6f5;
+  height: 100%;
+  width:27%;
+  right: 0px;
+  top: 0px
 }
