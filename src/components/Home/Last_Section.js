@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
+import UpperRightAdd from './Upper_Right_Add'
 import './Last_Section.css'
 
 class LastSection extends Component {
   render() {
     return (
       <div className='last-section-body'>
-        <div className='home-invisible-add'></div>
+        <div className='home-invisible-add'>
+          <UpperRightAdd />
+        </div>
         <div className='home-deal-of-the-day'>
           <div className='home-deal-halfer'>
             <h3 className='home-overflow'>Deal of the day</h3>

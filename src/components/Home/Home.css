@@ -1,7 +1,7 @@
 .home-segments {
   display: flex;
   width: 98vw;
-  height: 500px;
+  height: 550px;
   min-width: 1000px;
   justify-content: space-between;
   margin:10px 0px 10px 10px;

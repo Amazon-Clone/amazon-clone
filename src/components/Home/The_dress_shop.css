@@ -23,6 +23,7 @@
   height: 100%; 
   width: 100%;
   size: contain;
+  max-height: 385px;
   }
 .dress-shop-base-link {
   position: absolute;
