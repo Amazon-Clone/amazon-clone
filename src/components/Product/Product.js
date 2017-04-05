@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import './Product.css';
-import { Item } from './Item/Item';
+import Item from './Item/Item';
+import SideNav from './SideNav/SideNav.js';
 
 class Product extends Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
 
         this.state = {
@@ -17,16 +18,41 @@ class Product extends Component {
                     "productname": "Alpine Swiss Mens Wallet Leather Money Clip Thin Slim Front Pocket Wallet",
                     "productimage": "https://s3-us-west-1.amazonaws.com/amazon-clone/1_1_1.jpg",
                     "productprice": 11.99
-                }
+                },
+
+                {
+                    "productid": 1,
+                    "categoryid": 1,
+                    "productname": "Alpine Swiss Mens Wallet Leather Money Clip Thin Slim Front Pocket Wallet",
+                    "productimage": "https://s3-us-west-1.amazonaws.com/amazon-clone/1_1_1.jpg",
+                    "productprice": 11.99
+                },
+
+                {
+                    "productid": 1,
+                    "categoryid": 1,
+                    "productname": "Alpine Swiss Mens Wallet Leather Money Clip Thin Slim Front Pocket Wallet",
+                    "productimage": "https://s3-us-west-1.amazonaws.com/amazon-clone/1_1_1.jpg",
+                    "productprice": 11.99
+                },
+
+                {
+                    "productid": 1,
+                    "categoryid": 1,
+                    "productname": "Alpine Swiss Mens Wallet Leather Money Clip Thin Slim Front Pocket Wallet",
+                    "productimage": "https://s3-us-west-1.amazonaws.com/amazon-clone/1_1_1.jpg",
+                    "productprice": 11.99
+                },
+
             ]
         }
     }
 
     render() {
-        
+
         var products = this.state.products.map(product => {
-            return(
-                <p>1</p>
+            return (
+                <Item productid={product.productid} productname={product.productname} productimage={product.productimage} productprice={product.productprice}></Item>
             );
         });
 
@@ -39,8 +65,9 @@ class Product extends Component {
                     <p>Displaying <b>status</b> information</p>
                 </div>
                 <div className="mainBody">
-                    <div className="sideNavBar"></div>
+                    <SideNav className="sideNav"></SideNav>
                     <div className="itemContainer">
+                        {products}
                     </div>
                 </div>
             </div >
