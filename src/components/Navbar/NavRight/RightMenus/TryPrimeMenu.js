@@ -5,7 +5,7 @@ class TryPrimeMenu extends Component {
     render() {
         return (
             <div>
-                <div className='dmenu'>
+                <div className='primeOverlay'>
                     {/*<h1>sign in menu works</h1>*/}
                 </div>
                 <div className='tryPrimeMen'>

@@ -1,22 +1,24 @@
-.navRight{
+.navRight {
     float: right;
     display: flex;
     color: white;
     margin-top: 37px;
 }
-.words{
-margin-right: 24px;
-display: flex;
+
+.words {
+    margin-right: 24px;
+    display: flex;
 }
-.navBorder{
-        border-right: 1px solid #555;
+
+.navBorder {
+    border-right: 1px solid #555;
     display: inline-block;
     margin-bottom: 5px;
     width: 1px;
     height: 29px;
 }
 
-.globe   {
+.globe {
     position: relative;
     top: 15px;
     left: 24px;
@@ -25,12 +27,14 @@ display: flex;
     display: inline-block;
     width: 14px;
     height: 14px;
-    }
-.account{
+}
+
+.account {
     /*text-align: center;*/
     margin-top: -23px;
     margin-right: 5px;
 }
+
 .account h2 {
     font-size: 12px;
     line-height: 14px;
@@ -39,24 +43,25 @@ display: flex;
     margin-top: 9px;
     color: #CCCCCC;
 }
-.en{
+
+.en {
     color: #CCCCCC;
     margin-top: -1px;
     /*change this margin back to -8px when globe works*/
 }
-.globeBorder{
-   border-right: 1px solid #555;
+
+.globeBorder {
+    border-right: 1px solid #555;
     display: inline-block;
     margin-top: -16px;
     width: 1px;
     height: 29px;
     margin-right: 13px;
-    
     margin-left: -10px;
 }
-   
-   .navArrow {
-       /*float: right;*/
+
+.navArrow {
+    /*float: right;*/
     background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global_bluebeacon-1x_optimized._CB281044790_.png);
     background-position: 0 1000px;
     background-repeat: repeat-x;
@@ -74,24 +79,26 @@ display: flex;
     font-size: 0;
     line-height: 0;
     margin: 4px 0 2px 5px;
-    
 }
 
-.languageMenu{
-
+.languageMenu {
     display: none;
-}
-.signInMenu{
-  
-    display: none;
-  
-}
-.words .tryPrimeMenu{
-  
-    display: none;
-  
 }
 
-.words:hover .tryPrimeMenu{
+.signInMenu {
+    display: none;
+}
+
+
+
+/*Hover for TryPrime*/
+
+.words .tryPrimeMenu {
+    display: none;
+    /*height: 100%;*/
+}
+
+.words:hover .tryPrimeMenu {
     display: block;
+    /*height: 100%;*/
 }
