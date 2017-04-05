@@ -8,6 +8,8 @@ class FooterLanguage extends Component {
                 <div className='footer-language-box'>
                     <div className='footer-center-box'>
                         <div className='footer-amazon-logo'></div>
+                        <a href='#' className='footer-language-selector'></a>
+                        <a href='#' className='footer-country-selector'></a>
                     </div>
                 </div>
             </div>
