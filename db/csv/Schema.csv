@@ -2,7 +2,7 @@ Products,Options,ProductImages,Users,Passwords,Categories,Carts,CartItems,Produc
 productId,optionId,imageId,userId,passwordId,categoryId,cartId,cartElementId,specId,addressId
 productName,productId,optionId,userEmail,userId,categoryName,userId,cartId,productId,userId
 categoryId,optionName,imageUrl,userFirstName,passwordHash,,createdDate,productId,specText,recipientFirstName
-,optionDimensions,,userLastName,,,status,optionId,,recipientLastName
+,optionDimensions,,userLastName,,,checkedOut,optionId,,recipientLastName
 ,optionWeight,,,,,,quantity,,userAddress1
 ,optionPrice,,,,,,discount,,userAddress2
 ,,,,,,,savedForLater,,zipCode
