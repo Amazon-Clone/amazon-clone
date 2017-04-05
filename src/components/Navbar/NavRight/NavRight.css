@@ -8,6 +8,7 @@
 .words {
     margin-right: 24px;
     display: flex;
+    height: 100%
 }
 
 .navBorder {
