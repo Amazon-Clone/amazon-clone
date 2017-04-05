@@ -10,7 +10,7 @@ import LastSection from './Last_Section'
 class Home extends Component {
     render() {
         return (
-            <div>
+            <div className='home-main-everything'>
 
                 <Carousel />
 

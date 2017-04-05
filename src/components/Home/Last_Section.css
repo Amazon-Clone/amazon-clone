@@ -1,5 +1,59 @@
 .last-section-body {
-  width: 23.448%;
+  width: 26.448%;
   height: 500px;
   background: #f6f6f5;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  position:relative;
+
+}
+.home-invisible-add{
+  height:52%;
+  width:100%;
+  background: white;
+}
+.home-overflow {
+  /*width:200%;*/
+  margin-bottom:50px;
+}
+.home-deal-of-the-day {
+  height: 47%;
+  width:100%;
+  display: flex;
+}
+.home-deal-halfer {
+  width: 75%;
+  height: 100%;
+  padding: 10px;
+}
+.home-deal-halfer h3{
+  font-size: 20px;
+}
+.home-deal-halfer h6{
+  font-size: 13px;
+}
+.home-deal-halfer h1 {
+  font-size: 30px;
+  margin-bottom:5px;
+}
+
+.home-strikeout {
+  text-decoration: line-through;
+}
+.baselink-deal-of-the-day {
+  margin: 15px;
+}
+.push-me-down-home {
+  margin-bottom:85px;
+}
+.home-deal-halfer-again {
+  background-image: url(./betterhomes.jpg);
+  background-size: contain;
+  height: 150px;
+  width:100px;
+  position: absolute;
+  background-repeat: no-repeat;
+  bottom:20px;
+  right: 20px;
 }
