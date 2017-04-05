@@ -48,9 +48,16 @@
 
     margin-top: 8px;
 }
-.depMenu{
+.depBtn .depMenu{
   
     display: none;
   
 }
 
+/*button.depBtn:hover .depMenu{
+    display: block;
+}*/
+
+.depBtn:hover .depMenu {
+    display: block;
+}

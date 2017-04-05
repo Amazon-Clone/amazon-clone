@@ -1,11 +1,4 @@
-.tryPrimeOverlay{
-    position: absolute;
-    background-color: grey;
-    width: 100vw;
-    height: 100vw;
-    margin-top: 10vh;
-    opacity: .6;
-}
+
 .tryPrimeMen{
     height: 70vh;
     width: 28.5vw;
@@ -13,7 +6,7 @@
     position: absolute;
     right: 1.5vw;
     z-index: 10;
-    top: 16vh;
+    top: 15.5vh;
     border-radius: 3px;
     background-size: cover;
 }
@@ -47,4 +40,18 @@
     height: 35px;
     padding-top: 11px;
     font-size: 18px;
+}
+.primeOverlay{
+    z-index: 9;
+    background-color: grey;
+    opacity: .6;
+    position: absolute;
+    width: 110vw;
+    height: 2000px;
+   top: 15.5vh;
+   left: 0;
+    position: absolute;
+    margin-right: -10px;
+
+
 }

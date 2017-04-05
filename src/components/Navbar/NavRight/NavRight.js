@@ -36,6 +36,7 @@ class NavRight extends Component {
             <div className='words'>
                 <h1>Try Prime</h1>
                 <div className='navArrow'></div>
+                <div className='tryPrimeMenu'><TryPrimeMenu/> </div>
              </div>
              <div className="words">
              <h1>Cart</h1>
@@ -44,7 +45,7 @@ class NavRight extends Component {
           </div>
           <div className='languageMenu'><LanguageMenu/> </div>
           <div className='signInMenu'><SignInMenu/> </div>
-          <div className='tryPrimeMenu'><TryPrimeMenu/> </div>
+          {/*<div className='tryPrimeMenu'><TryPrimeMenu/> </div>*/}
         </div>
         );
     }
