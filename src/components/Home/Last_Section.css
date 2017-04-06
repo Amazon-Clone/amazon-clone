@@ -6,7 +6,7 @@
   flex-direction: column;
   min-width: 300px;
   position:relative;
-
+  margin-left: 15px;
 }
 .home-invisible-add{
   height:52%;

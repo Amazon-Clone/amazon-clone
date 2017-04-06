@@ -5,7 +5,8 @@
   width: 22.448%;
   height: 500px;
   background: #f6f6f5;
-  position:relative
+  position:relative;
+  margin-left: 15px;
 }
 .home-welcome-sign-in button {
   width:90%;
