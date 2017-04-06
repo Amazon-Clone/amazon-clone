@@ -10,6 +10,7 @@ class Register extends Component {
     // }
     submit(values) {
         console.log(values)
+        register(values)
     }
     render() {
         return (
