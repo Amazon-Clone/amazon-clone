@@ -9,7 +9,7 @@ import NavLeft from './NavLeft/NavLeft'
 class Navbar extends Component {
     render() {
         return (
-            <div>
+            <div className='headerAll'>
                 
                 <div className='ad'></div>
                 <div className='headerBlue'>
