@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-
+import {Link} from 'react-router';
 class SignInMenu extends Component {
 
     render() {
         return (
             <div>
-                <div className='overlay'></div>
+                <div className='signInOverlay'></div>
                 <div className='signInMen'>
-                    <div>Sign In</div>
-                    <h1>New Customer? <a>Start Here.</a></h1>
+                    <Link to='/login'><div className='signInBtn'>Sign In</div></Link>
+                    <div className='newCust'><h1>New Customer? <Link to='/register'>Start Here.</Link></h1></div>
 
                     <div className='flexParent'>
                         <div className='yourLists'> 
