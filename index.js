@@ -92,6 +92,8 @@ app.post('/api/cart/clear', cartController.clearCart);
 app.post('/api/cart/delete', cartController.deleteCartElement);
 app.post('/api/cart/update', cartController.updateCartElement);
 
+app.get('/api/user', /*authController.authorize,*/ dbController.currentUser);
+
 //TEST METHODS
 
 app.post('/api/cart/charge', /*authController.authorize,*/ stripeController.makePayment); //AUTHORIZE MAKES IT REQUIRE LOGIN
