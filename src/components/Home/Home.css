@@ -10,6 +10,17 @@
   font-family: arial;
   font-weight: 100;
 }
+.home-main-everything a{
+  color: blue;
+  text-decoration: none;
+  font-size: 13px;
+}
+.home-main-everything p {
+  font-size: 13px;
+}
+.home-main-everything a:hover {
+  text-decoration: underline;
+}
 .home-main-everything h1, .home-main-everything h2, .home-main-everything h3,.home-main-everything h4,.home-main-everything h5,.home-main-everything h6 {
   font-weight: 100
 }

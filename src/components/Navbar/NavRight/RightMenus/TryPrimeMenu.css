@@ -1,18 +1,16 @@
 
 .tryPrimeMen{
-    height: 70vh;
-    width: 28.5vw;
-    background-color: white;
+   
     position: absolute;
     right: 1.5vw;
     z-index: 10;
-    top: 15vh;
+    top: 10.5vh;
+    /*margin-top: 15vh;*/
     border-radius: 3px;
     background-size: cover;
-}
-.nav-content-img {
+
     width: 340px;
-    height: 472px;
+    height: 485px;
     background: url('https://images-na.ssl-images-amazon.com/images/G/01/digital/video/merch/gateway/PIN/AVD-3523-PIN_flyout_340x540._CB520888926_.jpg');
     display: inline-block;
     text-align: center;
@@ -20,6 +18,7 @@
     display: flex; 
     flex-direction: column;
     align-items: center;
+    border: 10px solid white;
     
 }
 
@@ -35,20 +34,22 @@
 .cta-button{
     background-color: #F49511;
     color: white;
-    margin-top: 3vh;
+    margin: 0 auto;
+    margin-top: 5px;
     width: 180px;
     height: 35px;
     padding-top: 11px;
     font-size: 18px;
 }
 .primeOverlay{
-    z-index: 9;
+    z-index: -100;
     background-color: grey;
     opacity: .6;
     position: absolute;
-    width: 110vw;
+    width: 100%;
     height: 2000px;
-   top: 15.5vh;
+   top: 0px;
+   margin-top: 13vh;
    left: 0;
     position: absolute;
     margin-right: -10px;

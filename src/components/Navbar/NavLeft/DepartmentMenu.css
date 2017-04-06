@@ -3,9 +3,10 @@
     background-color: grey;
     opacity: .6;
     position: absolute;
-    width: 100vw;
+    width: 100%;
+    top: 13vh;
     height: 300vh;
-    margin-top: 2.5vh;
+    /*margin-top: 2.5vh;*/
     margin-left: -2vw;
 
 
