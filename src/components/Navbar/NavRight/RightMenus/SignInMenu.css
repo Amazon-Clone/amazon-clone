@@ -1,0 +1,9 @@
+.signInMen{
+    height: 70vh;
+    width: 40vw;
+    background-color: white;
+}
+
+.flexParent{
+    display: flex;
+}
