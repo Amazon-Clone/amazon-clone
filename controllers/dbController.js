@@ -67,10 +67,13 @@ var dbController = {
       var salt = bcrypt.genSaltSync(10);
       var hash = bcrypt.hashSync(req.body.userpassword);
 
-      var newUser = db.registerUser([req.body.useremail, req.body.userfirstname, req.body.userlastname, hash]);
+      db.registerUser([req.body.useremail, req.body.userfirstname, req.body.userlastname, hash], function(err, result){
+          if(err){
+              res.status(500).send(err);
+          }
 
-
-      res.status(200).send(req.body.useremail);
+          res.status(200).send(result);
+      });
     }
 
 };
