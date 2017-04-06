@@ -61,10 +61,9 @@ var dbController = {
         res.status(200).send(cartId);
     },
 
-    registerUser: function(req, res, next){
+    registerUser: function(req, res){
 
       console.log(req.body);
-
       var salt = bcrypt.genSaltSync(10);
       var hash = bcrypt.hashSync(req.body.userpassword);
 
