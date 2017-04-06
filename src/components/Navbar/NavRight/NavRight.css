@@ -86,7 +86,11 @@
     display: none;
 }
 
-.signInMenu {
+.words .signInMenu {
+    display: none;
+}
+
+.words:hover .signInMenu {
     display: block;
 }
 

@@ -26,7 +26,10 @@ class NavRight extends Component {
                     <h2>Hello. Sign in</h2>
                     <h1>Account & Lists</h1>
                 </div>
+
+            
                     <div className='navArrow'></div>
+                    <div className='signInMenu'><SignInMenu/> </div>
              </div>
               
              <div className='words'>
@@ -44,7 +47,7 @@ class NavRight extends Component {
              
           </div>
           <div className='languageMenu'><LanguageMenu/> </div>
-          <div className='signInMenu'><SignInMenu/> </div>
+          
           {/*<div className='tryPrimeMenu'><TryPrimeMenu/> </div>*/}
         </div>
         );
