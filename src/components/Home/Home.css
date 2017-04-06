@@ -3,8 +3,8 @@
   width: 98vw;
   height: 550px;
   min-width: 1000px;
-  justify-content: space-between;
-  margin:10px 0px 10px 10px;
+  max-width: 1500px;
+  margin: 15px auto;
 }
 .home-main-everything {
   font-family: arial;
