@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 
+.navMain{
+    position: absolute;
+    height: 17vh;
+}
 .ad{
     /*background-color: grey; */
-    height: 50vh;
-    width: 50vw;
+    /*height: 50vh;*/
+    /*width: 50vw;*/
     background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/airstream/upnav/T2/T2_latest_1x._CB529542814_.jpg'); 
     background-color: #F6F6F6;
      text-align: left;
@@ -12,6 +16,7 @@
         background-repeat: no-repeat;
          background-size: 1920px;
           width: 100%;
+          display: none;
 }
 
 .headerBlue{
@@ -19,15 +24,15 @@
      position: relative;
     top: 0;
     left: 0;
-    z-index: 198;
+    z-index: 10;
     font-family: arial,sans-serif;
     font-size: 12px;
-    line-height: 1em;
+    /*line-height: 1em;*/
     margin: 0 -8px;
     display: block;
     zoom: 1;
     min-width: 1000px;
-    height: 100%;
+    height: 13vh;
 
 }
 .navBelt{
