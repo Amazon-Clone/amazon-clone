@@ -9,11 +9,13 @@ import ProductTest from './components/ProductTest/ProductTest'
 import Register from './components/Register/Register'
 
 export default(
+    <Route>
     <Route path='/' component={ App }>
         <IndexRoute component={ Home }/>
         <Route path='/product' component={ Product }/>
         <Route path='/producttest' component={ ProductTest }/>
-        <Route path='/register' component={ Register }/>
-    
+        
+    </Route>
+    <Route path='/register' component={ Register }/>
     </Route>
 )
