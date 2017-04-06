@@ -6,33 +6,47 @@ class RegisterForm extends Component {
     render() {
         const { handleSubmit } = this.props;
         return (
-
-                <form onSubmit={handleSubmit}>
-                    <div>
-                    <label htmlFor="userfirstname">First Name</label>
-                    <Field name="userfirstname" component="input" type="text"/>
+            <div>
+            <div className='register-page'>  
+                <div className='footer-amazon-logo'></div> 
+                <form className='register-body'onSubmit={handleSubmit}>
+                    <h1 className='register-title'>Create account</h1>
+                    <div className='title-input-fields'>
+                    <label htmlFor="userfirstname">Your first name</label>
+                    <Field className='input-field-input'name="userfirstname" component="input" type="text"/>
                     </div>
-                    <div>
-                    <label htmlFor="userlastname">Last Name</label>
-                    <Field name="userlastname" component="input" type="text"/>
+                    <div className='title-input-fields'>
+                    <label htmlFor="userlastname">Your last name</label>
+                    <Field className='input-field-input' name="userlastname" component="input" type="text"/>
                     </div>
-                    <div>
+                    <div className='title-input-fields'>
                     <label htmlFor="useremail">Email</label>
-                    <Field name="useremail" component="input" type="email"/>
+                    <Field className='input-field-input' name="useremail" component="input" type="email"/>
                     </div>
-                    <div>
+                    <div className='title-input-fields'>
                     <label htmlFor="userpassword">Password</label>
-                    <Field name="userpassword" component="input" type="password"/>
+                    <Field className='input-field-input' placeholder=' at least 6 characters' name="userpassword" component="input" type="password"/>
                     </div>
                     {/*<div>
                     <label htmlFor="confirm-password">Re-Enter Password</label>
                     <Field name="confirm-password" component="input" type="password"/>
                     </div>*/}
-                    <button type="submit">Submit</button>
-                </form>                
+                    <button className='button-register'type="submit">Create your Amazon account</button>
+                    <p>By creating an account, you agree to Amazon's <a href='#'>Conditions of Use </a>and <a href='#'>Privacy Notice</a></p>
+                    <hr></hr>
+                    <p>Already have an account? <a href='#'>Sign in</a></p>
+                </form>   
+            </div> 
+            <div className='base-register'>
+                <div className='base-register-links'>
+                    <a href='#'>Conditions of Use</a>
+                    <a href='#'>Privacy Notice</a>
+                    <a href='#'>Help</a>
+                </div>
+                <div className='register-copywrite'>© 1996-2017, Amazon.com, Inc. or its affiliates</div>
+            </div> 
+            </div>           
         );
-
-            
     }
 }
 
