@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { getStoreProducts } from '../../actions/products';
-
+import { getUser } from '../../actions/get_user'
+ 
 class ProductTest extends Component {
     componentWillMount() {
-        this.props.getStoreProducts();
+        this.props.getUser();
         console.log(this.props)
         
     }
     render() {
-        console.log(this.props.store)
+        console.log(this.props.user)
         return (
             <div>
                 <h1> Product testing</h1>
@@ -19,9 +19,7 @@ class ProductTest extends Component {
 }
 
 function mapStateToProps(state) {
-    return {
-      store: state.store.all
-    }
+    return state
 }
 
-export default connect(mapStateToProps, {getStoreProducts})(ProductTest);
+export default connect(mapStateToProps, {getUser})(ProductTest);
