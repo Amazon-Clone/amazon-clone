@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Field, reduxForm } from 'redux-form'
 import './Register.css'
+import { Link } from 'react-router';
 
 class RegisterForm extends Component {
     render() {
@@ -8,7 +9,7 @@ class RegisterForm extends Component {
         return (
             <div>
             <div className='register-page'>  
-                <div className='footer-amazon-logo'></div> 
+                <a href='#'><div className='footer-amazon-logo'></div></a>
                 <form className='register-body'onSubmit={handleSubmit}>
                     <h1 className='register-title'>Create account</h1>
                     <div className='title-input-fields'>
@@ -34,7 +35,7 @@ class RegisterForm extends Component {
                     <button className='button-register'type="submit">Create your Amazon account</button>
                     <p>By creating an account, you agree to Amazon's <a href='#'>Conditions of Use </a>and <a href='#'>Privacy Notice</a></p>
                     <hr></hr>
-                    <p>Already have an account? <a href='#'>Sign in</a></p>
+                    <p>Already have an account? <Link to='/login'>Sign in</Link></p>
                 </form>   
             </div> 
             <div className='base-register'>

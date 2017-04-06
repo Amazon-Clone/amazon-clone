@@ -1,0 +1,123 @@
+
+.register-page {
+  padding: 15px;
+  font-family: arial;
+  font-weight: 100;
+}
+.register-page p{
+  font-size: 14px;
+  font-family: arial;
+  font-weight: 100;
+  line-height: 20px;
+}
+.register-body {
+  width: 370px;
+  margin: 30px auto;
+  border-style: solid;
+  border-width: .1px;
+  border-color: #cccccc;
+  padding: 15px;
+  border-radius: 5px;
+}
+.footer-amazon-logo {
+  background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-sprite_1x-a45c662e707240b03417f6ca8b97bcb486f27428._V2_.png);
+  background-position: -5px -130px;
+  height: 31px;
+  width: 103px;
+  margin: 0 auto;
+}
+.register-title {
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+.title-input-fields {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 700
+}
+.input-field-input:focus {
+  outline: none !important;
+  border:1px solid orange;
+  box-shadow: 0 0 10px #F1C454;
+}
+.input-field-input {
+  font-size: 14px;
+  height: 35px;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
+.button-register {
+  background-color:#F3CE73;
+  width: 100%;
+  height: 35px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.register-page a {
+  color: blue;
+  text-decoration: none;
+}
+.register-page a:hover {
+  text-decoration: underline;
+}
+.base-register {
+  width: 100vw;
+  background: #fcfcfc;
+  height:30vh;
+}
+.base-register-links {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin: 0px auto;
+}
+.base-register-links a {
+  color: blue;
+  font-size: 13px;
+  text-decoration: none;
+}
+.base-register-links a:hover {
+  text-decoration: underline
+}
+.register-copywrite {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 13px;
+}
+.word-seperator {
+  display: flex;
+  justify-content: space-between
+}
+.word-seperator p{
+  font-weight: 700;
+}
+.keep-me-signed-sec {
+  display: flex;
+}
+.input-checkbox-thing {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.covering-hr {
+  position: absolute;
+  height: 20px;
+  width: 140px;
+  background: white;
+  top: -10px;
+  right: 90px;
+  text-align: center;
+}
+.reposition-absolute {
+  position: relative;
+  margin-top: 35px;
+}
+.other-button-reg {
+  background: lightgray;
+  margin-top: 10px;
+  height: 35px;
+}
