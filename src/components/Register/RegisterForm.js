@@ -22,11 +22,11 @@ class RegisterForm extends Component {
                     </div>
                     <div>
                     <label htmlFor="password">Password</label>
-                    <Field name="password" component="input" type="email"/>
+                    <Field name="password" component="input" type="password"/>
                     </div>
                     <div>
                     <label htmlFor="confirm-password">Re-Enter Password</label>
-                    <Field name="confirm-password" component="input" type="email"/>
+                    <Field name="confirm-password" component="input" type="password"/>
                     </div>
                     <button type="submit">Submit</button>
                 </form>                
