@@ -1,0 +1,66 @@
+.Item {
+    width: 80%;
+    height: 160px;
+    margin: 12px 0 0 15px;
+    border-top: 1px solid #DDDDDD;
+
+    display: flex;
+}
+
+.itemPhotoContainer {
+    display: inline-block;
+}
+
+.itemPhoto {
+    width: 156px;
+    height: 156px;
+}
+
+.itemFlexContainer {
+    
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    background-color: white;
+    height: 156px;
+    margin-left: 30px;
+
+    color: #555555;
+}
+
+
+.itemTitle{
+    font-size: 17px;
+    color: #0066C0;
+}
+
+.rightBoxContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 90px;
+}
+
+.greenText{
+    color: #078A00;
+    font-size: 12px;
+}
+
+
+.firstBox > .priceBox > sub{
+    font-size: 23px;
+    vertical-align: sub;
+    
+}
+
+.firstBox > .priceBox { 
+    vertical-align: super;
+    font-size: 12px;
+    color: black;
+}
+
+.secondBox > p, .shipText, .getByText, .vendorText{
+    font-weight: 100;
+}
