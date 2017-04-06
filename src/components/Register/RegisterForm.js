@@ -9,25 +9,25 @@ class RegisterForm extends Component {
 
                 <form onSubmit={handleSubmit}>
                     <div>
-                    <label htmlFor="firstName">First Name</label>
-                    <Field name="firstName" component="input" type="text"/>
+                    <label htmlFor="userfirstname">First Name</label>
+                    <Field name="userfirstname" component="input" type="text"/>
                     </div>
                     <div>
-                    <label htmlFor="lastName">Last Name</label>
-                    <Field name="lastName" component="input" type="text"/>
+                    <label htmlFor="userlastname">Last Name</label>
+                    <Field name="userlastname" component="input" type="text"/>
                     </div>
                     <div>
-                    <label htmlFor="email">Email</label>
-                    <Field name="email" component="input" type="email"/>
+                    <label htmlFor="useremail">Email</label>
+                    <Field name="useremail" component="input" type="email"/>
                     </div>
                     <div>
-                    <label htmlFor="password">Password</label>
-                    <Field name="password" component="input" type="password"/>
+                    <label htmlFor="userpassword">Password</label>
+                    <Field name="userpassword" component="input" type="password"/>
                     </div>
-                    <div>
+                    {/*<div>
                     <label htmlFor="confirm-password">Re-Enter Password</label>
                     <Field name="confirm-password" component="input" type="password"/>
-                    </div>
+                    </div>*/}
                     <button type="submit">Submit</button>
                 </form>                
         );
