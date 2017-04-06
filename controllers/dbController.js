@@ -79,9 +79,11 @@ var dbController = {
     },
 
     currentUser: function (req, res) {
-        db.getNames(req.session.user, function (err, result) {
+        console.log(req.session);
+
+        db.getNames(req.session.passport.user, function (err, result) {
             if (err) {
-                res.status(404)
+                res.status(404).send(err);
             } else {
 
                 console.log(result);
