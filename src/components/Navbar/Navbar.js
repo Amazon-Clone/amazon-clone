@@ -24,9 +24,9 @@ class Navbar extends Component {
                             <div className='nav-all-dropdown'>All</div>
                             <input
                                 type="text"
-                                value=""
-                                name="field-keywords"
-                                autocomplete="off"
+                                
+                               
+                                
                                 placeholder=""
                                 className="nav-input"
                                 tabindex="19"></input>
