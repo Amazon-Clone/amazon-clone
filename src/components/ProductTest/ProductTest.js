@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+/*import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { getUser } from '../../actions/get_user'
  
@@ -24,4 +24,4 @@ function mapStateToProps(state) {
     }
 }
 
-export default connect(mapStateToProps, {getUser})(ProductTest);
+export default connect(mapStateToProps, {getUser})(ProductTest);*/

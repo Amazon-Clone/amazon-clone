@@ -10,13 +10,14 @@ import './RightMenus/SignInMenu.css'
 import './RightMenus/TryPrimeMenu.css'
 
 class NavRight extends Component {
-    componentWillMount() {
+
+    componentDidMount() {
+        console.log('did:',  this.props)
     this.props.getUser();
-    console.log(this.props)
-    
     }
+
     render() {
-        // console.log(this.props.user)
+        console.log('this one:', this.props.user)
         return (
         <div>
           <div className="navRight">
@@ -30,8 +31,9 @@ class NavRight extends Component {
              </div>
              <div className="globeBorder"></div>
              <div className='words'>
-                <div className='account'>
-                    {/*<h2>Hello. { this.props.user.userfirstname }</h2>*/}
+                <div className='account' key={this.props.user}>
+                    <h2>Hello. {(this.props.user.userfirstname ? this.props.user.userfirstname : ' Sign in') }</h2>
+
                     <h1>Account & Lists</h1>
                 </div>
 
@@ -56,14 +58,13 @@ class NavRight extends Component {
           </div>
           <div className='languageMenu'><LanguageMenu/> </div>
           
-          {/*<div className='tryPrimeMenu'><TryPrimeMenu/> </div>*/}
         </div>
         );
     }
 }
 function mapStateToProps(state) {
     return {
-        user: state.user.users
+        user: state.user.all
     }
 }
 
