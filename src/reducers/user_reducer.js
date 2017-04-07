@@ -1,6 +1,6 @@
 import { GET_USER } from '../actions/get_user'
 
-const INITIAL_STATE = {users: [], post: null };
+const INITIAL_STATE = {users: ['Sign in'], post: null };
 export default function(state = INITIAL_STATE, action) {
     switch(action.type) {
         case GET_USER:

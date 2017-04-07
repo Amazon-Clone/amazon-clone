@@ -19,7 +19,9 @@ class ProductTest extends Component {
 }
 
 function mapStateToProps(state) {
-    return state
+    return {
+        user: state.user.users
+    }
 }
 
 export default connect(mapStateToProps, {getUser})(ProductTest);
