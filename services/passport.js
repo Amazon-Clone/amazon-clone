@@ -26,7 +26,7 @@ passport.use(new LocalStrategy({
 
         user = user[0];
 
-        if(hashPasswordAndCompareToStoredHash(password, user.storedpasswordhash)){
+        if(hashPasswordAndCompareToStoredHash(userpassword, user.storedpasswordhash)){
           return done(null, user);
         }else{
           return done(null, false, { message: 'Incorrect password.' });
