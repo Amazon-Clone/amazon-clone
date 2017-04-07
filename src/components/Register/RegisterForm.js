@@ -13,11 +13,11 @@ class RegisterForm extends Component {
                 <form className='register-body'onSubmit={handleSubmit}>
                     <h1 className='register-title'>Create account</h1>
                     <div className='title-input-fields'>
-                    <label htmlFor="userfirstname">Your first name</label>
+                    <label htmlFor="userfirstname">Your First Name</label>
                     <Field className='input-field-input'name="userfirstname" component="input" type="text"/>
                     </div>
                     <div className='title-input-fields'>
-                    <label htmlFor="userlastname">Your last name</label>
+                    <label htmlFor="userlastname">Your Last Name</label>
                     <Field className='input-field-input' name="userlastname" component="input" type="text"/>
                     </div>
                     <div className='title-input-fields'>
