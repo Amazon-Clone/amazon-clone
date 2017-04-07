@@ -5,7 +5,7 @@ import NavRight from './NavRight/NavRight'
 import NavLeft from './NavLeft/NavLeft'
 
 class Navbar extends Component {
-    render() {
+    render() { 
         return (
             <div>
 
