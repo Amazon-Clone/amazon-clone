@@ -5,7 +5,7 @@ var authController = {
   },
 
   sendAuthSuccesful: function(req, res) {
-    res.status(200).send('auth succesful');
+    res.status(200).send('auth successful');
   },
 
   logout: function(req, res) {
