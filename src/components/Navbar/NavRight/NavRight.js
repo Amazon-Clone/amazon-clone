@@ -51,7 +51,11 @@ class NavRight extends Component {
                 <div className='navArrow'></div>
                 <div className='tryPrimeMenu'><TryPrimeMenu/> </div>
              </div>
+
              <div className="words">
+                 <div className='cart'>
+                     <div className='cartCount'>0</div>
+                 </div>
              <h1>Cart</h1>
               </div>   
              

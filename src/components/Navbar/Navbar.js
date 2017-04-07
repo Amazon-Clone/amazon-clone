@@ -7,8 +7,8 @@ import NavLeft from './NavLeft/NavLeft'
 class Navbar extends Component {
     render() { 
         return (
-            <div>
 
+            <div>
                 <div className='ad'></div>
                 <div className='headerBlue'>
                     <div className="navBelt">
