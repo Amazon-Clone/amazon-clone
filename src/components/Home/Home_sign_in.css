@@ -8,7 +8,8 @@
   position:relative;
   margin-left: 15px;
 }
-.home-welcome-sign-in button {
+
+#more-specific-button {
   width:90%;
   background: #f0c14b;
   border-color: #a88734 #9c7e31 #846a29;
@@ -19,12 +20,12 @@
   border-width: 1px;
   cursor: pointer;
   display: inline-block;
-  padding: 0;
   text-align: center;
   text-decoration: none!important;
   /*vertical-align: middle;*/
   margin-top: 80px;
   margin-bottom: 100px;
+  padding-top: 6px;
 }
 .home-welcome-sign-in h1 {
   font-size: 30px;
@@ -42,6 +43,7 @@
 }
 .text-holder-home-signin {
   display: flex;
-  width: 100%;
   text-align: center;
+  width: 100%;
+  justify-content: space-around
 }

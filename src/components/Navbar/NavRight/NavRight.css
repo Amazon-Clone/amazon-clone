@@ -21,9 +21,9 @@
 
 .globe {
     position: relative;
-    top: 15px;
-    left: 24px;
-    background: url('https://images-na.ssl-images-amazon.com/images/G/01/AUIClients/Internationa…DesktopAssets-icp_sprite-6b737a23dc2fdf9eef2fe592c2f05017215df7e7._V2_.png');
+    top: 5px;
+    left: 3.5px;
+     background-image: url('/images/navimages/globe.png');
     background-position: -77px -24px;
     display: inline-block;
     width: 14px;
@@ -47,7 +47,7 @@
 
 .en {
     color: #CCCCCC;
-    margin-top: -1px;
+    margin-top: -16px;
     /*change this margin back to -8px when globe works*/
 }
 
@@ -106,4 +106,23 @@
 .words:hover .tryPrimeMenu {
     display: block;
     /*height: 100%;*/
+}
+
+.cart{
+    display: block;
+    overflow: hidden;
+    position: relative;
+    left: -5px;
+    top: -10px;
+    background-position: -10px -340px;
+    width: 38px;
+    height: 26px;
+    background-image: url('/images/navimages/cart.png')
+}
+.cartCount{
+    font-size: 15px;
+    color: #F08804;
+    margin-left: 17px;
+    margin-top: -2px;
+    font-family: Arial, Helvetica, sans-serif;
 }

@@ -8,10 +8,10 @@ class HomeSignIn extends Component {
       <div className='home-welcome-sign-in'>
           <h1>Welcome</h1>
           <p>Sign in for the best experience</p>
-          <button>Sign in securely</button>
+          <Link to='/login' id='more-specific-button' >Sign in securely</Link>
             <div className='home-segments-base-link'>
               <hr></hr>
-              <div className='text-holder-home-signin'><p>New to Amazon?</p><Link to='/register'>Start Here</Link></div>
+              <div className='text-holder-home-signin'><p>New to Amazon? <Link to='/register'>Start Here</Link></p></div>
             </div>
       </div>
     );
