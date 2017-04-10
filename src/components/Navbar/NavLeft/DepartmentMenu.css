@@ -43,6 +43,7 @@
     width: 90%;
     padding-bottom: 10px;
 }
+
 .menu1:hover {
     width: 800px;
     transition: width 150ms;
@@ -62,5 +63,6 @@
     display: block;
 }*/
 
-
-
+.hov:hover .video{
+    margin-left: 0;
+}

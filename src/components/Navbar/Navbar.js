@@ -5,10 +5,10 @@ import NavRight from './NavRight/NavRight'
 import NavLeft from './NavLeft/NavLeft'
 
 class Navbar extends Component {
-    render() {
+    render() { 
         return (
-            <div class='navMain'>
 
+            <div>
                 <div className='ad'></div>
                 <div className='headerBlue'>
                     <div className="navBelt">
@@ -20,12 +20,12 @@ class Navbar extends Component {
                             <div className='nav-all-dropdown'>All</div>
                             <input
                                 type="text"
-                                value=""
-                                name="field-keywords"
-                                autocomplete="off"
+                                
+                               
+                                
                                 placeholder=""
                                 className="nav-input"
-                                tabindex="19"></input>
+                                tabIndex="19"></input>
                             <div className="nav-searchBtn">
                                 <div className='searchIcon'></div>
                             </div>

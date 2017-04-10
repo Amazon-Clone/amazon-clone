@@ -35,6 +35,9 @@
     height: 13vh;
 
 }
+/*.headerAll{
+    height: 15.5vh;
+}*/
 .navBelt{
     background-color: #232f3e;
     position: relative;
@@ -81,9 +84,10 @@
 
 }
 .nav-input{
-    width: 70%;
+    width: 82%;
     height: 100%;
     border: none;
+    font-size: 15px;
      
     
 }
