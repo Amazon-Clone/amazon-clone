@@ -8,18 +8,16 @@
     height: 300vh;
     /*margin-top: 2.5vh;*/
     margin-left: -2vw;
-
-
 }
 .menu1{
-      position: absolute;
+    position: absolute;
+    left: 30px;
     height: 70vh;
     width: 250px;
-
     background-color: white;
-       margin-top: 1vh;
+    margin-top: 1vh;
     margin-left: 1.5vw;
-    z-index: 100;
+    z-index: 10;
     border-radius: 3px;
     padding-left: 3px;
     padding-top: 20px;
@@ -28,18 +26,42 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    color: white;
+    color: black;
     text-align: left;
+    transition: width 150ms;
 }
 .menu1 h1{
-color: #333333 !important;
-font-size: 13px !important;
+    color: #333333;
+    font-size: 13px !important;
+}
+.menu1 h1:hover {
+    color: #febd69;
+    font-weight: 700;
 }
 .dmenuBorder{
     border-bottom: 1px solid lightgray;
     width: 90%;
     padding-bottom: 10px;
 }
+
+.menu1:hover {
+    width: 800px;
+    transition: width 150ms;
+    font-size: 30px !important;
+}
+.slideout{
+    /*position: absolute;*/
+    background-color: blue;
+    /*top: 20vh;
+    left: 20vh;*/
+    height: 500px;
+    width: 500px;
+    display: none;
+}
+
+/*.menu1:hover .slideout{
+    display: block;
+}*/
 
 .hov:hover .video{
     margin-left: 0;
