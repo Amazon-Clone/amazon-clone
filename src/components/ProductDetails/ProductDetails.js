@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { addToCart } from '/../../actions/cart'
+import { addToCart } from '../../actions/cart'
 
 class ProductDetails extends Component {
 constructor(props){
@@ -8,12 +8,12 @@ constructor(props){
         productid: 5
     }
 }
-submitAdd = function(productid){
-    addToCart(productid)
+submitAdd(){
+    addToCart(this.state.productid)
 }
     render() {
         
-        functi
+        
         return (
             
             <div>
