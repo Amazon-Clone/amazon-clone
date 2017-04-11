@@ -19,10 +19,33 @@
     align-items: center;
 }
 
-.footer-amazon-logo {
+.footer-language-logo {
     background-image: url(/images/footer-images/nav-sprite-global.png);
     background-position: -10px -90px;
     width: 76px;
     height: 23px;
 }
 
+.footer-right-center {
+    width: 250px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-language-selector {
+    width: 120px;
+    height: 35px;
+    border-width: 1px;
+    border-color: #e6e6e6;
+    border-style: solid;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+.footer-country-selector {
+    width: 142px;
+    height: 35px;
+    border-width: 1px;
+    border-color: #e6e6e6;
+    border-style: solid;
+    border-radius: 3px;
+}
