@@ -17,8 +17,7 @@ submitAdd(){
         return (
             
             <div>
-                ProductDetails working
-                <button type="" onclick={this.submitAdd}></button>
+               
             </div>
         );
     }
