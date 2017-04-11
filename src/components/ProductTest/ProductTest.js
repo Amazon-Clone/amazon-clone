@@ -32,5 +32,6 @@ function mapStateToProps(state) {
 <<<<<<< HEAD
 export default connect(mapStateToProps)(ProductTest);
 =======
-export default connect(mapStateToProps, {getUser})(ProductTest);*/
+export default connect(mapStateToProps, {getUser})(ProductTest);
 >>>>>>> master
+*/
