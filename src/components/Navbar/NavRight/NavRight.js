@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { getUser } from '../../../actions/get_user'
 import './NavRight.css'
@@ -8,7 +8,6 @@ import TryPrimeMenu from './RightMenus/TryPrimeMenu'
 import './RightMenus/LanguageMenu.css'
 import './RightMenus/SignInMenu.css'
 import './RightMenus/TryPrimeMenu.css'
-import { Link } from 'react-router'
 
 class NavRight extends Component {
 
@@ -54,16 +53,11 @@ class NavRight extends Component {
              </div>
 
              <div className="words">
-<<<<<<< HEAD
-                <h1>Cart</h1>
-            </div>   
-=======
                  <div className='cart'>
                      <div className='cartCount'>0</div>
                  </div>
              <h1>Cart</h1>
               </div>   
->>>>>>> master
              
           </div>
           <div className='languageMenu'><LanguageMenu/> </div>
@@ -78,4 +72,4 @@ function mapStateToProps(state) {
     }
 }
 
-export default connect(mapStateToProps, { getUser })(NavRight);
+export default connect(mapStateToProps, { getUser })(NavRight); 
