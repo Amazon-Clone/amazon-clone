@@ -59,6 +59,10 @@
 }
 .register-page a {
   color: blue;
+  text-decoration: none;
+}
+.register-page a:hover {
+  text-decoration: underline;
 }
 .base-register {
   width: 100vw;
@@ -75,9 +79,45 @@
 .base-register-links a {
   color: blue;
   font-size: 13px;
+  text-decoration: none;
+}
+.base-register-links a:hover {
+  text-decoration: underline
 }
 .register-copywrite {
   margin: 0 auto;
   text-align: center;
   font-size: 13px;
+}
+.word-seperator {
+  display: flex;
+  justify-content: space-between
+}
+.word-seperator p{
+  font-weight: 700;
+}
+.keep-me-signed-sec {
+  display: flex;
+}
+.input-checkbox-thing {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.covering-hr {
+  position: absolute;
+  height: 20px;
+  width: 140px;
+  background: white;
+  top: -10px;
+  right: 90px;
+  text-align: center;
+}
+.reposition-absolute {
+  position: relative;
+  margin-top: 35px;
+}
+.other-button-reg {
+  background: lightgray;
+  margin-top: 10px;
+  height: 35px;
 }

@@ -1,0 +1,1 @@
+select * from Users where userId = $1;

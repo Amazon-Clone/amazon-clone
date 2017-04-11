@@ -6,7 +6,7 @@ class TryPrimeMenu extends Component {
         return (
             <div>
                 <div className='primeOverlay'>
-                    {/*<h1>sign in menu works</h1>*/}
+                  
                 </div>
                 <div className='tryPrimeMen'>
                     <div className="nav-content-img">

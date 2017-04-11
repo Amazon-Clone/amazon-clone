@@ -7,6 +7,8 @@ import Home from './components/Home/Home'
 import Product from './components/Product/Product'
 import ProductTest from './components/ProductTest/ProductTest'
 import Register from './components/Register/Register'
+import Login from './components/Login/Login'
+import ProductDetails from './components/ProductDetails/ProductDetails'
 
 export default(
     <Route>
@@ -14,8 +16,10 @@ export default(
         <IndexRoute component={ Home }/>
         <Route path='/product' component={ Product }/>
         <Route path='/producttest' component={ ProductTest }/>
+        <Route path='/product/:id' component={ ProductDetails }/>
         
     </Route>
     <Route path='/register' component={ Register }/>
+    <Route path='/login' component={ Login }/>
     </Route>
 )
