@@ -10,13 +10,10 @@
 }
 .menu1{
     position: absolute;
-<<<<<<< HEAD
     /*height: 70vh;*/
-=======
     left: 30px;
     height: 70vh;
     width: 250px;
->>>>>>> master
     background-color: white;
     margin-top: 1vh;
     margin-left: 1.5vw;
@@ -27,21 +24,17 @@
     /*padding-bottom: 16px;*/
     line-height: 15px;
     display: flex;
-<<<<<<< HEAD
     /*flex-direction: column;*/
     /*justify-content: space-between;*/
     /*color: white;*/
-=======
     flex-direction: column;
     justify-content: space-between;
     color: black;
->>>>>>> master
     text-align: left;
     transition: width 150ms;
 }
 .menu1 h1{
     color: #333333;
-<<<<<<< HEAD
     width: 200px;
     padding: 5px 0;
     font-size: 13px !important;
@@ -49,20 +42,17 @@
 .menu2 h1:hover {
     color: orange;
     font-size: 14px !important;
-=======
     font-size: 13px !important;
 }
 .menu1 h1:hover {
     color: #febd69;
     font-weight: 700;
->>>>>>> master
 }
 .dmenuBorder{
     border-bottom: 1px solid lightgray;
     width: 90%;
     padding-bottom: 10px;
 }
-<<<<<<< HEAD
 .sliding-slider {
     /*transition:width 150ms;*/
     width: 0px;
@@ -131,7 +121,6 @@
 .menu2 {
     display: flex;
     flex-direction: column;
-=======
 
 .menu1:hover {
     width: 800px;
@@ -152,7 +141,7 @@
     display: block;
 }*/
 
+
 .hov:hover .video{
-    margin-left: 0;
->>>>>>> master
+    margin-left: .1px;
 }
