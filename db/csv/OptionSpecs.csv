@@ -1,0 +1,15 @@
+optionSpecId,optionId,optionSpecName,optionSpecText
+1,1,Display Size:,24 inches
+2,1,Resolution:,1080P
+3,1,Refresh Rate:,60hz
+4,1,Display Technology:,LED
+5,2,Display Size:,28 inches
+6,2,Resolution:,720p
+7,2,Connectivity Technology:,Built-in Wi-Fi
+8,2,Model Year:,2017
+9,2,Refresh Rate:,60 hertz
+10,3,Display Size:,32 inches
+11,3,Resolution:,720p
+12,3,Connectivity Technology:,Built-in Wi-Fi
+13,3,Model Year:,2017
+14,3,Refresh Rate:,60 hertz

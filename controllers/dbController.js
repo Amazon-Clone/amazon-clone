@@ -15,6 +15,17 @@ var dbController = {
             }
         });
     },
+
+    getCategories: function(req, res, next){
+        db.getCategories(function(error, result){
+            if(error){
+                res.status(500).send();
+            }else{
+                res.status(200).send(result);
+            }         
+        });
+    },
+
     getProductById: function(req, res, next) {
 
         db.getProductById([req.params.id], function(error, result) {

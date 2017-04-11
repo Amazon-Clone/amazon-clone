@@ -37,7 +37,7 @@
 
 .rightBoxContainer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
 
     height: 90px;
@@ -63,4 +63,8 @@
 
 .secondBox > p, .shipText, .getByText, .vendorText{
     font-weight: 100;
+}
+
+#primeLogo{
+    width: 65px;
 }

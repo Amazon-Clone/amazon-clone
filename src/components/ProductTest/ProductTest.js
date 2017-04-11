@@ -4,10 +4,9 @@ import { getStoreProducts } from '../../actions/products';
 
 class ProductTest extends Component {
     componentWillMount() {
-        this.props.getStoreProducts();
-        console.log(this.props)
-        
+        getStoreProducts();
     }
+
     render() {
         console.log(this.props.store)
         return (
@@ -24,4 +23,4 @@ function mapStateToProps(state) {
     }
 }
 
-export default connect(mapStateToProps, {getStoreProducts})(ProductTest);
+export default connect(mapStateToProps)(ProductTest);

@@ -1,0 +1,53 @@
+subCategoryFilterOptionId,subCategoryFilterId,subCategoryFilterOptionName
+1,1,32 inches and under
+2,1,33 to 43 inches
+3,1,44 to 49 inches
+4,1,50 to 59 inches
+5,1,60 to 69 inches
+6,1,70 inches and up
+7,2,4K Ultra HD
+8,2,1080p
+9,2,1080i
+10,2,760p
+11,2,760i
+12,2,720p
+13,2,720i
+14,2,480p
+15,2,480i
+16,3,2016
+17,3,2015
+18,3,2014
+19,3,2013
+20,3,2012
+21,3,2011
+22,3,2010
+23,3,2009
+24,3,2008
+25,3,2007
+26,3,2006
+27,3,2005
+28,4,3D
+29,4,Smart TV
+30,5,Energy Star
+31,6,Samsung
+32,6,TCL
+33,6,LG Electronics
+34,6,VIZIO
+35,6,Element
+36,6,Sony
+37,6,Sceptre
+38,6,Aver
+39,6,Upstar
+40,6,Hisense
+41,6,Supersonic
+42,7,Netflix
+43,7,Youtube
+44,7,Pandora
+45,7,Vudu
+46,7,Amazon Instant Video
+47,7,HULU
+48,8,Flat
+49,8,Curved
+50,9,Home Entretainment
+51,9,Commercial Signage
+52,10,Frustration Free Packaging
