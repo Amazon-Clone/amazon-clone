@@ -1,5 +1,5 @@
-specsId,productId,specText
-1,1,Genuine Leather
-2,1,Magnet Money Clip
-3,1,"3 Card Slots, ID Window"
-4,1,"Slim & Thin, Perfect Front Pocket wallet to carry some money ID and a few cards"
+productSpecId,productId,productSpecName,productSpecText
+1,1,Display Size:,24 inches
+2,1,Resolution:,1080P
+3,1,Refresh Rate:,60hz
+4,1,Display Technology:,LED

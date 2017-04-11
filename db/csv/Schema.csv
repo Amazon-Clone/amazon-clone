@@ -1,8 +1,8 @@
-Products,Options,ProductImages,Users,Passwords,Categories,Carts,CartItems,ProductSpecs,Addresses
-productId,optionId,imageId,userId,passwordId,categoryId,cartId,cartElementId,specId,addressId
-productName,productId,optionId,userEmail,userId,categoryName,userId,cartId,productId,userId
-categoryId,optionName,imageUrl,userFirstName,passwordHash,,createdDate,productId,specText,recipientFirstName
-,optionDimensions,,userLastName,,,checkedOut,optionId,,recipientLastName
-,optionWeight,,,,,,quantity,,userAddress1
-,optionPrice,,,,,,discount,,userAddress2
-,,,,,,,savedForLater,,zipCode
+Products,Options,OptionImages,Users,Passwords,Categories,SubCategories,SubCategoryFilters,ProductSubCategoryFilter,Carts,CartItems,OptionSpecs,Addresses
+productId,optionId,imageId,userId,passwordId,categoryId,subCategoryId,subCategoryFilterId,productSubCategoryId,cartId,cartElementId,optionSpecId,addressId
+productName,productId,optionId,userEmail,userId,categoryName,categoryId,subCategoryId,optiontId,userId,cartId,optionId,userId
+productBrand,optionName,imageUrl,userFirstName,passwordHash,,subCategoryName,subCategoryFilterName,subCategoryId,createdDate,productId,optionSpecName,recipientFirstName
+productPrime,optionDimensions,,userLastName,,,,,,checkedOut,optionId,optionSpecText,recipientLastName
+productFreeShipping,optionWeight,,,,,,,,,quantity,,userAddress1
+,optionPrice,,,,,,,,,discount,,userAddress2
+,optionLastPrice,,,,,,,,,savedForLater,,zipCode

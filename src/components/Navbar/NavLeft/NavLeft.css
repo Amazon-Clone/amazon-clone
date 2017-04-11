@@ -8,7 +8,11 @@
 }
 
 .navLeft-Dep h1{
+<<<<<<< HEAD
     color: white;
+=======
+    /*color: white !important;*/
+>>>>>>> master
     margin-right: 5px;
     float: left;
     font-size: 15px;

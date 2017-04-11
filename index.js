@@ -78,6 +78,8 @@ app.get('/api/store', dbController.getStoreElements, function(req, res){
   res.status(200).send(req.result);
 });
 
+app.get('/api/store/categories', dbController.getCategories);
+
 app.get('/api/product/:id', dbController.getProductById, function(req, res){
   res.status(200).send(req.result);
 });
