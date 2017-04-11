@@ -6,6 +6,7 @@ import TryPrimeMenu from './RightMenus/TryPrimeMenu'
 import './RightMenus/LanguageMenu.css'
 import './RightMenus/SignInMenu.css'
 import './RightMenus/TryPrimeMenu.css'
+import { Link } from 'react-router'
 
 class NavRight extends Component {
     render() {
@@ -42,8 +43,8 @@ class NavRight extends Component {
                 <div className='tryPrimeMenu'><TryPrimeMenu/> </div>
              </div>
              <div className="words">
-             <h1>Cart</h1>
-              </div>   
+                <h1>Cart</h1>
+            </div>   
              
           </div>
           <div className='languageMenu'><LanguageMenu/> </div>

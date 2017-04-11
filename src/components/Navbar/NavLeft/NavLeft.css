@@ -8,10 +8,10 @@
 }
 
 .navLeft-Dep h1{
-    color: white !important;
+    color: white;
     margin-right: 5px;
     float: left;
-    font-size: 15px !important;
+    font-size: 15px;
 }
 .navLeft h1{
     color: #ccc;
@@ -23,11 +23,10 @@
     background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global_bluebeacon-1x_optimized._CB281044790_.png');
     background-position: 0 1000px;
     background-repeat: repeat-x;
-        border-top-color: #a7acb2;
-        /*visibility: visible;*/
-            display: inline-block;
+    border-top-color: #a7acb2;
+    display: inline-block;
     border-style: solid;
-    _border-style: dashed;
+    border-style: dashed;
     border-width: 4px;
     border-color: transparent;
     border-top: 4px solid #606060;
@@ -45,19 +44,11 @@
 }
 .left-text{
     display: flex;
-
     margin-top: 8px;
 }
 .depBtn .depMenu{
-  
     display: none;
-  
 }
-
-/*button.depBtn:hover .depMenu{
-    display: block;
-}*/
-
 .depBtn:hover .depMenu {
     display: block;
 }
