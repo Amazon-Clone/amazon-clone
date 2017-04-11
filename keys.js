@@ -4,5 +4,5 @@ var sessionSecretKey = '_VuT89**::;,<<KaO(Ja@1)Jx1@&^^$#';
 module.exports = {
   stripeSecretKey: stripeSecretKey,
   sessionSecretKey: sessionSecretKey,
-  localuserkey: "postgres://postgres:asdfasdfas@localhost/amazon-clone"
+  localuserkey: "postgres://postgres@localhost/amazon-clone"
 };
