@@ -121,7 +121,7 @@
 .menu2 {
     display: flex;
     flex-direction: column;
-
+}
 .menu1:hover {
     width: 800px;
     transition: width 150ms;
