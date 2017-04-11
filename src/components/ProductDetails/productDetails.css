@@ -1,0 +1,54 @@
+.ProdDetailsBody {
+    display: flex;
+
+}
+
+.prodPhotos {
+    width: 42px;
+    height: 42px;
+    background-color: red;
+    margin-top: 14px;
+}
+.mainPhoto{
+    width: 27vw;
+    background-color: red;
+    /*when photo is inserted, height will be 100%*/
+    height: 31vh;
+}
+.blueATag{
+    color: #0066C0;
+}
+.reviews{
+    display: flex;
+    
+}
+.stars{
+        background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-sprite_1x-28bd59af93d9b1c745bb0aca4de58763b54df7cf._V2_.png);
+  
+    background-size: 400px 670px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: top;  
+    background-position: -175px -368px;
+    width: 80px;
+    height: 18px;
+}
+.starMain{
+    display: flex
+}
+.starArrow{
+        background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-sprite_1x-28bd59af93d9b1c745bb0aca4de58763b54df7cf._V2_.png);
+ 
+    background-size: 400px 670px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.otherSellers{
+ color: #008A00;
+}
+.sizeParent{
+    color: #8891B6;
+}
+.sizeChild{
+    color: black;
+}
