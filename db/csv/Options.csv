@@ -1,3 +1,7 @@
-optionId,productId,optionName,optionDimensions,optionWeight,optionPrice
-1,1,Crosshatch Black,"4"" x 2 7/8"" x 3/8""",0.3 ounces,11.99
-2,1,Crosshatch Blue,"4"" x 2 7/8"" x 3/8""",0.3 ounces,11.99
+optionId,productId,optionName,optionDimensions,optionWeight,optionPrice,optionLastPrice
+1,1,24-inch,"4"" x 2 7/8"" x 3/8""",10.4 pounds,128.99,159.99
+2,2,28-inch,"25.3"" x 15.1"" x 3.2""",7.5 pounds,159.99,189.99
+3,2,32-Inch,"28.9"" x 17.1"" x 3.2""",9.9 pounds,169.99,199.99
+4,2,40-inch,"36.6"" x 21.1"" x 2.9""",14.6 pounds,269.99,289.99
+5,2,43-inch,"38.3"" x 22.2"" x 2.9""",16.8 pounds,319.99,319.99
+6,2,49-inch,"43.7"" x 27.3"" x 3""",25.4 pounds,379.99,379.99

@@ -1,3 +1,12 @@
-SELECT DISTINCT ON(Products.productId) Products.productId, Products.categoryId, Products.productName, ProductImages.imageUrl AS productImage, Options.optionPrice AS productPrice FROM Products
-JOIN Options ON Products.productId = Options.productId
-JOIN ProductImages On Options.optionId = ProductImages.OptionId;
+SELECT DISTINCT ON (queryA.optionId) queryA.productId, queryA.productOptionName AS productName, queryA.productBrand, queryA.productPrime, queryA.productFreeShipping, queryA.productCategoryName, queryA.productSubCategoryName, queryA.subCategoryFilterOptions, jsonb_object_agg(queryA.optionSpecName, queryA.optionSpecText) AS productSpecText, OptionImages.imageUrl AS productImageUrl, queryA.productLastPrice, queryA.productPrice FROM
+(SELECT Products.productId, Options.optionId, (Products.productName || ' ' || Options.optionName) AS productOptionName, Products.productBrand, Products.productPrime, Products.productFreeShipping, Categories.categoryName AS productCategoryName, SubCategories.subCategoryName AS productSubCategoryName, jsonb_object_agg(SubCategoryFilters.subCategoryFilterName, SubCategoryFilterOptions.subCategoryFilterOptionName) AS subCategoryFilterOptions, Options.optionLastPrice AS productLastPrice, OptionSpecs.optionSpecName, OptionSpecs.optionSpecText, Options.optionPrice AS productPrice FROM Products
+INNER JOIN Options ON Options.productId = Products.productId
+INNER JOIN ProductSubCategoryFilterOptions ON ProductSubCategoryFilterOptions.optionId = Options.optionId
+INNER JOIN SubCategoryFilterOptions ON SubCategoryFilterOptions.subCategoryFilterOptionId = ProductSubCategoryFilterOptions.subCategoryFilterOptionId
+INNER JOIN SubCategoryFilters ON SubCategoryFilters.subCategoryFilterId = SubCategoryFilterOptions.subCategoryFilterId
+INNER JOIN SubCategories ON SubCategories.subCategoryId = SubCategoryFilters.subCategoryId
+INNER JOIN Categories ON Categories.categoryId = SubCategories.categoryId
+INNER JOIN OptionSpecs ON OptionSpecs.optionId = Options.optionId
+GROUP BY Products.productId, productOptionName, Options.optionId, Products.productBrand, Products.productPrime, Products.productFreeShipping, Categories.categoryName,SubCategories.subCategoryName, OptionSpecs.optionSpecName, OptionSpecs.optionSpecText, Options.optionLastPrice, Options.optionPrice) AS queryA
+INNER JOIN OptionImages ON OptionImages.optionId = queryA.optionId
+GROUP BY queryA.productId, queryA.optionId, productOptionName, queryA.productBrand, queryA.productPrime, queryA.productFreeShipping, queryA.productCategoryName, queryA.productSubCategoryName, queryA.subCategoryFilterOptions, OptionImages.imageUrl, queryA.productLastPrice, queryA.productPrice

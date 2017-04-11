@@ -63,7 +63,8 @@ With data object embedded as follows:
 data:{
     useremail: 'emiliano_mesquita@hotmail.com',
     userfirstname: 'Emiliano',
-    userlastname: 'Mesquita'
+    userlastname: 'Mesquita',
+    userpassword: '123456'
 }
 ```
 
@@ -96,10 +97,17 @@ Gets all store products
 [
   {
     "productid": 1,
-    "categoryid": 1,
-    "productname": "Alpine Swiss Mens Wallet Leather Money Clip Thin Slim Front Pocket Wallet",
-    "productimage": "https://s3-us-west-1.amazonaws.com/amazon-clone/1_1_1.jpg",
-    "productprice": 11.99
+    "productname": "VIZIO D24-D1 D-Series 24\" Class LED Smart TV",
+    "optionprice": 128.99,
+    "optionlastprice": 159.99,
+    "categoryname": "Electronics",
+    "subcategoryname": "Televisions",
+    "subcategoryfilteroptions": [
+      "32 inches and under",
+      "1080p",
+      "2010"
+    ],
+    "imageurl": "https://s3-us-west-1.amazonaws.com/amazon-clone/1_1_6.jpg"
   }
 ]
 ```

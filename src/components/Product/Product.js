@@ -1,60 +1,32 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
+import { getStoreProducts } from '../../actions/products';
+import { getStoreCategories } from '../../actions/getStoreCategories.js';
 import './Product.css';
 import Item from './Item/Item';
 import SideNav from './SideNav/SideNav.js';
+import axios from 'axios';
+import { connect } from 'react-redux';
 
 class Product extends Component {
 
-    constructor(props) {
+    constructor(props){
         super(props);
+        this.props.getStoreProducts();
+        this.props.getStoreCategories();
 
-        this.state = {
-            categories: ['Wallets', 'Home Theater'],
-            products: [
-                {
-                    "productid": 1,
-                    "categoryid": 1,
-                    "productname": "Alpine Swiss Mens Wallet Leather Money Clip Thin Slim Front Pocket Wallet",
-                    "productimage": "https://s3-us-west-1.amazonaws.com/amazon-clone/1_1_1.jpg",
-                    "productprice": 11.99
-                },
-
-                {
-                    "productid": 1,
-                    "categoryid": 1,
-                    "productname": "Alpine Swiss Mens Wallet Leather Money Clip Thin Slim Front Pocket Wallet",
-                    "productimage": "https://s3-us-west-1.amazonaws.com/amazon-clone/1_1_1.jpg",
-                    "productprice": 11.99
-                },
-
-                {
-                    "productid": 1,
-                    "categoryid": 1,
-                    "productname": "Alpine Swiss Mens Wallet Leather Money Clip Thin Slim Front Pocket Wallet",
-                    "productimage": "https://s3-us-west-1.amazonaws.com/amazon-clone/1_1_1.jpg",
-                    "productprice": 11.99
-                },
-
-                {
-                    "productid": 1,
-                    "categoryid": 1,
-                    "productname": "Alpine Swiss Mens Wallet Leather Money Clip Thin Slim Front Pocket Wallet",
-                    "productimage": "https://s3-us-west-1.amazonaws.com/amazon-clone/1_1_1.jpg",
-                    "productprice": 11.99
-                },
-
-            ]
-        }
     }
 
     render() {
 
-        var products = this.state.products.map(product => {
+        var i = 0;
+
+        var products = this.props.products.map(product => {
             return (
-                <Item productid={product.productid} productname={product.productname} productimage={product.productimage} productprice={product.productprice}></Item>
+                <Item key = {i++} productid={product.productid} productbrand = {product.productbrand} productname={product.productname} productprime ={product.productprime} productfreeshipping= {product.productfreeshipping} productspectext={product.productspectext} productcategory={product.productcategory} productsubcategory={product.productsubcategory} productfilteroptions={product.productfilteroptions} productimageurl={product.productimageurl} productprice={product.productprice} productlastprice={product.productlastprice}></Item>
             );
         });
+
 
         return (
             <div className='productContainer'>
@@ -65,14 +37,31 @@ class Product extends Component {
                     <p>Displaying <b>status</b> information</p>
                 </div>
                 <div className="mainBody">
-                    <SideNav className="sideNav"></SideNav>
+                    <SideNav className="sideNav" categories={this.props.categories}></SideNav>
                     <div className="itemContainer">
                         {products}
                     </div>
                 </div>
-            </div >
+            </div>
         );
     }
 }
 
-export default Product;
+
+function mapStateToProps(state) {
+    return {
+      products: state.store.all,
+      categories: state.categories.all
+    }
+}
+
+const mapDispatchToProps = dispatch => 
+(
+  {
+    getStoreProducts: () => {dispatch(getStoreProducts())},
+    getStoreCategories: () => {dispatch(getStoreCategories())}
+  }
+);
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Product);
