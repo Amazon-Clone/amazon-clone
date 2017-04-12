@@ -15,7 +15,6 @@ export default(
     <Route path='/' component={ App }>
         <IndexRoute component={ Home }/>
         <Route path='/product' component={ Product }/>
-        <Route path='/producttest' component={ ProductTest }/>
         <Route path='/product/:id' component={ ProductDetails }/>
         
     </Route>

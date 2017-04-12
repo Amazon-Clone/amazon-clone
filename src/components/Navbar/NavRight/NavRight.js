@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { getUser } from '../../../actions/get_user'
+// import { connect } from 'react-redux';
+// import { getUser } from '../../../actions/get_user'
 import './NavRight.css'
 import LanguageMenu from './RightMenus/LanguageMenu'
 import SignInMenu from './RightMenus/SignInMenu'
@@ -11,10 +11,10 @@ import './RightMenus/TryPrimeMenu.css'
 
 class NavRight extends Component {
 
-    componentDidMount() {
-        console.log('did:',  this.props)
-    this.props.getUser();
-    }
+    // componentDidMount() {
+    //     console.log('did:',  this.props)
+    // this.props.getUser();
+    // }
 
     render() {
         console.log('this one:', this.props.user)
@@ -31,11 +31,11 @@ class NavRight extends Component {
              </div>
              <div className="globeBorder"></div>
              <div className='words'>
-                <div className='account' key={this.props.user}>
+                {/*<div className='account' key={this.props.user}>
                     <h2>Hello. {(this.props.user.userfirstname ? this.props.user.userfirstname : ' Sign in') }</h2>
 
                     <h1>Account & Lists</h1>
-                </div>
+                </div>*/}
 
             
                     <div className='navArrow'></div>
@@ -66,10 +66,11 @@ class NavRight extends Component {
         );
     }
 }
-function mapStateToProps(state) {
-    return {
-        user: state.user.all
-    }
-}
+// function mapStateToProps(state) {
+//     return {
+//         user: state.user.all
+//     }
+// }
 
-export default connect(mapStateToProps, { getUser })(NavRight);
+// export default connect(mapStateToProps, { getUser })(NavRight);
+export default NavRight;
