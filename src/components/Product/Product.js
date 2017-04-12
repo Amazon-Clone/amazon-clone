@@ -5,27 +5,48 @@ import { getStoreCategories } from '../../actions/getStoreCategories.js';
 import './Product.css';
 import Item from './Item/Item';
 import SideNav from './SideNav/SideNav.js';
-import axios from 'axios';
 import { connect } from 'react-redux';
+var _ = require('lodash');
 
 class Product extends Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
+
         this.props.getStoreProducts();
         this.props.getStoreCategories();
 
+        this.state = { filteroptions: ['Smart TV'] };
     }
 
     render() {
 
         var i = 0;
 
-        var products = this.props.products.map(product => {
+        console.log('my state', this.state);
+        console.log('my props', this.props);
+
+
+        var products = this.props.products;
+
+        this.state.filteroptions.forEach(function (filteroption) {
+
+            products = products.filter(function (element) {
+
+                var options = _.values(element.subcategoryfilteroptions);
+
+                if (_.includes(options, filteroption))
+                    return true;
+            })
+        });
+
+        products = products.map(product => {
             return (
-                <Item key = {i++} productid={product.productid} productbrand = {product.productbrand} productname={product.productname} productprime ={product.productprime} productfreeshipping= {product.productfreeshipping} productspectext={product.productspectext} productcategory={product.productcategory} productsubcategory={product.productsubcategory} productfilteroptions={product.productfilteroptions} productimageurl={product.productimageurl} productprice={product.productprice} productlastprice={product.productlastprice}></Item>
+                <Item key={i++} productid={product.productid} productbrand={product.productbrand} productname={product.productname} productprime={product.productprime} productfreeshipping={product.productfreeshipping} productspectext={product.productspectext} productcategory={product.productcategory} productsubcategory={product.productsubcategory} productfilteroptions={product.productfilteroptions} productimageurl={product.productimageurl} productprice={product.productprice} productlastprice={product.productlastprice}></Item>
             );
         });
+
+
 
 
         return (
@@ -49,19 +70,19 @@ class Product extends Component {
 
 
 function mapStateToProps(state) {
+
     return {
-      products: state.store.all,
-      categories: state.categories.all
+        products: state.store.all,
+        categories: state.categories.all
     }
 }
 
-const mapDispatchToProps = dispatch => 
-(
-  {
-    getStoreProducts: () => {dispatch(getStoreProducts())},
-    getStoreCategories: () => {dispatch(getStoreCategories())}
-  }
+const mapDispatchToProps = dispatch => (
+    {
+        getStoreProducts: () => { dispatch(getStoreProducts()) },
+        getStoreCategories: () => { dispatch(getStoreCategories()) }
+    }
 );
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(Product);
+export default connect(mapStateToProps, { getStoreProducts, getStoreCategories })(Product);
