@@ -72,4 +72,5 @@ function mapStateToProps(state) {
     }
 }
 
-export default connect(mapStateToProps, { getUser })(NavRight); 
+export default connect(mapStateToProps, { getUser })(NavRight);
+<img alt="Amazon Music Unlimited" src="https://images-na.ssl-images-amazon.com/images/G/01/digital/music/merch/2017/Other/PrimeUpsell/Phase4/Amazon_GW_DesktopHero_Prime_4_1500x300._CB529588918_.jpg" height="300px" width="1500px" data-a-hires="https://images-na.ssl-images-amazon.com/images/G/01/digital/music/merch/2017/Other/PrimeUpsell/Phase4/Amazon_GW_DesktopHero_Prime_4_3000x600._CB529588918_.jpg">
