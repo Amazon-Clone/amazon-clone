@@ -5,19 +5,19 @@ class ProdInfo extends Component {
 
     render() {
         return (
-            <div>
+            <div className='prodInfoMain'>
                 {/*fill in with dummy data*/}
-                <a href="" className="blueATag">LG Electronics</a>
-                <h1>LG Electronics OLED65B6P Flat 65-Inch 4K Ultra HD Smart OLED TV (2016 Model)</h1>
+                <a className="blueATag">LG Electronics</a>
+                <h1 className='prodTitle'>LG Electronics OLED65B6P Flat 65-Inch 4K Ultra HD Smart OLED TV (2016 Model)</h1>
                 <div className='reviews'>
                     <div className="starMain">
                         <div className='stars'></div>
                         <div className='starArrow'></div>
                     </div>
-                    <a href="" className='blueATag   |'> 268 customer reviews</a>
+                    <a href="" className='blueATag marg'> 268 customer reviews</a>
                     <a href="" className='blueATag'> 277 answered questions</a>
                 </div>
-                <h2 className='otherSellers'>Available from <a className='blueATag'> these sellers.</a></h2>
+                <h2 className='otherSellers'>Price <a className='priceRed'> $71.00</a></h2>
                 <div className='flexOnly'>
                     <h2 className='sizeGrey'>Size: </h2>
                     <h2 className='sizeBlack'>65-inch</h2>
