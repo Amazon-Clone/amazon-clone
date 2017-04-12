@@ -15,17 +15,9 @@ class Navbar extends Component {
                         <Link to='/'>
                             <span className='navLogo'></span>
                         </Link>
-
                         <div className='nav-search'>
                             <div className='nav-all-dropdown'>All</div>
-                            <input
-                                type="text"
-                                
-                               
-                                
-                                placeholder=""
-                                className="nav-input"
-                                tabIndex="19"></input>
+                            <input type="text" placeholder="" className="nav-input" tabIndex="19"></input>
                             <div className="nav-searchBtn">
                                 <div className='searchIcon'></div>
                             </div>
@@ -36,11 +28,9 @@ class Navbar extends Component {
                         <NavRight/>
                     </div>
                     <NavLeft/>
-
                 </div>
                 {/*<Link to='/'></Link>
                 <Link to='/product'>Product</Link>*/}
-
             </div>
         );
     }

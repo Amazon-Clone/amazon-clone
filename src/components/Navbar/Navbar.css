@@ -1,14 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
-
-.navMain{
-    /*position: absolute;*/
+.navMain {
     height: 200px;
 }
-.ad{
-    /*background-color: grey; */
-    /*height: 50vh;*/
-    /*width: 50vw;*/
-    background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/airstream/upnav/T2/T2_latest_1x._CB529542814_.jpg'); 
+
+.ad {
+    background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/airstream/upnav/T2/T2_latest_1x._CB529542814_.jpg');
     background-color: #F6F6F6;
     text-align: left;
     background-position: top left;
@@ -19,82 +15,70 @@
     display: none;
 }
 
-.headerBlue{
+.headerBlue {
     background-color: #232f3e;
     position: relative;
     top: 0;
     left: 0;
     z-index: 10;
-    font-family: arial,sans-serif;
+    font-family: arial, sans-serif;
     font-size: 12px;
-    /*line-height: 1em;*/
     margin: 0 -8px;
     display: block;
     zoom: 1;
     min-width: 1000px;
-    height: 13vh;
-
+    height: 100px;
 }
-/*.headerAll{
-    height: 15.5vh;
-}*/
-.navBelt{
+
+.navBelt {
     background-color: #232f3e;
     position: relative;
     width: 100%;
     font-size: 14px;
     z-index: 5;
-    /*height: 10vh;*/
     padding-top: 15px;
 }
 
-
-
-.navLogo{
+.navLogo {
     background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global_bluebeacon-1x_optimized._CB281044790_.png);
     float: left;
     text-indent: -500px;
     background-position: 22px -51px;
     width: 142px;
     height: 35px;
-    /*margin-top: 13px;*/
-    
-        
 }
 
-.nav-search{
-    width: 50vw;
-    height: 2vw;
+.nav-search {
+    width: calc(80vw - 300px);
+    min-width: 450px;
+    height: 33px;
     background-color: white;
     margin-left: 220px;
     border-radius: 3px;
-    
 }
-.nav-all-dropdown{
+
+.nav-all-dropdown {
     float: left;
     padding-top: 10px;
-    width: 55px;
-    height: 100%; 
+    height: 100%;
     background-color: #F3F3F3;
     z-index: 1000;
     text-align: center;
     border-radius: 3px 0px 0px 3px;
-  
-    
-
 }
-.nav-input{
+
+.nav-input {
     width: 82%;
     height: 100%;
     border: none;
     font-size: 15px;
-     
-    
 }
-.search-button{
+
+.search-button {
     width: 55px;
 }
-.nav-searchBtn{
+
+.nav-searchBtn {
     background-color: #febd69;
     background-image: none;
     border: none;
@@ -103,7 +87,8 @@
     float: right;
     border-radius: 0px 3px 3px 0px;
 }
-.nav-quote{
+
+.nav-quote {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 25px;
     line-height: 12px;
@@ -112,10 +97,10 @@
     margin-right: 20px;
     float: right;
     letter-spacing: 2px;
-    
 }
-.searchIcon{
-    background-image:  url('https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global_bluebeacon-1x_optimized._CB281044790_.png');
+
+.searchIcon {
+    background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global_bluebeacon-1x_optimized._CB281044790_.png');
     background-position: -10px -290px;
     width: 21px;
     height: 21px;
