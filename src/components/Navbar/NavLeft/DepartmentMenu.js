@@ -29,6 +29,7 @@ class DepartmentMenu extends Component {
             v: { width: '0px' },
         }
     }
+
     onHoverB(target) {
         this.setState({
             [target]: { 
@@ -37,14 +38,15 @@ class DepartmentMenu extends Component {
             }
         })
     }
+
      onHoverC(target) {
         this.setState({
             [target]: { 
-                width: '485px',
-                 
+                width: '485px',         
             }
         })
     }
+
     onExitB(target) {
         this.setState({
             [target]: { 

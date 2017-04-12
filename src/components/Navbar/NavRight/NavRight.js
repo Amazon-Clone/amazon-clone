@@ -1,4 +1,4 @@
- import React, { Component } from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { getUser } from '../../../actions/get_user'
 import './NavRight.css'
@@ -16,6 +16,7 @@ class NavRight extends Component {
     this.props.getUser();
 }
 
+
     render() {
         console.log('this one:', this.props.user)
         const user = this.props.user || {}
@@ -31,11 +32,6 @@ class NavRight extends Component {
                     </div>
                     <div className="globeBorder"></div>
              <div className='words'>
-                <div className='account' key={user}>
-                    <h2>Hello. {(user.userfirstname ? user.userfirstname : ' Sign in') }</h2>
-
-                    <h1>Account & Lists</h1>
-                </div>
 
             
                     <div className='navArrow'></div>
@@ -66,10 +62,11 @@ class NavRight extends Component {
         );
     }
 }
+
 function mapStateToProps(state) {
     return {
         user: state.user.all
     }
 }
 
-export default connect(mapStateToProps, { getUser })(NavRight); 
+export default connect(mapStateToProps, { getUser })(NavRight);
