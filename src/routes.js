@@ -16,7 +16,8 @@ export default(
         <IndexRoute component={ Home }/>
         <Route path='/product' component={ Product }/>
         <Route path='/producttest' component={ ProductTest }/>
-        <Route path='/product/:id' component={ ProductDetails }/>
+        {/*<Route path='/product/:id' component={ ProductDetails }/>*/}
+        <Route path='/productdetails' component={ ProductDetails }/>
         
     </Route>
     <Route path='/register' component={ Register }/>

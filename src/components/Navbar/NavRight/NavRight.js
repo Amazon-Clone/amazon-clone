@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { getUser } from '../../../actions/get_user'
 import './NavRight.css'
@@ -14,25 +14,25 @@ class NavRight extends Component {
     componentDidMount() {
         console.log('did:',  this.props)
     this.props.getUser();
-    }
+}
 
     render() {
         console.log('this one:', this.props.user)
+        const user = this.props.user || {}
         return (
         <div>
           <div className="navRight">
-            <div className='words'>
-                <div >
-                    <h1 className='en'>EN</h1>
-                    <div className='globe'></div>
-                </div>
-                <div className='navArrow'></div>
-                    
-             </div>
-             <div className="globeBorder"></div>
+                    <div className='words'>
+                        <div>
+                            <div className='en'>EN</div>
+                            <div className='globe'></div>
+                        </div>
+                        <div className='navArrow'></div>
+                    </div>
+                    <div className="globeBorder"></div>
              <div className='words'>
-                <div className='account' key={this.props.user}>
-                    <h2>Hello. {(this.props.user.userfirstname ? this.props.user.userfirstname : ' Sign in') }</h2>
+                <div className='account' key={user}>
+                    <h2>Hello. {(user.userfirstname ? user.userfirstname : ' Sign in') }</h2>
 
                     <h1>Account & Lists</h1>
                 </div>
@@ -73,3 +73,4 @@ function mapStateToProps(state) {
 }
 
 export default connect(mapStateToProps, { getUser })(NavRight);
+<img alt="Amazon Music Unlimited" src="https://images-na.ssl-images-amazon.com/images/G/01/digital/music/merch/2017/Other/PrimeUpsell/Phase4/Amazon_GW_DesktopHero_Prime_4_1500x300._CB529588918_.jpg" height="300px" width="1500px" data-a-hires="https://images-na.ssl-images-amazon.com/images/G/01/digital/music/merch/2017/Other/PrimeUpsell/Phase4/Amazon_GW_DesktopHero_Prime_4_3000x600._CB529588918_.jpg">
