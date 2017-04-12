@@ -10,21 +10,28 @@
     margin-top: 14px;
 }
 .mainPhoto{
-    width: 27vw;
+    /*width: 27vw;*/
     background-color: red;
     /*when photo is inserted, height will be 100%*/
     height: 31vh;
 }
 .blueATag{
     color: #0066C0;
+    font-size: 18px;
+}
+
+.prodTitle{
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 15px;
 }
 .reviews{
     display: flex;
-    
+    margin-top: 7px;
 }
+
 .stars{
-        background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-sprite_1x-28bd59af93d9b1c745bb0aca4de58763b54df7cf._V2_.png);
-  
+    background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-sprite_1x-28bd59af93d9b1c745bb0aca4de58763b54df7cf._V2_.png);
     background-size: 400px 670px;
     background-repeat: no-repeat;
     display: inline-block;
@@ -34,7 +41,9 @@
     height: 18px;
 }
 .starMain{
-    display: flex
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    margin-right: 30px;
 }
 .starArrow{
         background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-sprite_1x-28bd59af93d9b1c745bb0aca4de58763b54df7cf._V2_.png);
@@ -145,4 +154,69 @@ vertical-align: top;
     width: 38px;
     height: 23px;
     background-color: #F8F8F8;
+}
+
+.cartIcon{
+height: 25px;
+    width: 25px;
+    background-position: -35px -5px;
+        background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-sprite_1x-28bd59af93d9b1c745bb0aca4de58763b54df7cf._V2_.png);
+    -webkit-background-size: 400px 670px;
+    background-size: 400px 670px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.addCartBtn{
+    width: 207px;
+    height: 35px;
+    background-color: #F4D484;
+    display: flex;
+}
+
+.addCartBox{
+    border: 1px solid lightgray;
+}
+
+.cartText {
+    color: black;
+}
+.addToList{
+    border: 1px solid lightgray;
+    background-color: #E9EBEE;
+    width: 200px;
+    height: 40px;
+
+}
+
+.sellOnAmazon{
+    width: 90px;
+    height: 23px;
+    background-color: #E9EBEE;
+    border: 1px solid lightgray;
+    font-size: 12px;
+    
+}
+
+/*prod details widths*/
+
+.leftPhotosMain{
+    width: 6vw;
+    padding-left: 10px;
+}
+.mainPhoto{
+    width: 27vw;
+    margin-top: 70px;
+}
+.prodInfoMain{
+    width: 50vw;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+
+.prodMiscMain{
+    width: 15vw;
 }
