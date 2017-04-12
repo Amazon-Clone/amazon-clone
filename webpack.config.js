@@ -6,7 +6,7 @@ module.exports = {
         path: __dirname + '/public',
         filename: 'bundle.js'
     },
-    devtool: 'inline-map',
+    devtool: 'eval-inline-map',
     devServer: {
         inline: true,
         contentBase: 'public',

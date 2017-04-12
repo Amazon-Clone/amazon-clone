@@ -35,7 +35,7 @@
   display: flex;
   flex-direction: column;
   font-size: 14px;
-  font-weight: 700
+  font-weight: 700;
 }
 .input-field-input:focus {
   outline: none !important;
@@ -48,6 +48,9 @@
   margin-top: 5px;
   margin-bottom: 25px;
   border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: grey
 }
 .button-register {
   background-color:#F3CE73;
