@@ -91,6 +91,7 @@ width: 91px;
 height: 52px;
 border: 1px lightgray solid;
 text-align: center;
+padding-top: 10px;
 /*padding: auto;*/
 }
 .boxPrice{
@@ -214,6 +215,10 @@ height: 25px;
     background-color: #E9EBEE;
     border: 1px solid lightgray;
     font-size: 12px;
+    
+}
+.pad {
+    margin-top: 25px;
     
 }
 
