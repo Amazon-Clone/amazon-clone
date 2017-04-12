@@ -1,0 +1,19 @@
+.footer-item-content {
+    width: 126px;
+    height: 34px;
+    padding: 0 .75em;
+    margin-bottom: 15px;
+    
+}
+
+.footer-item-content h1 {
+    color: lightgray;
+    font-size: 11px;
+    margin-bottom: 2px;
+}
+
+.footer-item-content p {
+    color: darkgray;
+    font-size: 10px;
+    
+}

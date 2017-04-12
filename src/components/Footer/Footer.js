@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import FooterNav from './FooterNav/FooterNav';
 import FooterLanguage from './FooterLanguage/FooterLanguage';
+import FooterBottom from './FooterBottom/FooterBottom'
 import './Footer.css'
 
 class Footer extends Component {
@@ -14,6 +15,7 @@ class Footer extends Component {
                 </a>
                 <FooterNav/>
                 <FooterLanguage/>
+                <FooterBottom/>
             </footer>
         );
     }
