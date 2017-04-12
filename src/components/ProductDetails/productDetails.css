@@ -91,12 +91,21 @@ width: 91px;
 height: 52px;
 border: 1px lightgray solid;
 text-align: center;
+padding-top: 10px;
 /*padding: auto;*/
 }
 .boxPrice{
     color: red;
+    margin-top: 6px;
+    font-size: 14px;
 }
-
+.bullets{
+    padding-left: 16px;
+    margin-bottom: 16px;
+}
+.bullet li{
+    color: grey;
+}
 .messageIcon{
     background-position: -42px 0;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAMCAYAAABx290PAAAA20lEQ…QLQeBiLAP3sUi27aRbCAIN/5lEi4/OJ1Xb/wYGplPJohj6AGLXLKmrpibWAAAAAElFTkSuQmCC);
@@ -112,6 +121,15 @@ text-align: center;
 }
 .socialMedia h2{
     color: #0066c0;
+}
+
+.lineSpace{
+    margin-top: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+.pack{
+    font-size: 13px;
 }
 
 .socEmail{
@@ -216,6 +234,10 @@ height: 25px;
     font-size: 12px;
     
 }
+.pad {
+    margin-top: 25px;
+    
+}
 
 /*prod details widths*/
 
@@ -236,4 +258,19 @@ height: 25px;
 
 .prodMiscMain{
     width: 15vw;
+}
+
+ul li {
+  color: #3c3c3c; 
+  /* set color of list item text */
+  /*list-style: none; */
+}
+
+ul li::before {
+  color: gray; 
+ 
+}
+.listBullet{
+    font-size: 16px;
+    line-height: 24px;
 }
