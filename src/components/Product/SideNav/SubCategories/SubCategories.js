@@ -13,7 +13,6 @@ class SubCategories extends Component{
             subcategories.push(
             <div key={key}>
                 <p className="subCategoryName">{key}</p>
-                <SubCategoryFilters subcategoryfilters = {this.props.subcategories[key]}></SubCategoryFilters>
             </div>
             );
         }
