@@ -17,9 +17,9 @@ class NavLeft extends Component {
                 <div className='left-text'>
                     <h1>Your Amazon.com</h1>
                     <h1>Todays Deals</h1>
-                    <h1>Gift Cards & Registry</h1>
-                    <h1>Sell</h1>
-                    <h1>Help</h1>
+                    <h1 className='h1c'>Gift Cards & Registry</h1>
+                    <h1 className='h1b'>Sell</h1>
+                    <h1 className='h1a'>Help</h1>
                 </div>
                 </div>
                 
