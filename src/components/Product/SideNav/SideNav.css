@@ -6,6 +6,11 @@
     padding: 20px 0 0 10px;
 }
 
+.categoryNameContainer{
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+}
+
 .categoryTitle{
     font-size: 17px;
     font-weight: 400;
@@ -21,4 +26,9 @@
 .categoryName{
     font-size: 14px;
     margin: 6px 0 6px 0;
+}
+
+.subCategoryFiltersContainer{
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
 }

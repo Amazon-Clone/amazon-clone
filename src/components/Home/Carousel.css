@@ -4,8 +4,25 @@
   min-width: 1000px;
   max-width: 1500px;
   margin: 0 auto;
-  background: url(/images/homeimages/carousel-echo.jpg) center no-repeat;
   background-size: cover;
   display: flex;
   justify-content: space-between;
+}
+.car-1 {
+  background: url(/images/homeimages/carousel-echo.jpg) center no-repeat;
+}
+.car-2 {
+  background: url(/images/homeimages/carousel-clothes.jpg) center no-repeat;
+}
+.car-3 {
+  background: url(/images/homeimages/carousel-harry.jpg) center no-repeat;
+}
+.car-4 {
+  background: url(/images/homeimages/carousel-kindle.jpg) center no-repeat;
+}
+.car-5 {
+  background: url(/images/homeimages/carousel-music.jpg) center no-repeat;
+}
+.car-6 {
+  background: url(/images/homeimages/carousel-prime.jpg) center no-repeat;
 }

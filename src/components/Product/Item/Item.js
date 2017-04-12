@@ -21,7 +21,7 @@ class Item extends Component {
 
                 <div className="itemFlexContainer">
                     <div className="itemTitleContainer">
-                        <Link className="itemTitle">{this.props.productname}</Link>
+                        <Link to={"/product/" + this.props.productid} className="itemTitle">{this.props.productname}</Link>
                         <p className="vendorText">{this.props.productbrand}</p>
                     </div>
                     
@@ -43,7 +43,7 @@ class Item extends Component {
                                 <p>5 stars</p>
                             </div>
                         </div>
-                        <SpecBox productspectext={this.props.productspectext}></SpecBox>
+                        <SpecBox className="specBox" productspectext={this.props.productspectext}></SpecBox>
                     </div>
                 </div>
             </div>

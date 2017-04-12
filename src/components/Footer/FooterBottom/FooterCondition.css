@@ -1,0 +1,22 @@
+.footer-condition-container {
+    width: 100%;
+    height: 58px;
+    background-color: #131A22;
+    padding: 10px 0 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.footer-condition-container a {
+    color: lightgray;
+    margin-right: 12px;
+}
+
+.footer-condition-container p {
+    color: gray;
+}
+
+.footer-condition-container a:hover {
+    text-decoration: underline;
+}
