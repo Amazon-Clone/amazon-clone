@@ -22,15 +22,14 @@ class NavRight extends Component {
         return (
         <div>
           <div className="navRight">
-            <div className='words'>
-                <div >
-                    <h1 className='en'>EN</h1>
-                    <div className='globe'></div>
-                </div>
-                <div className='navArrow'></div>
-                    
-             </div>
-             <div className="globeBorder"></div>
+                    <div className='words'>
+                        <div>
+                            <div className='en'>EN</div>
+                            <div className='globe'></div>
+                        </div>
+                        <div className='navArrow'></div>
+                    </div>
+                    <div className="globeBorder"></div>
              <div className='words'>
                 <div className='account' key={user}>
                     <h2>Hello. {(user.userfirstname ? user.userfirstname : ' Sign in') }</h2>
