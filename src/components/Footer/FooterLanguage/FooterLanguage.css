@@ -17,6 +17,7 @@
     width: 400px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .footer-language-logo {
@@ -28,6 +29,7 @@
 
 .footer-right-center {
     width: 250px;
+    margin-bottom: 5px;
     display: flex;
     justify-content: flex-end;
 }
@@ -36,16 +38,60 @@
     width: 120px;
     height: 35px;
     border-width: 1px;
-    border-color: #e6e6e6;
+    border-color: silver;
     border-style: solid;
     border-radius: 3px;
     margin-right: 5px;
+    display: flex;
 }
+
+.footer-globe {
+    width: 15px;
+    height: 15px;
+    background-position: -77px -24px;
+    background-image: url('/images/footer-images/international.png');
+    margin-top: 8px;
+    margin-left: 7px;
+}
+
+.footer-language-selector p {
+    color: silver;
+    margin-top: 10px;
+    margin-left: 7px;
+    font-size: 13px;
+}
+
+.footer-language-arrow {
+    background-image: url('/images/footer-images/international.png');
+    width: 12px;
+    height: 12px;
+    background-position: -77px -80px;
+    margin-top: 10px;
+    margin-left: 18px;
+}
+
 .footer-country-selector {
     width: 142px;
     height: 35px;
     border-width: 1px;
-    border-color: #e6e6e6;
+    border-color: silver;
     border-style: solid;
     border-radius: 3px;
+    display: flex;
+}
+
+.footer-country-flag {
+    width: 18px;
+    height: 12px;
+    background-image: url('/images/footer-images/international.png');
+    background-position: -54px -108px;
+    margin-top: 9px;
+    margin-left: 7px;
+}
+
+.footer-country-selector p {
+    color: silver;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-left: 7px;
 }

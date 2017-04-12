@@ -10,11 +10,14 @@ class FooterLanguage extends Component {
                         <div className='footer-language-logo'></div>
                         <div className='footer-right-center'>
                             <a href='#' className='footer-language-selector'>
-                                <div className='footer-globe'>
-
-                                </div>
+                                <div className='footer-globe'></div>
+                                <p>English</p>
+                                <span className='footer-language-arrow'></span>
                             </a>
-                            <a href='#' className='footer-country-selector'></a>
+                            <a href='#' className='footer-country-selector'>
+                                <div className='footer-country-flag'></div>
+                                <p>United States</p>
+                            </a>
                         </div>
                     </div>
                 </div>
