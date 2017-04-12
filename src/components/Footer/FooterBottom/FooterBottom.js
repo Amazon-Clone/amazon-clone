@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FooterFeature from './FooterFeature'
+import FooterCondition from './FooterCondition'
 import './FooterBottom.css'
 
 class FooterBottom extends Component {
@@ -7,6 +8,7 @@ class FooterBottom extends Component {
         return (
             <div className='footer-bottom-container'>
                 <FooterFeature/>
+                <FooterCondition/>
             </div>
         );
     }

@@ -3,7 +3,11 @@
     height: 34px;
     padding: 0 .75em;
     margin-bottom: 15px;
-    
+    cursor: pointer;
+}
+.footer-item-content:hover {
+    text-decoration: underline;
+    text-decoration-color: silver;
 }
 
 .footer-item-content h1 {
