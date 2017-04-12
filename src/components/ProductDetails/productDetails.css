@@ -1,0 +1,148 @@
+.ProdDetailsBody {
+    display: flex;
+
+}
+
+.prodPhotos {
+    width: 42px;
+    height: 42px;
+    background-color: red;
+    margin-top: 14px;
+}
+.mainPhoto{
+    width: 27vw;
+    background-color: red;
+    /*when photo is inserted, height will be 100%*/
+    height: 31vh;
+}
+.blueATag{
+    color: #0066C0;
+}
+.reviews{
+    display: flex;
+    
+}
+.stars{
+        background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-sprite_1x-28bd59af93d9b1c745bb0aca4de58763b54df7cf._V2_.png);
+  
+    background-size: 400px 670px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: top;  
+    background-position: -175px -368px;
+    width: 80px;
+    height: 18px;
+}
+.starMain{
+    display: flex
+}
+.starArrow{
+        background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-sprite_1x-28bd59af93d9b1c745bb0aca4de58763b54df7cf._V2_.png);
+ 
+    background-size: 400px 670px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.otherSellers{
+ color: #008A00;
+}
+.sizeGrey{
+    color: #8891B6;
+    margin-right: 5px;
+
+}
+.sizeBlack{
+    color: black;
+    float: right;
+}
+.flexOnly{
+    display: flex;
+}
+
+.sizeBoxParent{
+    display: flex;
+}
+.sizeBoxChild{
+width: 91px;
+height: 52px;
+border: 1px lightgray solid;
+}
+.boxPrice{
+    color: red;
+}
+
+.messageIcon{
+    background-position: -42px 0;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAMCAYAAABx290PAAAA20lEQ…QLQeBiLAP3sUi27aRbCAIN/5lEi4/OJ1Xb/wYGplPJohj6AGLXLKmrpibWAAAAAElFTkSuQmCC);
+    display: inline-block;
+    position: relative;
+    width: 13px;
+    top: 1px;
+    height: 11px;
+}
+
+.socialMedia{
+    display: flex;
+}
+.socialMedia h2{
+    color: #0066c0;
+}
+
+.socEmail{
+        width: 19px;
+    height: 17px;
+    background-position: -99px -168px;
+    position: relative;
+    top: 1px;
+        background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-sprite_1x-28bd59af93d9b1c745bb0aca4de58763b54df7cf._V2_.png);
+    /*-webkit-background-size: 400px 670px;*/
+    background-size: 400px 670px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: top;
+}
+.socFac{
+    width: 17px;
+    height: 17px;
+    background-position: -36px -168px;
+    position: relative;
+    top: 1px;
+    background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-sprite_1x-28bd59af93d9b1c745bb0aca4de58763b54df7cf._V2_.png);
+    /*-webkit-background-size: 400px 670px;*/
+    background-size: 400px 670px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: top;
+
+}
+.socTwit{
+    background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-sprite_1x-28bd59af93d9b1c745bb0aca4de58763b54df7cf._V2_.png);
+    -webkit-background-size: 400px 670px;
+    background-size: 400px 670px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: top;
+        width: 18px;
+    height: 17px;
+    background-position: -57px -168px;
+    position: relative;
+    top: 1px;
+}
+.socPin{
+width: 17px;
+height: 17px;
+background-position: -78px -168px;
+position: relative;
+top: 1px;
+background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-sprite_1x-28bd59af93d9b1c745bb0aca4de58763b54df7cf._V2_.png);
+background-size: 400px 670px;
+background-repeat: no-repeat;
+display: inline-block;
+vertical-align: top;
+}
+
+.qDropdown{
+    width: 38px;
+    height: 23px;
+    background-color: #F8F8F8;
+}
