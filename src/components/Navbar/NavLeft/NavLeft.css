@@ -2,17 +2,13 @@
     display: flex;
     margin-bottom: 10px;
     margin-top: 25px;
-    width: 50vw;
+
     align-content: space-around;
     margin-left: 24px;
 }
 
 .navLeft-Dep h1{
-<<<<<<< HEAD
     color: white;
-=======
-    /*color: white !important;*/
->>>>>>> master
     margin-right: 5px;
     float: left;
     font-size: 15px;
@@ -40,7 +36,6 @@
     font-size: 0;
     line-height: 0;
     margin: 0 0 2px 5px;
-
 }
 .depBtn{
     background-color: transparent;
@@ -48,11 +43,26 @@
 }
 .left-text{
     display: flex;
-    margin-top: 8px;
+    /*margin-top: 20px;*/
 }
 .depBtn .depMenu{
     display: none;
 }
 .depBtn:hover .depMenu {
     display: block;
+}
+@media (max-width: 1125px){
+    .h1a {
+        display: none;
+    }
+}
+@media (max-width: 1075px){
+    .h1b {
+        display: none;
+    }
+}
+@media (max-width: 1025px){
+    .h1c {
+        display: none;
+    }
 }
