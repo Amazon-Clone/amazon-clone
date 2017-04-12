@@ -9,13 +9,11 @@ class SubCategoryFilterOptions extends Component{
 
         for(var key in this.props.subcategoryfilteroptions){
             subCategoryFilterOptions.push(
-            <div key={key}>
-                <p className="subCategoryName">{key} <span>({this.props.subcategoryfilteroptions[key]})</span></p>
-            </div>
+                <p className="subCategoryFilterOptionName" key={key}>{key} <span>({this.props.subcategoryfilteroptions[key]})</span></p>
             );
         }
 
-        return(<div>{subCategoryFilterOptions}</div>);
+        return(<span>{subCategoryFilterOptions}</span>);
     }
 }
 

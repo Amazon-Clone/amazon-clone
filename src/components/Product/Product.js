@@ -19,6 +19,12 @@ class Product extends Component {
         this.state = { filteroptions: ['Smart TV'] };
     }
 
+
+    addFilterOptions(filterOption){
+        this.state = {filteroptions: this.state.filteroptions.push(filterOption)};
+    }
+
+
     render() {
 
         var i = 0;
@@ -58,7 +64,7 @@ class Product extends Component {
                     <p>Displaying <b>status</b> information</p>
                 </div>
                 <div className="mainBody">
-                    <SideNav className="sideNav" categories={this.props.categories}></SideNav>
+                    <SideNav className="sideNav" addFilterOptions = {this.addFilterOptions.bind(this)} categories={this.props.categories}></SideNav>
                     <div className="itemContainer">
                         {products}
                     </div>

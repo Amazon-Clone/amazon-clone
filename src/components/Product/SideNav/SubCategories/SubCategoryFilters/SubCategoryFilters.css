@@ -1,0 +1,18 @@
+.subCategoryFilter{
+    margin: 0 0 5px 0;
+}
+
+.subCategoryFilterName{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.subCategoryFilterOptions > *{
+    display: inline-block;
+    width: auto;
+}
+
+.subCategoryFilterFlexBox{
+    display: flex;
+    align-items: center;
+}
