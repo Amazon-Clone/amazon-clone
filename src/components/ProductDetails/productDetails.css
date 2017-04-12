@@ -28,6 +28,8 @@
 .reviews{
     display: flex;
     margin-top: 7px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid lightgray;
 }
 
 .stars{
@@ -42,8 +44,16 @@
 }
 .starMain{
     display: flex;
-    border-bottom: 1px solid lightgray;
+    
     margin-right: 30px;
+}
+.marg{
+    margin-left: 15px;
+    margin-right: 30px;
+}
+.priceRed{
+    color: red;
+    font-size: 22px;
 }
 .starArrow{
         background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-sprite_1x-28bd59af93d9b1c745bb0aca4de58763b54df7cf._V2_.png);
@@ -53,7 +63,10 @@
     display: inline-block;
 }
 .otherSellers{
- color: #008A00;
+margin-top: 15px;
+color: black;
+font-size: 17px;
+margin-bottom: 15px;
 }
 .sizeGrey{
     color: #8891B6;
@@ -70,11 +83,15 @@
 
 .sizeBoxParent{
     display: flex;
+    margin-top: 10px;
 }
 .sizeBoxChild{
+margin-right: 15px;
 width: 91px;
 height: 52px;
 border: 1px lightgray solid;
+text-align: center;
+/*padding: auto;*/
 }
 .boxPrice{
     color: red;

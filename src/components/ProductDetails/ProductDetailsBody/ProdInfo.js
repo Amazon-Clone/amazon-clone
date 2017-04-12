@@ -14,10 +14,10 @@ class ProdInfo extends Component {
                         <div className='stars'></div>
                         <div className='starArrow'></div>
                     </div>
-                    <a href="" className='blueATag'> 268 customer reviews     |</a>
+                    <a href="" className='blueATag marg'> 268 customer reviews</a>
                     <a href="" className='blueATag'> 277 answered questions</a>
                 </div>
-                <h2 className='otherSellers'>Available from <a className='blueATag'> these sellers.</a></h2>
+                <h2 className='otherSellers'>Price <a className='priceRed'> $71.00</a></h2>
                 <div className='flexOnly'>
                     <h2 className='sizeGrey'>Size: </h2>
                     <h2 className='sizeBlack'>65-inch</h2>
