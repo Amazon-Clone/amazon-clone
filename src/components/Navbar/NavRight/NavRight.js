@@ -14,10 +14,11 @@ class NavRight extends Component {
     componentDidMount() {
         console.log('did:',  this.props)
     this.props.getUser();
-    }
+}
 
     render() {
         console.log('this one:', this.props.user)
+        const user = this.props.user || {}
         return (
         <div>
           <div className="navRight">
@@ -31,8 +32,8 @@ class NavRight extends Component {
              </div>
              <div className="globeBorder"></div>
              <div className='words'>
-                <div className='account' key={this.props.user}>
-                    <h2>Hello. {(this.props.user.userfirstname ? this.props.user.userfirstname : ' Sign in') }</h2>
+                <div className='account' key={user}>
+                    <h2>Hello. {(user.userfirstname ? user.userfirstname : ' Sign in') }</h2>
 
                     <h1>Account & Lists</h1>
                 </div>
