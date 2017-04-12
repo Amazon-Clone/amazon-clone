@@ -27,4 +27,4 @@ function mapStateToProps(state) {
 }
 
 export default connect(mapStateToProps)(ProductTest);
-export default connect(mapStateToProps, {getUser})(ProductTest);*/
+*/

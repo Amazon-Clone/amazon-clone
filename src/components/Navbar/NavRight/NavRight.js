@@ -1,4 +1,4 @@
- import React, { Component } from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { getUser } from '../../../actions/get_user'
 import './NavRight.css'
@@ -15,6 +15,7 @@ class NavRight extends Component {
         console.log('did:',  this.props)
     this.props.getUser();
 }
+
 
     render() {
         console.log('this one:', this.props.user)
@@ -35,6 +36,7 @@ class NavRight extends Component {
                         <h2>Hello. {(user.userfirstname ? user.userfirstname : ' Sign in') }</h2>
                         <h1>Account & Lists</h1>
                     </div>
+
                     <div className='navArrow'></div>
                     <div className='signInMenu'><SignInMenu/> </div>
                 </div>
@@ -58,6 +60,7 @@ class NavRight extends Component {
         );
     }
 }
+
 function mapStateToProps(state) {
     return {
         user: state.user.all
