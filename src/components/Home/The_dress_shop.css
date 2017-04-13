@@ -13,7 +13,7 @@
   margin-bottom: 30px;
 }
 .dress-shop-video {
-  size: contain;
+  size: cover;
   position:relative;
   background:#f6f6f5;
 }
@@ -21,10 +21,11 @@
   left: 0px; 
   top: 0px; 
   overflow: hidden; 
-  height: 100%; 
-  width: 100%;
-  size: contain;
-  max-height: 385px;
+  height: 700px;
+  /*width: 200px;*/
+  /*size: contain;*/
+  max-height: 430px;
+  position:absolute;
   }
 .dress-shop-base-link {
   position: absolute;
@@ -41,9 +42,10 @@
 }
 .rightcover-home {
   position: absolute;
-  background:#f6f6f5;
+  background:blue;
   height: 100%;
-  width:27%;
+  width:200px;
   right: 0px;
-  top: 0px
+  top: 0px;
+  z-index: 2000;
 }
