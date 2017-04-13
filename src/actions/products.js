@@ -14,3 +14,12 @@ export function getStoreProducts() {
         payload: request
     }
 }
+
+export function getOneProduct(id) {
+    return axios.get(`/api/product/` + id)
+        .then(res => res.data)
+        .catch(err => {
+            throw err
+            return {}
+        })
+}

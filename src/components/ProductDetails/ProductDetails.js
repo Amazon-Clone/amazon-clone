@@ -15,7 +15,7 @@ class ProductDetails extends Component {
         
         return (
             
-            <div>
+            <div className='fonts'>
                 <ProdDetailsNav/>
                 <div className='ProdDetailsBody'>
                     <LeftPhotos/>

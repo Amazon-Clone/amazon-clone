@@ -35,6 +35,7 @@ class Item extends Component {
                                 <p className="getByText">Get it by <span className="greenText"><b>Tommorrow, April 5</b></span></p>
                                 <NgIf show={this.props.productfreeshipping}><p className="shipText">FREE Shipping on eligible orders</p></NgIf>
                             </div>
+                            <div>{this.props.productid}</div>
 
 
 
