@@ -56,7 +56,6 @@ class DepartmentMenu extends Component {
     }
 
     render() {
-        console.log(this.state.b)
         return (
             <div>
                 <div className='dmenu'></div>
