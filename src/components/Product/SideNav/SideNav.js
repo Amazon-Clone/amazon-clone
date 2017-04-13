@@ -8,8 +8,6 @@ import SubCategoryFilters from './SubCategories/SubCategoryFilters/SubCategoryFi
 class SideNav extends Component {
 
     render() {
-        console.log(this.props.categories)
-
         var i = 0;
 
         var categories = this.props.categories.map(category => {
@@ -28,7 +26,7 @@ class SideNav extends Component {
             for(var key in category.subcategories){
                 subcategoryfilters.push(
                     <div key = {i++}>
-                        <SubCategoryFilters subcategoryfilters = {category.subcategories[key]}></SubCategoryFilters>
+                        <SubCategoryFilters handleCheckbox={this.props.handleCheckbox} subcategoryfilters = {category.subcategories[key]}></SubCategoryFilters>
                     </div>
                 );
             }
