@@ -4,7 +4,9 @@ export const LOGIN = 'LOGIN'
 
 
 export function login(props) {
-    const request = axios.post(`/api/login`, props)
+    const request = axios.post(`/api/login`, props).then((response)=> {
+        console.log(response.data)
+    })
     return {
         type: LOGIN,
         payload: request
