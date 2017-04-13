@@ -20,7 +20,7 @@ class ProductDetails extends Component {
                 <div className='ProdDetailsBody'>
                     <LeftPhotos/>
                     <MainPhoto/>
-                    <ProdInfo/>
+                    <ProdInfo urlParams={this.props.params}/>
                     <RightProdMisc/>
 
                 </div>
