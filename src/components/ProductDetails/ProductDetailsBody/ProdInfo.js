@@ -1,23 +1,41 @@
 import React, { Component } from 'react';
+import { getOneProduct } from '../../../actions/products';
 
 
 class ProdInfo extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            product:{title: 'loading...'}
+        }
+    }
+
+    componentDidMount(){
+        console.log("testing" + this.props.params)
+        getOneProduct(this.props.params.id)
+        .then(product => {
+            this.setState({product: product})
+        })
+    }
 
     render() {
+        console.log("props",this.props)
+        const{ product } = this.state;
         return (
             <div className='prodInfoMain'>
                 {/*fill in with dummy data*/}
                 <a className="blueATag">LG Electronics</a>
-                <h1 className='prodTitle'>LG Electronics OLED65B6P Flat 65-Inch 4K Ultra HD Smart OLED TV (2016 Model)</h1>
+                <h1 className='prodTitle'>{product.productname}</h1>
+                <h1 className='prodTitle'>LG Electronics 65UH9500 65-Inch 4K Ultra HD Smart LED TV (2016 Model)</h1>
                 <div className='reviews'>
                     <div className="starMain">
                         <div className='stars'></div>
                         <div className='starArrow'></div>
                     </div>
-                    <a href="" className='blueATag marg'> 268 customer reviews</a>
-                    <a href="" className='blueATag'> 277 answered questions</a>
+                    <a  className='blueATag marg'> 268 customer reviews</a>
+                    <a  className='blueATag'> 277 answered questions</a>
                 </div>
-                <h2 className='otherSellers'>Price <a className='priceRed'> $71.00</a></h2>
+                <h2 className='otherSellers'>Price: <a className='priceRed'> $71.00</a></h2>
                 <div className='flexOnly pad'>
                     <h2 className='sizeGrey'>Size: </h2>
                     <h2 className='sizeBlack'>65-inch</h2>

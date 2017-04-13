@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 
 class RightProdMisc extends Component {
 
+
     render() {
+        
         return (
             <div className='prodMiscMain'>
                 <div className='socialMedia'>
@@ -13,29 +15,29 @@ class RightProdMisc extends Component {
                     <div className='socPin'></div>
                 </div>
 
-                <div className='addCartBox'>   
-                    <div className='flexOnly'>
+                <div className='addCartBox check'>   
+                    <div className='flexOnly check'>
                         <h2>Qty:</h2>
                         <div className='qDropdown'>1</div>
                     </div>
-                     <div className='flexOnly'>
+                     <div className='flexOnly check'>
                         <input id="checkBox" type="checkbox"></input>
                         <h2>Yes, I want FREE Two-Day  Shipping with <a className='blueATag'>Amazon Prime</a></h2>
                     </div>
-                      <div className='flexOnly'>
+                      <div className='flexOnly check'>
                         <input id="checkBox" type="checkbox"></input>
                         <h2>Include <a className='blueATag'>3-Year Protection for $10.80</a></h2>
                     </div>
-                     <div className='flexOnly'>
+                     <div className='flexOnly check'>
                         <input id="checkBox" type="checkbox"></input>
                         <h2>Include <a className='blueATag'>2-Year Protection for $5.70</a></h2>
                     </div>
-                    <div className='addCartBtn'>
+                    <div className='addCartBtn check'>
                         <div className='cartIcon'></div>
                         <h2 className='cartText'>Add to Cart</h2>
                     </div>
                    <hr/>
-                   <a>Turn on 1-Click ordering for this browser</a>
+                   <a className='blueATag check' >Turn on 1-Click ordering for this browser</a>
                   <hr/>
                    <h2>Ship to:</h2>
                    <h2>PROVO, UT 84601</h2>
