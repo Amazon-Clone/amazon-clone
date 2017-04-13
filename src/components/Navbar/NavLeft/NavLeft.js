@@ -9,7 +9,7 @@ class NavLeft extends Component {
               <div className='navLeft'>
                 <div className='navLeft-Dep'>
                    <button className="depBtn">
-                        <h1>Departments</h1>
+                        <h2>Departments</h2>
                         <div className='navArrow'></div>
                         <div className='depMenu'><DepartmentMenu/></div>
                     </button>
