@@ -17,13 +17,15 @@
 }
 .blueATag{
     color: #0066C0;
-    font-size: 18px;
+    font-size: 13px;
+    font-family: arial;
 }
 
-.prodTitle{
-    font-size: 30px;
-    line-height: 40px;
-    margin-top: 15px;
+.prodTitle {
+    font-size: 21px;
+    line-height: 27px;
+    margin-top: 10px;
+    font-weight: 100;
 }
 .reviews{
     display: flex;
@@ -52,7 +54,7 @@
     margin-right: 30px;
 }
 .priceRed{
-    color: red;
+    color: #B12704;
     font-size: 22px;
 }
 .starArrow{
@@ -62,11 +64,13 @@
     background-repeat: no-repeat;
     display: inline-block;
 }
-.otherSellers{
-margin-top: 15px;
-color: black;
-font-size: 17px;
-margin-bottom: 15px;
+.otherSellers {
+    margin-top: 15px;
+    color: #555555;
+    font-size: 13px;
+    margin-bottom: 15px;
+    font-weight: 100;
+    margin-right: 5px;
 }
 .sizeGrey{
     color: #8891B6;
@@ -91,12 +95,22 @@ width: 91px;
 height: 52px;
 border: 1px lightgray solid;
 text-align: center;
+padding-top: 10px;
 /*padding: auto;*/
 }
 .boxPrice{
-    color: red;
+    color: #b12704;
+    margin-top: 6px;
+    font-size: 14px;
 }
-
+.bullets{
+    padding-left: 16px;
+    margin-bottom: 16px;
+    font-family: arial;
+}
+.bullet li{
+    color: grey;
+}
 .messageIcon{
     background-position: -42px 0;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAMCAYAAABx290PAAAA20lEQ…QLQeBiLAP3sUi27aRbCAIN/5lEi4/OJ1Xb/wYGplPJohj6AGLXLKmrpibWAAAAAElFTkSuQmCC);
@@ -107,11 +121,29 @@ text-align: center;
     height: 11px;
 }
 
-.socialMedia{
+.socialMedia {
     display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 22px;
+    margin-bottom: 11px;
 }
 .socialMedia h2{
     color: #0066c0;
+    font-family: arial;
+    font-size: 13px;
+    font-weight: 100;
+    margin-top: 5px;
+    
+}
+
+.lineSpace{
+    margin-top: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+.pack{
+    font-size: 13px;
 }
 
 .socEmail{
@@ -126,6 +158,8 @@ text-align: center;
     background-repeat: no-repeat;
     display: inline-block;
     vertical-align: top;
+    font-family: arial;
+    
 }
 .socFac{
     width: 17px;
@@ -216,6 +250,10 @@ height: 25px;
     font-size: 12px;
     
 }
+.pad {
+    margin-top: 25px;
+    
+}
 
 /*prod details widths*/
 
@@ -228,12 +266,44 @@ height: 25px;
     margin-top: 70px;
 }
 .prodInfoMain{
-    width: 50vw;
+    width: 48vw;
     padding-left: 30px;
     padding-top: 20px;
+    font-family: arial;
+    
 }
 
 
 .prodMiscMain{
-    width: 15vw;
+    width: 17vw;
 }
+
+ul li {
+  color: #3c3c3c; 
+  /* set color of list item text */
+  /*list-style: none; */
+}
+
+ul li::before {
+  color: gray; 
+ 
+}
+.listBullet{
+    font-size: 13px;
+    line-height: 24px;
+}
+.fonts {
+    font-family: arial;
+    font-weight: 100;
+}
+
+.check h2{
+    font-size: 13px;
+    font-weight: 100;
+}
+.ship{
+    font-weight: 400 !important;
+}
+/*.oneClick{
+    font-size
+}*/
