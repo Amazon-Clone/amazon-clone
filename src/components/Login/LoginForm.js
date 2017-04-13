@@ -14,11 +14,11 @@ class LoginForm extends Component {
                         <h1 className='register-title'>Sign in</h1>
                         <div className='title-input-fields'>
                         <label htmlFor="useremail">Email (phone for mobile accounts)</label>
-                        <Field className='input-field-input'name="useremail" component="input" type="email"/>
+                        <Field className='input-field-input'name="useremail" component="input" type="email" onChange={this.props.onEmailChange}/>
                         </div>
                         <div className='title-input-fields'>
                             <label className='word-seperator' htmlFor="userpassword"><p>Password</p> <a href='#'>Forgot your password?</a></label>
-                        <Field  className='input-field-input' name="userpassword" component="input" type="password"/>
+                        <Field  className='input-field-input' name="userpassword" component="input" type="password" onChange={this.props.onPasswordChange}/>
                         </div>
                         <button className='button-register'type="submit">Sign in</button>
                     <div className='keep-me-signed-sec'>

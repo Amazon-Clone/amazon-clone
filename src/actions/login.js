@@ -3,10 +3,8 @@ import axios from 'axios'
 export const LOGIN = 'LOGIN'
 
 
-export function login(user) {
-    const request = axios.post(`/api/login`, user).then((response)=> {
-        console.log(response.data)
-    })
+export function login(props) {
+    const request = axios.post(`/api/login`, props)
     return {
         type: LOGIN,
         payload: request
