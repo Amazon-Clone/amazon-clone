@@ -18,10 +18,10 @@ class ProductDetails extends Component {
             <div className='fonts'>
                 <ProdDetailsNav/>
                 <div className='ProdDetailsBody'>
-                    <LeftPhotos/>
-                    <MainPhoto/>
+                    <LeftPhotos urlParams={this.props.params}/>
+                    <MainPhoto urlParams={this.props.params}/>
                     <ProdInfo urlParams={this.props.params}/>
-                    <RightProdMisc/>
+                    <RightProdMisc urlParams={this.props.params}/>
 
                 </div>
                

@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 class ProdInfo extends Component {
     constructor(props){
         super(props);
+        
     }
     componentDidUpdate(prevProps, prevState) {
         console.log(this.state.product)
@@ -17,16 +18,23 @@ class ProdInfo extends Component {
             this.setState({product: product.data})
         })
     }
-
+//     handleClick() {
+//     this.setState({option: this.state.option = 1});
+//   }
 
     render() {
         console.log("props",this.props)
         // const product = this.state.product[0];
         const option = 0;
+        const option1 = 1;
+
+        
+        
         return (
+            
                 <div className='prodInfoMain'>
                     {/*fill in with dummy data*/}
-                    <a className="blueATag">LG Electronics</a>
+                    <a className="blueATag">{this.state ? this.state.product[option].productbrand: null}</a>
                     <h1 className='prodTitle'>{this.state ? this.state.product[option].productname: null}</h1>
                     {/*<h1 className='prodTitle'>LG Electronics 65UH9500 65-Inch 4K Ultra HD Smart LED TV (2016 Model)</h1>*/}
                     <div className='reviews'>
@@ -37,19 +45,19 @@ class ProdInfo extends Component {
                         <a  className='blueATag marg'> 268 customer reviews</a>
                         <a  className='blueATag'> 277 answered questions</a>
                     </div>
-                    <h2 className='otherSellers'>Price: <a className='priceRed'> $71.00</a></h2>
+                    <h2 className='otherSellers'>Price: <a className='priceRed'> {this.state ? this.state.product[option].optionprice: null}</a></h2>
                     <div className='flexOnly pad'>
                         <h2 className='sizeGrey'>Size: </h2>
-                        <h2 className='sizeBlack'>65-inch</h2>
+                        <h2 className='sizeBlack'>{this.state ? this.state.product[option].optionname: null}</h2>
                     </div>
                     <div className='sizeBoxParent'>
                         <div className='sizeBoxChild'>
-                            <h2>55-inch</h2>
-                            <h2 className='boxPrice'>$1997.0</h2>
+                            <h2>{this.state ? this.state.product[option].optionname: null}</h2>
+                            <h2 className='boxPrice'>{this.state ? this.state.product[option].optionprice: null }</h2>
                         </div>
-                        <div className='sizeBoxChild'>
-                            <h2>65-inch</h2>
-                            <h2 className='boxPrice'>$399.00</h2>
+                        <div className='sizeBoxChild' >
+                            {/*<h2>{this.state ? this.state.product[option1].optionname: 'hi'}</h2>*/}
+                            {/*<h2 className='boxPrice'>{this.state ? this.state.product[option1].optionprice: 'N/A'} </h2>*/}
                         </div>
                     </div>
                     <div className='flexOnly pad'>
@@ -59,7 +67,7 @@ class ProdInfo extends Component {
                     <hr/> 
                     <ul className='bullets pad'>
                         <li className='listBullet'>Smart Functionality: Yes - web OS 3.0</li>
-                        <li className='listBullet'>Dimensions (W x H x D): TV without stand: 57.1" x 33.0" x 1.9", TV with stand: 57.1" x 34.7" x 8.9"</li>
+                        <li className='listBullet'>Dimensions (W x H x D): TV without stand: {this.state ? this.state.product[option].optiondimensions: null}, TV with stand: 57.1" x 34.7" x 8.9"</li>
                         <li className='listBullet'>Inputs: 4 HMDI, 3 USB, 1 RF, 1 Component, 1 Composite, 1 Optical, 1 RS232C, 1 Ethernet</li>
                         <li className='listBullet'>HDR Enhanced Display</li>
                         <a href='' className='blueATag'>See more product details</a>
