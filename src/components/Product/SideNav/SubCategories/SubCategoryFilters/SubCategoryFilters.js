@@ -7,8 +7,6 @@ class SubCategoryFilters extends Component{
 
     render(){
 
-        console.log('state', this.state);
-
         var subCategoryFilters = [];
 
         for(var key in this.props.subcategoryfilters){

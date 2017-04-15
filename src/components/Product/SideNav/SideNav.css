@@ -32,3 +32,37 @@
     box-sizing: border-box;
     padding: 10px 0 10px 0;
 }
+
+
+.sideNavBot{
+    margin: 20px 0 0 0;
+}
+
+.primeLogo{
+    width: 47px;
+}
+
+.commonFilter{
+    padding: 5px 0 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.priceFilter{
+    display: flex column;
+}
+
+.priceBox{
+    width: 70px;
+}
+
+.priceOption{
+    display: block;
+    background:none!important;
+    color:inherit;
+    border:none; 
+    padding:0!important;
+    font: inherit;
+    /*border is optional*/
+    cursor: pointer;
+}
