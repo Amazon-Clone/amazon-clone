@@ -4,6 +4,7 @@ var db = app.get('db');
 
 var cart = {
   addProductToCart: function(req, res) {
+    console.log(req.body)
 
       var cartObj = req.body;
 
