@@ -8,8 +8,6 @@ export const GET_ONE_PRODUCT = "GET_ONE_PRODUCT"
 export function getStoreProducts() {
     const request = axios.get(`/api/store`);
 
-    console.log(request);
-
     return {
         type: GET_STORE_PRODUCTS,
         payload: request
