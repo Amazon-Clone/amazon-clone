@@ -32,6 +32,7 @@ class SideNav extends Component {
             }
         });
 
+
         return (
             <div className="sideNav">
                 <div className="categoryContainer">
@@ -40,9 +41,31 @@ class SideNav extends Component {
                         {categories}
                     </div>
                 </div>
-                <div className = "subCategoryFiltersContainer">
-                    {subcategoryfilters}
+                <div className ="sideNavBot">
+                    <h3 className="categoryTitle">Refine By</h3>
+                    <div className="commonFilter">
+                        <input onChange={this.props.handleCheckboxSetState} value="productprime" type="checkbox"/>
+                        <img className="primeLogo" src="https://s3-us-west-1.amazonaws.com/amazon-clone/logos/amazonprimelogo.jpg"/>
+                    </div>
+                    <div className="commonFilter">
+                        <input onChange={this.props.handleCheckboxSetState} value="productfreeshipping" type="checkbox"/>
+                        <p>Free Shipping by Amazon</p>
+                    </div>
+                    <div className = "subCategoryFiltersContainer">
+                        {subcategoryfilters}
+                    </div>
+                    <div className="priceFilter">
+                        <h3>Price</h3>
+                        <button className="priceOption" value={0} onClick = {this.props.handleSetState}>Under $25</button>
+                        <button className="priceOption" value={1} onClick = {this.props.handleSetState}>$25 to $50</button>
+                        <button className="priceOption" value={2} onClick = {this.props.handleSetState}>$50 to $100</button>
+                        <button className="priceOption" value={3} onClick = {this.props.handleSetState}>$100 to $200</button>
+                        <button className="priceOption" value={4} onClick = {this.props.handleSetState}>$200 and above</button>
+                        $<input className="priceBox" type="text"></input> to $<input className="priceBox" type="text"></input>
+                    </div>
                 </div>
+
+                
             </div>
         );
     }
