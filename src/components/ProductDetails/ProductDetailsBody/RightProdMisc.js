@@ -7,16 +7,11 @@ class RightProdMisc extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            cartProduct: {
-             hi: 1,
-             x: 2
-            }
         }
-        this.onSubmit = this.handleSubmit.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this)
 
     }
     handleSubmit(product) {
-        // event.preventDefault()
         console.log('my', product)
         addToCart(product)
     }
@@ -25,8 +20,8 @@ class RightProdMisc extends Component {
         console.log(this.state.product)
     }
 
-    componentDidMount() {
-        console.log("testing", this.props.urlParams)
+    componentWillMount() {
+        // console.log("testing", this.props.urlParams)
         getOneProduct(this.props.urlParams.id)
             .payload
             .then(product => {
@@ -35,9 +30,12 @@ class RightProdMisc extends Component {
     }
 
     render() {
+            console.log("tester", this.state.product ? this.state.product[0]: null)
+        
         const option = 0;
         return (
             <div className='prodMiscMain'>
+                
                 <div className='socialMedia'>
                     <h2>Share</h2>
                     <div className='socEmail'></div>
@@ -69,15 +67,15 @@ class RightProdMisc extends Component {
                             <a className='blueATag'> 2-Year Protection for $5.70</a>
                         </h2>
                     </div>
-                    <form onSubmit={this.onSubmit}>
+                    {/*<form onSubmit={this.onSubmit}>*/}
                         <button
                             className='addCartBtn check'
-                            onClick={this.onSubmit(this.state.cartProduct)}
+                            onClick={this.state.product? this.handleSubmit.bind(this, this.state.product[0]): console.log('not ready')}
                             type="submit">
                             <div className='cartIcon'></div>
                             <h2 className='cartText'>Add to Cart</h2>
                         </button>
-                    </form>
+                    {/*</form>*/}
                     <hr/>
                     <a className='blueATag check'>Turn on 1-Click ordering for this browser</a>
                     <hr/>
