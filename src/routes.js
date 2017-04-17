@@ -13,14 +13,13 @@ import Cart from './components/Cart/Cart'
 
 export default(
     <Route>
-        <Route path='/' component={ App }>
-            <IndexRoute component={ Home }/>
-            <Route path='/product' component={ Product }/>
-            <Route path='/product/:id' component={ ProductDetails }/>
-            <Route path='/productdetails' component={ ProductDetails }/>
-            <Route path='/cart' component={ Cart }/>
-        </Route>
-        <Route path='/register' component={ Register }/>
-        <Route path='/login' component={ Login }/>
+    <Route path='/' component={ App }>
+        <IndexRoute component={ Home }/>
+        <Route path='/product' component={ Product }/>
+        <Route path='/product/:id' component={ ProductDetails }/>
+        <Route path='/cart' component={ Cart }></Route>
+    </Route>
+    <Route path='/register' component={ Register }/>
+    <Route path='/login' component={ Login }/>
     </Route>
 )
