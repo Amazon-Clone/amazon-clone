@@ -4,13 +4,23 @@ import { login } from '../../actions/login'
 
 
 class Login extends Component {
-    // submit = (values) => {
-    //     console.log(values);
-    //     register(value)
-    // }
+
     submit(values) {
         console.log(values)
-        login(values)
+        // const user = this.props.user[0] || {}
+        login(values).payload.then( function(response) {
+            console.log(response)
+
+                if( response.data === 'auth successful') {
+                    alert('Login Successful') 
+                return  window.location.href = '#'
+            }   else {
+                return alert('Incorrect Username or Password')
+            }
+        })
+
+        console.log(values)
+
     }
     render() {
         return (
