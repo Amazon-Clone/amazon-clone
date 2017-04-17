@@ -10,7 +10,16 @@ class Register extends Component {
     // }
     submit(values) {
         console.log(values)
-        register(values)
+        register(values).payload.then((response)=>{
+            if(response.status === 200) {
+                alert('Register Successful')
+                window.location.href = '#/login'
+            }
+            else {
+                alert('Username/Email Exists')
+            }
+            
+        })
     }
     render() {
         return (
