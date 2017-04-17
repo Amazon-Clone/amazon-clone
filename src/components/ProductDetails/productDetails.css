@@ -260,7 +260,11 @@ margin-top: 15px;
     height: 23px;
     background-color: #E9EBEE;
     border: 1px solid lightgray;
-    font-size: 12px;
+    font-size: 11px;
+    margin-top: 3px;
+    padding-top: 5px;
+    padding-left: 3px;
+    margin-bottom: 50px;
     
 }
 .pad {
@@ -323,6 +327,9 @@ ul li::before {
 }
 .sell{
     font-size: 11px;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
 }
 /*.oneClick{
     font-size
