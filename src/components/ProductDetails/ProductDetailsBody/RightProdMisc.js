@@ -56,19 +56,19 @@ class RightProdMisc extends Component {
                     <div className='flexOnly check'>
                         <input id="checkBox" type="checkbox"></input>
                         <h2>Yes, I want FREE Two-Day Shipping with
-                            <a className='blueATag'>Amazon Prime</a>
+                            <a className='blueATag'> Amazon Prime</a>
                         </h2>
                     </div>
                     <div className='flexOnly check'>
                         <input id="checkBox" type="checkbox"></input>
                         <h2>Include
-                            <a className='blueATag'>3-Year Protection for $10.80</a>
+                            <a className='blueATag'> 3-Year Protection for $10.80</a>
                         </h2>
                     </div>
                     <div className='flexOnly check'>
                         <input id="checkBox" type="checkbox"></input>
                         <h2>Include
-                            <a className='blueATag'>2-Year Protection for $5.70</a>
+                            <a className='blueATag'> 2-Year Protection for $5.70</a>
                         </h2>
                     </div>
                     <form onSubmit={this.onSubmit}>
@@ -89,7 +89,7 @@ class RightProdMisc extends Component {
                     <div className='addToList'>Add to List</div>
                 </div>
                 <div className='flexOnly'>
-                    <h2>Have one to sell?</h2>
+                    <h2 className='sell'>Have one to sell?</h2>
                     <div className='sellOnAmazon'>
                         Sell on Amazon</div>
                 </div>
