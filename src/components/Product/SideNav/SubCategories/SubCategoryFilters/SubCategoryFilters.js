@@ -13,7 +13,7 @@ class SubCategoryFilters extends Component{
             subCategoryFilters.push(
             <div className="subCategoryFilter" key={key}>
                 <p className="subCategoryFilterName">{key}</p>
-                <div className="subCategoryFilterFlexBox"><input id="checkBox" type="checkbox"/><SubCategoryFilterOptions className = "subCategoryFilterOptions"subcategoryfilteroptions={this.props.subcategoryfilters[key]}></SubCategoryFilterOptions></div>
+                <div className="subCategoryFilterFlexBox"><input id="checkBox" type="checkbox" value={Object.keys(this.props.subcategoryfilters[key])} onChange={this.props.handleCheckbox}/><SubCategoryFilterOptions className = "subCategoryFilterOptions"subcategoryfilteroptions={this.props.subcategoryfilters[key]}></SubCategoryFilterOptions></div>
             </div>
             );
         }

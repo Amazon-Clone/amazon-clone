@@ -36,8 +36,6 @@ class Item extends Component {
                                 <NgIf show={this.props.productfreeshipping}><p className="shipText">FREE Shipping on eligible orders</p></NgIf>
                             </div>
 
-
-
                             <div className="secondBox">
                                 <p>More buying choices</p>
                                 <p>5 stars</p>

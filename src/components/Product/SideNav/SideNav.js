@@ -8,8 +8,6 @@ import SubCategoryFilters from './SubCategories/SubCategoryFilters/SubCategoryFi
 class SideNav extends Component {
 
     render() {
-        console.log(this.props.categories)
-
         var i = 0;
 
         var categories = this.props.categories.map(category => {
@@ -28,11 +26,12 @@ class SideNav extends Component {
             for(var key in category.subcategories){
                 subcategoryfilters.push(
                     <div key = {i++}>
-                        <SubCategoryFilters subcategoryfilters = {category.subcategories[key]}></SubCategoryFilters>
+                        <SubCategoryFilters handleCheckbox={this.props.handleCheckbox} subcategoryfilters = {category.subcategories[key]}></SubCategoryFilters>
                     </div>
                 );
             }
         });
+
 
         return (
             <div className="sideNav">
@@ -42,9 +41,31 @@ class SideNav extends Component {
                         {categories}
                     </div>
                 </div>
-                <div className = "subCategoryFiltersContainer">
-                    {subcategoryfilters}
+                <div className ="sideNavBot">
+                    <h3 className="categoryTitle">Refine By</h3>
+                    <div className="commonFilter">
+                        <input onChange={this.props.handleCheckboxSetState} value="productprime" type="checkbox"/>
+                        <img className="primeLogo" src="https://s3-us-west-1.amazonaws.com/amazon-clone/logos/amazonprimelogo.jpg"/>
+                    </div>
+                    <div className="commonFilter">
+                        <input onChange={this.props.handleCheckboxSetState} value="productfreeshipping" type="checkbox"/>
+                        <p>Free Shipping by Amazon</p>
+                    </div>
+                    <div className = "subCategoryFiltersContainer">
+                        {subcategoryfilters}
+                    </div>
+                    <div className="priceFilter">
+                        <h3>Price</h3>
+                        <button className="priceOption" value={0} onClick = {this.props.handleSetState}>Under $25</button>
+                        <button className="priceOption" value={1} onClick = {this.props.handleSetState}>$25 to $50</button>
+                        <button className="priceOption" value={2} onClick = {this.props.handleSetState}>$50 to $100</button>
+                        <button className="priceOption" value={3} onClick = {this.props.handleSetState}>$100 to $200</button>
+                        <button className="priceOption" value={4} onClick = {this.props.handleSetState}>$200 and above</button>
+                        $<input className="priceBox" type="text"></input> to $<input className="priceBox" type="text"></input>
+                    </div>
                 </div>
+
+                
             </div>
         );
     }

@@ -75,12 +75,14 @@ app.post('/api/register', dbController.registerUser);
 //PRODUCT DATA METHODS
 
 app.get('/api/store', dbController.getStoreElements, function(req, res){
+  console.log('getting products')
   res.status(200).send(req.result);
 });
 
 app.get('/api/store/categories', dbController.getCategories);
 
 app.get('/api/product/:id', dbController.getProductById, function(req, res){
+  console.log('getting product')
   res.status(200).send(req.result);
 });
 

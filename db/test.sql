@@ -1,17 +1,22 @@
-SELECT secondSubQuery.productId, secondSubQuery.productName, secondSubQuery.prime, secondSubQuery.freeShipping, json_agg(ProductImages.imageUrl), secondSubQuery.productSpecText, secondSubQuery.categoryName, secondSubQuery.subCategoryName, secondSubQuery.subCategoryFilterOptions, Options.optionPrice, Options.optionLastPrice FROM
-(SELECT productId, productName, prime, freeShipping, jsonb_agg(productSpecText ORDER BY productSpecText) AS productSpecText, categoryName, subCategoryName, subCategoryFilterOptions FROM
-(SELECT Products.productId, Products.productName, Products.prime, Products.freeShipping, ProductSpecs.productSpecText, Categories.categoryName, SubCategories.subCategoryName, jsonb_agg(SubCategoryFilterOptions.subCategoryFilterOptionName ORDER BY SubCategoryFilterOptions.subCategoryFilterOptionName) AS subCategoryFilterOptions FROM Products
-	INNER JOIN ProductSubCategoryFilterOptions ON ProductSubCategoryFilterOptions.productId = Products.productId
-	INNER JOIN SubCategoryFilterOptions ON SubCategoryFilterOptions.subCategoryFilterOptionId = ProductSubCategoryFilterOptions.subCategoryFilterOptionId
-	INNER JOIN SubCategoryFilters ON SubCategoryFilters.subCategoryFilterId = SubCategoryFilterOptions.subCategoryFilterId
-	INNER JOIN SubCategories ON SubCategories.subCategoryId = SubCategoryFIlters.subCategoryId
-	INNER JOIN Categories ON Categories.categoryId = SubCategories.categoryId
-	INNER JOIN ProductSpecs ON ProductSpecs.productId = Products.productId
-GROUP BY Products.productId, Products.productName, Products.prime, Products.freeShipping, ProductSpecs.productSpecText, Categories.categoryName, SubCategories.subCategoryName)
-	AS subQuery
-GROUP BY subQuery.productId, subQuery.productName, subQuery.prime, subQuery.freeShipping, subQuery.categoryName, subQuery.subCategoryName, subQuery.subCategoryFilterOptions)
-	AS secondSubQuery
-		INNER JOIN Options ON Options.productId = secondSubQuery.productId
-		INNER JOIN ProductImages ON ProductImages.optionId = Options.optionId
-GROUP BY secondSubQuery.productId, secondSubQuery.productName, secondSubQuery.prime, secondSubQuery.freeShipping, secondSubQuery.productSpecText, secondSubQuery.categoryName, secondSubQuery.subCategoryName, secondSubQuery.subCategoryFilterOptions, Options.optionPrice, Options.optionLastPrice
+SELECT categoryName,  jsonb_object_agg AS SubCategories  FROM
+(SELECT categoryName, jsonb_object_agg(subCategoryName, jsonb_object_agg) FROM
+(SELECT categoryName, subCategoryName, jsonb_object_agg(subCategoryFilterName, jsonb_object_agg) FROM
 
+SELECT categoryName, subCategoryName, subCategoryFilterName, jsonb_agg(queryZ.subCategoryFilterOptionName) AS subCategoryFilterOptionNames, jsonb_object_agg FROM
+
+(SELECT categoryName, subCategoryName, subCategoryFilterName, queryZ.subCategoryFilterOptionName, jsonb_object_agg(queryZ.subCategoryFilterOptionName, queryZ.count) AS subCategoryFilterOptionNameCount FROM
+
+(SELECT categoryName, subCategoryName, subCategoryFilterName, subCategoryFilterOptions.subCategoryFilterOptionName, count(subCategoryFilterOptionName) FROM Categories
+INNER JOIN SubCategories ON SubCategories.categoryId = Categories.categoryId
+INNER JOIN SubCategoryFilters ON SubCategoryFilters.subCategoryId = SubCategories.subCategoryId
+INNER JOIN SubCategoryFilterOptions ON SubCategoryFilterOptions.subCategoryFilterId = SubCategoryFilters.subCategoryFilterId
+INNER JOIN ProductSubCategoryFilterOptions ON ProductSubCategoryFilterOptions.subCategoryFilterOptionId = SubCategoryFilterOptions.subCategoryFilterOptionId
+GROUP BY categoryName, subCategoryName, subCategoryFilterName, subCategoryFilterOptions.subCategoryFilterOptionName) AS queryZ
+
+GROUP BY categoryName, subCategoryName, subCategoryFilterName, queryZ.subCategoryFilterOptionName) AS queryB
+
+
+
+
+GROUP BY categoryName, subCategoryName) AS queryC
+GROUP BY categoryName) AS queryD

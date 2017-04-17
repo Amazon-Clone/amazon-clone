@@ -15,13 +15,13 @@ class ProductDetails extends Component {
         
         return (
             
-            <div>
+            <div className='fonts'>
                 <ProdDetailsNav/>
                 <div className='ProdDetailsBody'>
-                    <LeftPhotos/>
-                    <MainPhoto/>
-                    <ProdInfo/>
-                    <RightProdMisc/>
+                    <LeftPhotos urlParams={this.props.params}/>
+                    <MainPhoto urlParams={this.props.params}/>
+                    <ProdInfo urlParams={this.props.params}/>
+                    <RightProdMisc urlParams={this.props.params}/>
 
                 </div>
                

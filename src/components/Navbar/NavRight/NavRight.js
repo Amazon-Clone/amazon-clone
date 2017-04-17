@@ -12,13 +12,11 @@ import './RightMenus/TryPrimeMenu.css'
 class NavRight extends Component {
 
     componentDidMount() {
-        console.log('did:',  this.props)
-    this.props.getUser();
-}
+        this.props.getUser();
+    }
 
 
     render() {
-        console.log('this one:', this.props.user)
         const user = this.props.user || {}
 
         return (
