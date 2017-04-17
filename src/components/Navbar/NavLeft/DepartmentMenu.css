@@ -1,5 +1,5 @@
 .dmenu{
-    z-index: 9;
+    z-index: 12;
     background-color: grey;
     opacity: .6;
     position: absolute;
@@ -12,7 +12,7 @@
     position: absolute;
     left: 30px;
     background-color: white;
-    z-index: 10;
+    z-index: 13;
     border-radius: 3px;
     padding-left: 3px;
     line-height: 15px;
@@ -41,10 +41,17 @@
     width: 90%;
     padding-bottom: 10px;
 }
+.practice-feat {
+    height: 490px;
+    width: 521px;
+    background-color: blue;
+}
 .sliding-slider {
-    background-image: url('/images/homeimages/frge.png');
     background-size: cover;
     background-repeat: no-repeat;
+}
+.sliding-slider1 {
+    background-image: url('/images/homeimages/frge.png');
 }
 .sliding-slider2 {
     background-image: url('/images/homeimages/abc.png');

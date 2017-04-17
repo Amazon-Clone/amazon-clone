@@ -49,12 +49,12 @@
     display: flex;
     margin-top: 4px;
 }
-.depBtn .depMenu{
+.depMenu{
     display: none;
 }
-.depBtn:hover .depMenu {
+/*.depBtn:hover .depMenu {
     display: block;
-}
+}*/
 .depBtn h1 {
     padding-bottom: 10px;
 }

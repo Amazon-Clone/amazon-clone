@@ -1,0 +1,56 @@
+.repeated-prod-rec-body {
+    display: flex;
+    margin-top: 15px;
+}
+.prod-pic-rec {
+    height: 90px;
+    width: 90px;
+    margin-right: 7px;
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/51FFTKXFpRL._SS100_.jpg);
+    background-position: center;
+    background-size: cover
+}
+.rating-stars {
+    display: flex;
+    margin-top: 5px;
+}
+.desc-rec-prod-name {
+    font-size: 14px;
+    color: #0066C0;
+    font-weight: 100;
+}
+.blue-number {
+    font-size: 14px;
+    color: #0066C0;
+    font-weight: 100;
+    margin-left: 10px;
+}
+.display-fl {
+    display: flex;
+}
+.price-red-let {
+    color: #b12704;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.prime-logo {
+    background-image: url(/images/homeimages/primelogo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 16px;
+    width: 50px;
+    margin-left: 5px;
+}
+.prime-logo-container {
+    padding-top: 4px;
+}
+.add-to-cart-mini {
+    height: 22px;
+    width: 80px;
+    background-color: #F4D17A;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    border-radius: 5px
+}
