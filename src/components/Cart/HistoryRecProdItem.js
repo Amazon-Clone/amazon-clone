@@ -3,10 +3,10 @@ import './Cart.css'
 import './AlsoBought.css'
 import './RecProdItem.css'
 
-class AlsoBought extends Component {
+class HistoryRecProdItem extends Component {
     render() {
 
-        const recproduct = 'Samsung Electronics UN65MU8000 65-Inch 4K Ultra HD Smart LED TV (2017 Model)';
+        const recproduct = this.props.title;
         const numberOfRatings = 345;
         const img = 'https://images-na.ssl-images-amazon.com/images/I/51FFTKXFpRL._SS100_.jpg';
         const price = '$223.34'
@@ -17,7 +17,7 @@ class AlsoBought extends Component {
             <div className='also-bought-body'>
                 <img src={ this.props.image } className='prod-pic-rec-lg' alt=""/>
                 <div className='prod-rec-mini-desc'>
-                    <h5 className='desc-rec-prod-name'>{ this.props.title }</h5>
+                    <h5 className='desc-rec-prod-name'>{ rec }</h5>
                     <div className='rating-stars'>
                         <div className='starsstars'></div>
                         <h5 className='blue-number'>{ this.props.numberOf }</h5>
@@ -36,4 +36,4 @@ class AlsoBought extends Component {
     }
 }
 
-export default AlsoBought;
+export default HistoryRecProdItem;

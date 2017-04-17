@@ -2,7 +2,6 @@
     height: 150px;
     width: 150px;
     margin-bottom: 25px;
-    background-image: url(https://images-na.ssl-images-amazon.com/images/I/51FFTKXFpRL._SS100_.jpg);
     background-position: center;
     background-size: cover
 }
@@ -22,10 +21,18 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    min-width: 1000px;
+}
+.carousel-titlea {
+   display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    min-width: 650px; 
 }
 .little-righty {
     font-size: 13px;
     font-weight: 100;
+    width: 13%
 }
 .also-bought-car {
     border-top: lightgray;
@@ -37,7 +44,6 @@
     padding-top: 40px;
     margin-left: 30px;
     margin-right: 30px;
-    min-width: 1000px;
 }
 .also-bought-car1 {
     border-top: lightgray;
@@ -72,13 +78,26 @@
     border-style: solid;
     text-align: center
 }
-@media (max-width: 800px) {
-    .also-bought-7 {
+@media (max-width: 1400px) {
+    .disappear {
         display: none;
     }
-    .also-bought-5 {
+}
+@media (max-width: 1250px) {
+    .disappear2 {
         display: none;
-        width: 0px;
-        height: 0px;
     }
+}
+.starsstars {
+    background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-sprite_1x-28bd59af93d9b1c745bb0aca4de58763b54df7cf._V2_.png);
+    /*-webkit-background-size: 400px 670px;*/
+    background-size: 400px 670px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position: -175px -368px;
+    width: 80px;
+    height: 18px;
+}
+.fourandhalfstars {
+    
 }
