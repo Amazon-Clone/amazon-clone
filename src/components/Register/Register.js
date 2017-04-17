@@ -16,7 +16,7 @@ class Register extends Component {
                 window.location.href = '#/login'
             }
             else {
-                alert('User Email Exists')
+                alert('Username/Email Exists')
             }
             
         })
