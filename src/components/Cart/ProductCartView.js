@@ -17,7 +17,7 @@ class ProductCartView extends Component {
                     <h3 className='money-pr'>$2,197.99</h3>
                 </div>
                 <div>
-                    <input className='binput-typ' type="number"/>
+                    <input className='binput-typ' type="number" value='1'/>
                 </div>
             </div>
         );

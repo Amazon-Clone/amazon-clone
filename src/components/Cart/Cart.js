@@ -9,6 +9,14 @@ import AlsoBoughtCarousel from './AlsoBoughtCarousel'
 import AlsoBoughtCarousel2 from './AlsoBoughtCarousel2'
 
 class Cart extends Component {
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            subtotal: 0,
+            numbItems: 0
+        }
+    }
     render() {
         return (
             <div className='cart-body'>
@@ -28,7 +36,7 @@ class Cart extends Component {
                             <ProductCartView />
 
                         </div>
-                        <div className='totally-total'><p>Subtotal: (4 items): <span>$8,956.77</span></p></div>  
+                        <div className='totally-total'><p>Subtotal: ({ this.state.numbItems } items): <span>${ this.state.subtotal }</span></p></div>  
 
                         <p className='little-more-info'>The price and availability of items at Amazon.com are subject to change. The Cart is a temporary place to store a list of your items and reflects each item's most recent price. <span>Learn more</span>
                         <br></br>Do you have a gift card or promotional code? We'll ask you to enter your claim code when it's time to pay.</p>
