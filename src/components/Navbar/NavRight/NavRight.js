@@ -20,6 +20,7 @@ class NavRight extends Component {
     render() {
         console.log('this one:', this.props.user)
         const user = this.props.user || {}
+
         return (
         <div>
             <div className="navRight">

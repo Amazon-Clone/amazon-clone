@@ -1,0 +1,68 @@
+.product-cart-view-body {
+    display: flex;
+    justify-content:space-between;
+}
+.pikcha {
+    height: 80px;
+    width: 110px;
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/51FFTKXFpRL._SS100_.jpg);
+    background-position: center;
+    background-size: cover
+}
+.pikcha-holer {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.product-yo-mama h3{
+    color: #0066c0;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.product-yo-mama h4{
+    color: green;
+    font-weight: 100;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.product-yo-mama h6{
+    font-size: 14px;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+.disflex {
+    display: flex;
+}
+.disflex span{
+    color: #0066C0;
+}
+.product-cart-view-body div{
+    border: none !important;
+}
+.product-yo-mama {
+    margin-left: 10px;
+    width: 40vw;
+    min-width: 300px;
+    margin-right: 20px;
+}
+.moblu{
+    color: #0066C0;
+    justify-content: space-between;
+    width: 170px;
+}
+.money-pr {
+    font-size: 18px;
+    color: #a13029;
+    margin-left: 20px;
+}
+.product-yo-mama span {
+    font-size: 13px;
+    color: black;
+    font-weight: 100;
+}
+.binput-typ {
+    height: 30px;
+    width: 70px;
+    background-color: lightgray;
+    margin-left: 50px;
+}
