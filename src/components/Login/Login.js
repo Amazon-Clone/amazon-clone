@@ -12,7 +12,7 @@ class Login extends Component {
             console.log(response)
 
                 if( response.data === 'auth successful') {
-                    alert('login successful') 
+                    alert('Login Successful') 
                 return  window.location.href = '#'
             }   else {
                 return alert('Incorrect Username or Password')
