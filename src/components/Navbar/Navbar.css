@@ -20,7 +20,7 @@
     position: relative;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 999;
     font-family: arial, sans-serif;
     font-size: 12px;
     margin: 0 -8px;
@@ -65,10 +65,11 @@
     z-index: 1000;
     text-align: center;
     border-radius: 3px 0px 0px 3px;
+    width: 45px;
 }
 
 .nav-input {
-    width: 82%;
+    width: 75%;
     height: 100%;
     border: none;
     font-size: 15px;
@@ -106,4 +107,7 @@
     height: 21px;
     margin: auto;
     margin-top: 7px;
+}
+.zindex{
+    z-index: 100;
 }

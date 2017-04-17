@@ -3,6 +3,7 @@
     display: flex;
     color: white;
     margin-top: 25px;
+    z-index: 10;
 }
 
 .words {

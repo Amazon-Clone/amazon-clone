@@ -1,18 +1,22 @@
 .dmenu{
-    z-index: 12;
-    background-color: grey;
-    opacity: .6;
+    z-index: -10;
+    background-color: black;
+    opacity: .5;
     position: absolute;
     width: 100%;
-    top: 13vh;
+    top: 100px;
+    left: 0;
     height: 200vh;
-    margin-left: -2vw;
+    /*margin-left: -2vw;*/
+}
+.dmenu:hover {
+    display: none;
 }
 .menu1{
     position: absolute;
     left: 30px;
     background-color: white;
-    z-index: 13;
+    z-index: 1000;
     border-radius: 3px;
     padding-left: 3px;
     line-height: 15px;
