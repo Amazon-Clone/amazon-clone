@@ -8,10 +8,8 @@ class RightProdMisc extends Component {
         super(props);
         this.state = {
             cartProduct: {
-                productid: this.state ? this.state.product[option].productbrand: null,
-                optionid: 1,
-                quantity: 1,
-                discount: 0
+             hi: 1,
+             x: 2
             }
         }
         this.onSubmit = this.handleSubmit.bind(this)
@@ -19,7 +17,7 @@ class RightProdMisc extends Component {
     }
     handleSubmit(product) {
         // event.preventDefault()
-        console.log(product)
+        console.log('my', product)
         addToCart(product)
     }
 
