@@ -18,6 +18,7 @@ class NavRight extends Component {
 
     render() {
         const user = this.props.user || {}
+
         return (
         <div>
             <div className="navRight">
