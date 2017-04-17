@@ -223,24 +223,35 @@ height: 25px;
 }
 
 .addCartBtn{
-    width: 207px;
+    width: 180px;
     height: 35px;
     background-color: #F4D484;
     display: flex;
+   text-align: center;
+     font-size: 13px;
+margin-top: 15px;
+    
 }
 
 .addCartBox{
     border: 1px solid lightgray;
+     padding: 20px
 }
 
 .cartText {
     color: black;
+    margin-left: 15px;
+    margin-top: 3px;
 }
 .addToList{
     border: 1px solid lightgray;
     background-color: #E9EBEE;
-    width: 200px;
+    width: 170px;
     height: 40px;
+    font-size: 13px;
+    padding-top: 11px;
+    padding-left: 10px;
+    /*text-align: center;*/
 
 }
 
@@ -249,7 +260,11 @@ height: 25px;
     height: 23px;
     background-color: #E9EBEE;
     border: 1px solid lightgray;
-    font-size: 12px;
+    font-size: 11px;
+    margin-top: 3px;
+    padding-top: 5px;
+    padding-left: 3px;
+    margin-bottom: 50px;
     
 }
 .pad {
@@ -278,6 +293,7 @@ height: 25px;
 
 .prodMiscMain{
     width: 17vw;
+   ;
 }
 
 ul li {
@@ -302,9 +318,18 @@ ul li::before {
 .check h2{
     font-size: 13px;
     font-weight: 100;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    line-height: 18px;
 }
 .ship{
     font-weight: 400 !important;
+}
+.sell{
+    font-size: 11px;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
 }
 /*.oneClick{
     font-size
