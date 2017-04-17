@@ -21,6 +21,5 @@ export default(
     </Route>
     <Route path='/register' component={ Register }/>
     <Route path='/login' component={ Login }/>
-
     </Route>
 )
