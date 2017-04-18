@@ -1,4 +1,5 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
 
 module.exports = {
     entry: './src/index.js',
@@ -25,7 +26,7 @@ module.exports = {
             },
             {
                 test: /\.js$/,
-                exclude: /node_module/,
+                exclude: [/node_modules/, /controllers/, /services/, path.join(__dirname, 'keys.js'), path.join(__dirname, 'index.js')],
                 use: {
                     loader: 'babel-loader'
                 }
