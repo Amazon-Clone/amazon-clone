@@ -5,11 +5,6 @@ import './CartSummary.css'
 class CartSummary extends Component {
     constructor(props) {
         super(props)
-
-        this.state = {
-            total: 0,
-            numbItems: 0
-        }
     }
 
     render() {
@@ -21,7 +16,7 @@ class CartSummary extends Component {
                     <p>Choose this option at checkout. <span>See details</span></p>
                 </div>
                 <div className='sum-mid'>
-                    <h1 className='mid-sec-subtot'>Subtotal ({ this.state.numbItems } item): <span>${ this.state.total }</span></h1>
+                    <h1 className='mid-sec-subtot'>Subtotal ({ this.props.itemNumber } item): <span>${ this.props.subTotal }</span></h1>
                     <div className='displ-fl'><input type="checkbox"/><p>This order contains a gift</p></div>
                     <button className='sub-mid-butt'>Proceed to checkout</button>
                     <p>1-Click ordering is not available for at least one item in your order.</p>

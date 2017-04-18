@@ -18,31 +18,62 @@ class Cart extends Component {
         }
 
         this.props.getCart()
+        this.deleteCartItem = this.deleteCartItem.bind(this);
+        this.quantityChange = this.quantityChange.bind(this);
     }
 
-    componentWillUpdate(){
-        if(this.props.cart && Array.isArray(this.props.cart)){
-            var stateObj = {cart: this.props.cart};
-            
-            console.log('we are update');
-
-            this.setState({}, stateObj);
+    componentDidUpdate(){
+        if(!this.state.cart && this.props.cart && this.props.cart.length !== 0){
+            this.setState(Object.assign({}, {cart: this.props.cart}));
         }
+    }
+
+    quantityChange(optionid, event){
+        console.log('event: ', event);
+        console.log('typeof(event.target.value): ', event.target.value);
+
+        console.log('optionid: ', optionid);
+
+        var stateObj = {cart: this.state.cart};
+
+        stateObj.cart[stateObj.cart.findIndex(function(cartItem){
+            return cartItem.optionid === optionid;
+        })].quantity = Number(event.target.value);
+
+        this.setState(Object.assign({}, this.state, stateObj));
+    }
+
+
+    updateCartQuantity(){
+    }
+
+    deleteCartItem(optionid){
+        var stateObj = {cart: this.state.cart};
+
+        stateObj.cart.splice(stateObj.cart.findIndex(function(cartItem){
+            return cartItem.optionid === optionid;
+        }), 1);
+
+        this.setState(Object.assign({}, stateObj));
     }
 
     render() {
 
+        console.log(this.state.cart);
+
         var cartItems = this.state.cart? this.state.cart.map(function(cartItem) {
-            return (<ProductCartView cartObject={cartItem}/>)
-        }):[];
+                    return (<ProductCartView key={cartItem.optionid} quantityChange={this.quantityChange} deleteCartItem = {this.deleteCartItem} cartItem={cartItem}/>)
+                }.bind(this)):[];
+
+        var itemNumber = this.state.cart? this.state.cart.reduce(function(acum, cartItem){return acum + cartItem.quantity}, 0) : 0;
+        var subTotal = this.state.cart? this.state.cart.reduce(function(acum, cartItem){return acum + cartItem.quantity * cartItem.optionprice}, 0) : 0;
         
-        console.log(this.props.cart)
         return (
             <div className='cart-body'>
                 <div className='cart-upper'>
                     <div className='cart-upper-left'>
 
-                        <CartSecOne />
+                        <CartSecOne subTotal = {subTotal}/>
 
                         <div className='headers'>
                             <p className='cart-title'>Shopping Cart</p>
@@ -55,7 +86,7 @@ class Cart extends Component {
                             { cartItems }
 
                         </div>
-                        <div className='totally-total'><p>Subtotal: 1 (items): <span>$5</span></p></div>  
+                        <div className='totally-total'><p>Subtotal: {itemNumber} (items): <span>{subTotal}</span></p></div>  
 
                         <p className='little-more-info'>The price and availability of items at Amazon.com are subject to change. The Cart is a temporary place to store a list of your items and reflects each item's most recent price. <span>Learn more</span>
                         <br></br>Do you have a gift card or promotional code? We'll ask you to enter your claim code when it's time to pay.</p>
@@ -65,7 +96,7 @@ class Cart extends Component {
                     </div>
                     <div className='cart-upper-right'>
 
-                        <CartSummary />
+                        <CartSummary subTotal = {subTotal} itemNumber = {itemNumber}/>
 
                         <RecProducts />
                         
