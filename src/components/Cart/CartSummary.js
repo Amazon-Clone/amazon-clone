@@ -18,7 +18,7 @@ class CartSummary extends Component {
                 <div className='sum-mid'>
                     <h1 className='mid-sec-subtot'>Subtotal ({ this.props.itemNumber } item): <span>${ this.props.subTotal }</span></h1>
                     <div className='displ-fl'><input type="checkbox"/><p>This order contains a gift</p></div>
-                    <button className='sub-mid-butt'>Proceed to checkout</button>
+                    <button onClick = {this.props.checkoutCart} className='sub-mid-butt'>Proceed to checkout</button>
                     <p>1-Click ordering is not available for at least one item in your order.</p>
                 </div>
                 <div className='sum-bot'>

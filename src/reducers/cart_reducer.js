@@ -1,4 +1,4 @@
-import {GET_CART} from '../actions/getCart';
+import {GET_CART} from '../actions/cart';
 
 const INITIAL_STATE = { all: [], post: null };
 
