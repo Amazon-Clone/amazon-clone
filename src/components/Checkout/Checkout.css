@@ -23,7 +23,6 @@
 .checkout-leftside {
     width: 72%;
     min-width: 660px;
-    display: flex;
     margin-right: 10px;
 }
 
