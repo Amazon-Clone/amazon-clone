@@ -54,3 +54,81 @@
     height: 77px;
 }
 
+.checkout-product-content {
+    width: 75%;
+    margin-left: 18px;
+    padding-right: 10px;
+
+}
+.checkout-product-content h2{
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.checkout-cost {
+    color: #C7644B;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+.checkout-product-content p {
+    font-size: 13px;
+    margin-top: 4px;
+}
+.checkout-product-content p a {
+    font-size: 11px;
+    text-decoration: none;
+    color: #4881ea;
+    margin-left: 3px;
+}
+
+.checkout-stock {
+    color: #C7644B;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.checkout-product-content h3{
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+.checkout-product-content h3 a{
+    font-size: 11px;
+    text-decoration: none;
+    color: #4881ea;
+    margin-left: 3px;
+    font-weight: 500;
+}
+
+.checkout-sold-by {
+    font-size: 13px;
+    margin-top: 5px;
+    color: gray;
+}
+
+.checkout-product-content button {
+    display: flex;
+    margin-top: 5px;
+}
+.checkout-product-content button p{
+    font-size: 11px;
+    margin-bottom: 2px;
+}
+.checkout-product-content button img {
+    width: 16px;
+    height: 16px;
+    margin-top: 1px;
+    margin-right: 4px;
+}
+
+.other-gift-option {
+    font-size: 11px;
+    margin-top: 3px;
+    color: gray;
+}
+
+.checkout-product-right {
+    
+}
