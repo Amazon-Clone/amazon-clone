@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CheckoutUser from './CheckoutUser'
 import PlaceOrder from  './PlaceOrder'
+import CheckoutProd from './CheckoutProd'
 import './Checkout.css'
 
 class Checkout extends Component {
@@ -13,6 +14,7 @@ class Checkout extends Component {
                     <div className='checkout-main-content'>
                         <div className='checkout-leftside'>
                             <CheckoutUser />
+                            <CheckoutProd />
                         </div>
                         <div className='checkout-rightside'>
                             <PlaceOrder/>
