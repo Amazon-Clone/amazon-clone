@@ -5,6 +5,7 @@
     border-color: #E8E8E8;
     border-style: solid;
     border-radius: 5px;
+    min-width: 284px;
 }
 
 .place-order-inner-box {

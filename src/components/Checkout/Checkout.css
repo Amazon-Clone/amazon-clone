@@ -29,3 +29,36 @@
 .checkout-rightside {
     width: 26%;
 }
+
+.checkout-footer-container {
+    width: 100%;
+    height: 178px;
+    margin-top: 15px;
+    border-bottom-width: 1px;
+    border-color: #E8E8E8;
+    border-style: solid;
+}
+.checkout-footer-container p {
+    margin-top: 15px;
+    font-size: 11px;
+    color: gray;
+    line-height: 18px;
+}
+.checkout-footer-container p a {
+    margin-top: 15px;
+    font-size: 11px;
+    color: gray;
+    line-height: 18px;
+    text-decoration: none;
+    color: #4881ea;
+}
+
+.checkout-condition-footer {
+    text-align: center;
+    font-size: 11px;
+    margin-top: 17px;
+}
+.checkout-condition-footer a {
+    text-decoration: none;
+    color: #4881ea;
+}

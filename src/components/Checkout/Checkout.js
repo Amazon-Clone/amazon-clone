@@ -20,6 +20,14 @@ class Checkout extends Component {
                             <PlaceOrder/>
                         </div>
                     </div>
+                    <div className='checkout-footer-container'>
+                        <p>Do you need help? Explore our <a href='#'>Help pages</a> or <a href='#'>contact us</a></p>
+                        <p>For an item sold by Amazon.com: When you click the "Place your order" button, we'll send you an email message acknowledging receipt of your order. Your contract to purchase an item will not be complete until we send you an email notifying you that the item has been shipped.</p>
+                        <p>Colorado, Oklahoma, South Dakota and Vermont Purchasers: <a href='#'>Important information regarding sales tax you may owe in your State</a></p>
+                        <p>Within 30 days of delivery, you may return new, unopened merchandise in its original condition. Exceptions and restrictions apply. See Amazon.com's <a href='#' >Returns Policy</a></p>
+                        <p>Go to the <a href='#'>Amazon.com homepage</a> without completing your order.</p>
+                    </div>
+                    <div className='checkout-condition-footer'><a href='#'>Conditions of Use </a> | <a href='#'>Privacy Notice</a> © 1996-2017, Amazon.com, Inc.</div>
                 </div>
             </div>
         );
