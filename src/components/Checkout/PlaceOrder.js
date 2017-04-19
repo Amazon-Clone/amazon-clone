@@ -17,7 +17,21 @@ class PlaceOrder extends Component {
                         <p >Shipping & handling:</p>
                         <p >$17.43</p>
                     </div>
-                    <hr/>
+                    <div className='order-price'>
+                        <p >Total before tax:</p>
+                        <p >$2,266.43</p>
+                    </div>
+                    <div className='order-price shipping-handling'>
+                        <p >Estimated tax to be collected:</p>
+                        <p >$154.06</p>
+                    </div>
+                    <div className='order-price-total'>
+                        <h2 >Order Total:</h2>
+                        <h2>$2,420.49</h2>
+                    </div>
+                </div>
+                <div className='shipping-cost-calc'>
+                    <a href='#'>How are shipping costs calculated?</a>
                 </div>
             </div>
         );

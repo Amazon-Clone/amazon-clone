@@ -58,3 +58,36 @@
     border-color: #E8E8E8;
     padding-bottom: 12px;
 }
+
+.order-price-total {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+
+}
+.order-price-total h2 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    color: #C7644B;
+}
+
+.shipping-cost-calc {
+    width: 100%;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F7F7;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-width: 1px;
+    border-color: #E8E8E8;
+}
+
+.shipping-cost-calc a {
+    text-decoration: none;
+    font-size: 11px;
+    color: #4881ea;
+}
