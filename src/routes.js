@@ -10,6 +10,7 @@ import Register from './components/Register/Register'
 import Login from './components/Login/Login'
 import ProductDetails from './components/ProductDetails/ProductDetails'
 import Cart from './components/Cart/Cart'
+import Checkout from './components/Checkout/Checkout'
 
 export default(
     <Route>
@@ -21,5 +22,7 @@ export default(
     </Route>
     <Route path='/register' component={ Register }/>
     <Route path='/login' component={ Login }/>
+    <Route path='/checkout' component={ Checkout }/>
+
     </Route>
 )

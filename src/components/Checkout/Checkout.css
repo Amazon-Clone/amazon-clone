@@ -1,0 +1,32 @@
+.checkout-main-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.checkout-center-box {
+    width: 86%;
+    max-width: 1100px;
+    margin-top: 20px;
+}
+.checkout-review-order {
+    margin: 21px 0;
+    font-size: 21px;
+}
+
+.checkout-main-content {
+    width: 100%;
+    display: flex;
+}
+
+.checkout-leftside {
+    width: 74%;
+    min-width: 660px;
+    display: flex;
+    margin-right: 10px;
+}
+
+.checkout-rightside {
+    width: 24%;
+}

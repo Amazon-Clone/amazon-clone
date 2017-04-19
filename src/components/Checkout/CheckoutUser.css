@@ -1,0 +1,120 @@
+.checkout-user-container {
+    width: 96%;
+    height: 144px;
+    border-width: 1px;
+    border-color: #E8E8E8;
+    border-style: solid;
+    border-radius: 5px;
+    display: flex;
+}
+
+.checkout-user-col-a {
+    width: 33%;
+    margin-top: 14px;
+    margin-left: 13px;
+}
+
+.checkout-user-address {
+    list-style: none;
+}
+
+.checkout-user-address h1{
+    font-size: 13px;
+}
+
+.checkout-user-address a{
+    font-size: 11px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #4881ea;
+    margin-left: 4px;
+}
+.checkout-user-address li{
+    margin-top: 6px;
+    font-size: 13px;
+
+}
+
+.checkout-user-col-b {
+    width: 33%;
+    margin-top: 14px;
+    margin-left: 13px;
+}
+
+.checkout-user-payment {
+    list-style: none;
+}
+
+.checkout-user-payment h1{
+    font-size: 13px;
+}
+.checkout-user-payment a{
+    font-size: 11px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #4881ea;
+    margin-left: 4px;
+}
+.checkout-user-payment li{
+    font-size: 13px;
+    display: flex;
+}
+.checkout-user-payment li p{
+    padding-top: 4px;
+    margin-left: 2px;
+}
+.checkout-user-billing {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.checkout-user-billing h1{
+    font-size: 13px;
+}
+.checkout-user-billing a{
+    font-size: 11px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #4881ea;
+    margin-left: 4px;
+}
+.checkout-user-billing li{
+    font-size: 13px;
+    display: flex;
+}
+.checkout-user-billing li p{
+    padding-top: 4px;
+    margin-left: 2px;
+}
+
+.checkout-user-col-c {
+    width: 33%;
+    margin-top: 14px;
+    margin-left: 13px;
+}
+
+.checkout-user-coupon {
+    list-style: none;
+}
+.checkout-user-coupon h1 {
+    font-size: 13px;
+}
+.checkout-user-coupon li {
+    margin-top: 10px;
+    display: flex;
+}
+.checkout-user-coupon input {
+    width: 152px;
+    height: 32px;
+    border-color: silver;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    color: #E8E8E8;
+}
+
+.checkout-user-coupon button {
+    width: 54px;
+    margin-left: 6px;
+}
+
