@@ -4,18 +4,7 @@ import './Cart.css'
 class CartSecOne extends Component {
     constructor(props) {
         super(props)
-
-        this.state = {
-            total: 0,
-            savings: 0
-        }
-        
-
-
     }
-
-
-
 
     render() {
 
@@ -32,13 +21,13 @@ class CartSecOne extends Component {
                 <div className='cult-right'>
                     <div>
                         <div className='cult-up'>
-                            <h6 className='widthth'>Current Total:</h6><h6>${ this.state.total }</h6>
+                            <h6 className='widthth'>Current Total:</h6><h6>${ this.props.subTotal }</h6>
                         </div>
                         <div className='cult-upa'>
-                            <h6 className='heavy widthth'>Savings:</h6><h6 className='border-bot heavy'>${ this.state.savings }</h6>
+                            <h6 className='heavy widthth'>Savings:</h6><h6 className='border-bot heavy'>${ this.props.subTotal? '-50' : '0'}</h6>
                         </div>
                         <div className='cult-upa'>
-                            <h6 className='red widthth'>Cost After Savings:</h6><h6 className='red'>$ {this.state.total - this.state.savings}</h6>
+                            <h6 className='red widthth'>Cost After Savings:</h6><h6 className='red'>$ {(this.props.subTotal? (this.props.subTotal - 50).toFixed(2) : 0)}</h6>
                         </div>
                     </div>
                 </div>

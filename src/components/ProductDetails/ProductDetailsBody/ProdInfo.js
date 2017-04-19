@@ -8,21 +8,22 @@ class ProdInfo extends Component {
         
     }
     componentDidUpdate(prevProps, prevState) {
-        console.log(this.state.product)
     }
 
     changeOption(number){
         this.setState(Object.assign({}, this.state, {defaultOption: this.state.product[number]}))
+        this.props.getChildState(this.state.product[number]);
     }
     
     
     componentDidMount(){
-        console.log("testing", this.props.urlParams)
         getOneProduct(this.props.urlParams.id).payload
         .then(product => {
             this.setState({
             product: product.data,
             defaultOption: product.data[0]})
+
+            this.props.getChildState({product: product.data[0]});
         })
 
     }
@@ -31,7 +32,6 @@ class ProdInfo extends Component {
 //   }
 
     render() {
-        console.log("props",this.props)
         // const product = this.state.product[0];
         
 

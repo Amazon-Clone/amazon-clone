@@ -70,7 +70,7 @@ class RightProdMisc extends Component {
                     {/*<form onSubmit={this.onSubmit}>*/}
                         <button
                             className='addCartBtn check'
-                            onClick={this.state.product? this.handleSubmit.bind(this, this.state.product[0]): console.log('not ready')}
+                            onClick={this.state.product? this.handleSubmit.bind(this, Object.assign({quantity: 1, discount: 0}, this.state.product[0])) : console.log('not ready')}
                             type="submit">
                             <div className='cartIcon'></div>
                             <h2 className='cartText'>Add to Cart</h2>

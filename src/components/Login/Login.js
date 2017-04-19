@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import LoginForm from './LoginForm'
 import { login } from '../../actions/login'
+import { browserHistory } from 'react-router';
 
 
 class Login extends Component {
@@ -10,10 +11,9 @@ class Login extends Component {
         // const user = this.props.user[0] || {}
         login(values).payload.then( function(response) {
             console.log(response)
-
                 if( response.data === 'auth successful') {
                     alert('Login Successful') 
-                return  window.location.href = '#'
+                browserHistory.push('/');
             }   else {
                 return alert('Incorrect Username or Password')
             }

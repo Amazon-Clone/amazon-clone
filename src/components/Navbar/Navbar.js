@@ -19,7 +19,7 @@ class Navbar extends Component {
                             <div className='nav-all-dropdown'>All</div>
                             <input type="text" placeholder="" className="nav-input" tabIndex="19"></input>
                             <div className="nav-searchBtn">
-                                <div className='searchIcon'></div>
+                                <Link to='/product'><div className='searchIcon'></div></Link>
                             </div>
                         </div>
                         <div>
