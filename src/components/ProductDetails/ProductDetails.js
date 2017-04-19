@@ -9,9 +9,24 @@ import './productDetails.css'
 
 class ProductDetails extends Component {
 
+    constructor(props){
+        super(props);
+
+        this.getChildState.bind(this);
+    }
+
+
+    getChildState(stateObj){
+        this.setState(Object.assign({}, this.state, stateObj));
+
+        console.log('parentStateObj', stateObj);
+    }
+
 
     render() {
         
+        
+
         
         return (
             
@@ -20,7 +35,7 @@ class ProductDetails extends Component {
                 <div className='ProdDetailsBody'>
                     <LeftPhotos urlParams={this.props.params}/>
                     <MainPhoto urlParams={this.props.params}/>
-                    <ProdInfo urlParams={this.props.params}/>
+                    <ProdInfo getChildState={this.getChildState} urlParams={this.props.params}/>
                     <RightProdMisc urlParams={this.props.params}/>
 
                 </div>

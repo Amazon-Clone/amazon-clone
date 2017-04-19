@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { getUser } from '../../../actions/get_user'
+import { Link } from 'react-router'
 import './NavRight.css'
 import LanguageMenu from './RightMenus/LanguageMenu'
 import SignInMenu from './RightMenus/SignInMenu'
@@ -51,7 +52,7 @@ class NavRight extends Component {
                     <div className='cart'>
                         <div className='cartCount'>0</div>
                     </div>
-                    <h1>Cart</h1>
+                    <Link to='/cart'><h1>Cart</h1></Link>
                 </div>  
             </div>
             <div className='languageMenu'><LanguageMenu/> </div>
