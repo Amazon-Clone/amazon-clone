@@ -14,16 +14,16 @@ import Checkout from './components/Checkout/Checkout'
 
 export default(
     <Route>
-
+        <Route>
         <Route path='/' component={ App }>
             <IndexRoute component={ Home }/>
             <Route path='/product' component={ Product }/>
             <Route path='/product/:id' component={ ProductDetails }/>
-            <Route path='/cart' component={ Cart }/>
-            <Route path='/register' component={ Register }/>
-            <Route path='/login' component={ Login }/>
-            <Route path='/checkout' component={ Checkout }/>
+            <Route path='/cart' component={ Cart }/>>
         </Route>
-
+        <Route path='/register' component={ Register }/>
+        <Route path='/login' component={ Login }/>
+        <Route path='/checkout' component={ Checkout }/>
+        </Route>
     </Route>
 )
