@@ -25,6 +25,38 @@ class CheckoutProd extends Component {
                     </div>
                     <div className='checkout-product-right'>
                         <h1>Choose a delivery option:</h1>
+                        <div className='checkout-radio-button'>
+                            <input type="radio"/>
+                            <div className='checkout-radio-align'>
+                                <h2>April 25-29</h2>
+                                <p>FREE Shipping</p>
+                            </div>
+                            
+                        </div>
+                        <div className='checkout-radio-button'>
+                            <input type="radio"/>
+                            <div className='checkout-radio-align'>
+                                <h2>Tuesday, April 25</h2>
+                                <p>$12.22 - Standard Shipping</p>
+                            </div>
+                            
+                        </div>
+                        <div className='checkout-radio-button'>
+                            <input type="radio"/>
+                            <div className='checkout-radio-align'>
+                                <h2>Friday, April 21</h2>
+                                <p>$17.43 - Two-Day Shipping</p>
+                            </div>
+                            
+                        </div>
+                        <div className='checkout-radio-button'>
+                            <input type="radio"/>
+                            <div className='checkout-radio-align'>
+                                <h2>Thursday April 20</h2>
+                                <p>$30.93 - One-Day Shipping</p>
+                            </div>
+                            
+                        </div>
                     </div>
                 </div>
             </div>

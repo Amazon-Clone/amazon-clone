@@ -130,5 +130,27 @@
 }
 
 .checkout-product-right {
-    
+    margin-top: 12px;
+}
+
+.checkout-product-right h1 {
+    font-size: 13px;
+}
+
+.checkout-radio-button {
+    display: flex;
+    margin-top: 5px;
+}
+.checkout-radio-align {
+    margin-top: 2px;
+    margin-left: 6px;
+}
+.checkout-radio-align h2 {
+    color: #32AD32; 
+    font-size: 13px;
+}
+.checkout-radio-align p {
+    margin-top: 8px;
+    font-size: 13px;
+    color: gray;
 }
