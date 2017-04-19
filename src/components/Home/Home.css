@@ -24,3 +24,57 @@
 .home-main-everything h1, .home-main-everything h2, .home-main-everything h3,.home-main-everything h4,.home-main-everything h5,.home-main-everything h6 {
   font-weight: 100
 }
+.homeAfterSignIn{
+  height: 65px;
+  width: 100%;
+  background-color: #232F3E;
+  display: flex;
+}
+.initials{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #DDD277;
+  color: white;
+  text-align: center;
+  padding-top: 12px;
+  font-size: 25px;
+  margin: auto 0px;
+  font-weight:200;
+  margin-left: 30px;
+}
+.home-hi{
+  color: white;
+  margin: auto 0px;
+  margin-left: 3%;
+  font-size: 15px;
+  font-family: arial;
+  font-weight: 800;
+  
+}
+.home-orders{
+  /*display: flex;*/
+  border-left: .5px solid lightgray;
+  height: 50px;
+  margin: auto 0px;
+  padding-left: 20px;
+  margin-left: 5%;
+}
+.your-orders{
+  margin-top: 10px;
+  color: #CCCCCC;
+  font-size: 13px;
+}
+.recent-orders{
+  color: white;
+  font-size: 16px;
+  margin-top: 5px;
+}
+.home-prime{
+  /*display: flex;*/
+  /*border-left: .5px solid lightgray;*/
+  height: 50px;
+  margin: auto 0px;
+  padding-left: 20px;
+  margin-left: 5%;
+}
