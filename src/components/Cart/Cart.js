@@ -7,8 +7,9 @@ import CartSummary from './CartSummary'
 import RecProducts from './RecProducts'
 import AlsoBoughtCarousel from './AlsoBoughtCarousel'
 import AlsoBoughtCarousel2 from './AlsoBoughtCarousel2'
-import { getCart } from '../../actions/getCart'
+import { getCart, checkoutCart } from '../../actions/cart'
 import { connect } from 'react-redux'
+import {browserHistory} from 'react-router'
 
 class Cart extends Component {
     constructor(props) {
@@ -20,12 +21,21 @@ class Cart extends Component {
         this.props.getCart()
         this.deleteCartItem = this.deleteCartItem.bind(this);
         this.quantityChange = this.quantityChange.bind(this);
+        this.checkoutCart = this.checkoutCart.bind(this);
+
+
+        console.log(this.props);
     }
 
     componentDidUpdate(){
         if(!this.state.cart && this.props.cart && this.props.cart.length !== 0){
             this.setState(Object.assign({}, {cart: this.props.cart}));
         }
+    }
+
+    checkoutCart(){
+        this.props.checkoutCart();
+        browserHistory.push('/checkout');
     }
 
     quantityChange(optionid, event){
@@ -42,7 +52,6 @@ class Cart extends Component {
 
         this.setState(Object.assign({}, this.state, stateObj));
     }
-
 
     updateCartQuantity(){
     }
@@ -96,7 +105,7 @@ class Cart extends Component {
                     </div>
                     <div className='cart-upper-right'>
 
-                        <CartSummary subTotal = {subTotal} itemNumber = {itemNumber}/>
+                        <CartSummary checkoutCart = {this.checkoutCart} subTotal = {subTotal} itemNumber = {itemNumber}/>
 
                         <RecProducts />
                         
@@ -119,6 +128,7 @@ function mapStateToProps(state) {
 const mapDispatchToProps = dispatch => (
     {
         getCart: () => { dispatch(getCart()) },
+        checkoutCart: () => {dispatch(checkoutCart())}
     }
 );
 

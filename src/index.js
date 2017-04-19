@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
-import { Router, hashHistory } from 'react-router';
+import { Router, hashHistory, browserHistory } from 'react-router';
 import reducers from './reducers/index.js';
 // import promise from 'redux-promise';
 import promiseMiddleware from 'redux-promise-middleware';
@@ -12,7 +12,7 @@ const createStoreWithMiddleware = applyMiddleware(promiseMiddleware())(createSto
 
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
-    <Router history={hashHistory} routes={routes} />
+    <Router history={browserHistory} routes={routes} />
   </Provider>,
   document.getElementById('root')
 );
