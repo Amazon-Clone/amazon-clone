@@ -2,13 +2,9 @@ import React, { Component } from 'react';
 import { Field, reduxForm } from 'redux-form'
 import './Login.css';
 import { Link } from 'react-router';
-import { browserHistory } from 'react-router';
+
 
 class LoginForm extends Component {
-
-    handleClick() {
-        browserHistory.push('/');
-    }
 
     render() {
         const { handleSubmit } = this.props;
@@ -28,7 +24,7 @@ class LoginForm extends Component {
                             <label className='word-seperator' htmlFor="userpassword"><p>Password</p> <a href='#'>Forgot your password?</a></label>
                             <Field className='input-field-input' name="userpassword" component="input" type="password" />
                         </div>
-                        <button className='button-register' type="submit" onClick = {this.handleClick}>Sign in</button>
+                        <button className='button-register' type="submit">Sign in</button>
                         <div className='keep-me-signed-sec'>
                             <input className='input-checkbox-thing' type="checkbox" />
                             <p>Keep me signed in. <a href='#'>Details</a></p>

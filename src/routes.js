@@ -10,16 +10,18 @@ import Register from './components/Register/Register'
 import Login from './components/Login/Login'
 import ProductDetails from './components/ProductDetails/ProductDetails'
 import Cart from './components/Cart/Cart'
+import Checkout from './components/Checkout/Checkout'
 
 export default(
     <Route>
-    <Route path='/' component={ App }>
-        <IndexRoute component={ Home }/>
-        <Route path='/product' component={ Product }/>
-        <Route path='/product/:id' component={ ProductDetails }/>
-        <Route path='/cart' component={ Cart }></Route>
-    </Route>
-    <Route path='/register' component={ Register }/>
-    <Route path='/login' component={ Login }/>
+        <Route path='/' component={ App }>
+            <IndexRoute component={ Home }/>
+            <Route path='/product' component={ Product }/>
+            <Route path='/product/:id' component={ ProductDetails }/>
+            <Route path='/cart' component={ Cart }/>
+            <Route path='/register' component={ Register }/>
+            <Route path='/login' component={ Login }/>
+            <Route path='/checkout' component={ Checkout }/>
+        </Route>
     </Route>
 )

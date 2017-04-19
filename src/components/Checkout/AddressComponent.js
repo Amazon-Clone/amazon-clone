@@ -2,7 +2,12 @@ import React, {Component} from 'react';
 
 class AddressComponent extends Component{
     render(){
+
+
+        return(        
         <div className="addressComponentContainer">
+
+
             <div className="titleContainer">
                 <h3><span>1</span> Choose a shipping address</h3>
             </div>
@@ -12,11 +17,10 @@ class AddressComponent extends Component{
                 </div>
                 <div>Placeholder addresses</div>
             </div>
-            
-
-            
-            
-
         </div>
+        );
     }
 }
+
+
+export default AddressComponent;
