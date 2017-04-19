@@ -21,13 +21,12 @@
 }
 
 .checkout-leftside {
-    width: 74%;
+    width: 72%;
     min-width: 660px;
     display: flex;
     margin-right: 10px;
 }
 
 .checkout-rightside {
-    width: 24%;
-    margin-left: 10px;
+    width: 26%;
 }

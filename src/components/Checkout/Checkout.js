@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CheckoutUser from './CheckoutUser'
+import PlaceOrder from  './PlaceOrder'
 import './Checkout.css'
 
 class Checkout extends Component {
@@ -14,7 +15,7 @@ class Checkout extends Component {
                             <CheckoutUser />
                         </div>
                         <div className='checkout-rightside'>
-
+                            <PlaceOrder/>
                         </div>
                     </div>
                 </div>
