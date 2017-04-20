@@ -22,9 +22,6 @@ class Cart extends Component {
         this.deleteCartItem = this.deleteCartItem.bind(this);
         this.quantityChange = this.quantityChange.bind(this);
         this.checkoutCart = this.checkoutCart.bind(this);
-
-
-        console.log(this.props);
     }
 
     componentDidUpdate(){
@@ -67,8 +64,6 @@ class Cart extends Component {
     }
 
     render() {
-
-        console.log(this.state.cart);
 
         var cartItems = this.state.cart? this.state.cart.map(function(cartItem) {
                     return (<ProductCartView key={cartItem.optionid} quantityChange={this.quantityChange} deleteCartItem = {this.deleteCartItem} cartItem={cartItem}/>)

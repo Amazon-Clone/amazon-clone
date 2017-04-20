@@ -11,7 +11,7 @@ class PlaceOrder extends Component {
                     <h1>Order Summary</h1>
                     <div className='order-price'>
                         <p >Items:</p>
-                        <p >$2,249.00</p>
+                        <p >{this.props.subTotal}</p>
                     </div>
                     <div className='order-price shipping-handling' >
                         <p >Shipping & handling:</p>
