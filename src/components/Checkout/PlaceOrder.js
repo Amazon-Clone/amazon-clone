@@ -11,23 +11,23 @@ class PlaceOrder extends Component {
                     <h1>Order Summary</h1>
                     <div className='order-price'>
                         <p >Items:</p>
-                        <p >{this.props.subTotal}</p>
+                        <p >{this.props.subTotal.toFixed(2)}</p>
                     </div>
                     <div className='order-price shipping-handling' >
                         <p >Shipping & handling:</p>
-                        <p >$17.43</p>
+                        <p >{this.props.shippingTotal.toFixed(2)}</p>
                     </div>
                     <div className='order-price'>
                         <p >Total before tax:</p>
-                        <p >$2,266.43</p>
+                        <p >{(this.props.subTotal + this.props.shippingTotal).toFixed(2)}</p>
                     </div>
                     <div className='order-price shipping-handling'>
                         <p >Estimated tax to be collected:</p>
-                        <p >$154.06</p>
+                        <p >{((this.props.subTotal + this.props.shippingTotal) * 0.08).toFixed(2)}</p>
                     </div>
                     <div className='order-price-total'>
                         <h2 >Order Total:</h2>
-                        <h2>$2,420.49</h2>
+                        <h2>{((this.props.subTotal + this.props.shippingTotal) +  (this.props.subTotal + this.props.shippingTotal) * 0.08).toFixed(2)}</h2>
                     </div>
                 </div>
                 <div className='shipping-cost-calc'>

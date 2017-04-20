@@ -32,10 +32,11 @@ class CheckoutProd extends Component {
                         </div>
                     </div>
 
+                    <form action="">
                         <div className='checkout-product-right'>
                             <h1>Choose a delivery option:</h1>
                             <div className='checkout-radio-button'>
-                                <input type="radio" name="shipping" value={0}/>
+                                <input onChange={this.props.changeShippingCost} type="radio" name='shipping' value={0} />
                                 <div className='checkout-radio-align'>
                                     <h2>April 25-29</h2>
                                     <p>FREE Shipping</p>
@@ -43,7 +44,7 @@ class CheckoutProd extends Component {
 
                             </div>
                             <div className='checkout-radio-button'>
-                                <input type="radio" name="shipping" value={12.22}/>
+                                <input onChange={this.props.changeShippingCost} type="radio" name='shipping' value={12.22} />
                                 <div className='checkout-radio-align'>
                                     <h2>Tuesday, April 25</h2>
                                     <p>$12.22 - Standard Shipping</p>
@@ -51,7 +52,7 @@ class CheckoutProd extends Component {
 
                             </div>
                             <div className='checkout-radio-button'>
-                                <input type="radio" name="shipping" value={17.43}/>
+                                <input onChange={this.props.changeShippingCost} type="radio" name='shipping' value={17.43} />
                                 <div className='checkout-radio-align'>
                                     <h2>Friday, April 21</h2>
                                     <p>$17.43 - Two-Day Shipping</p>
@@ -59,7 +60,7 @@ class CheckoutProd extends Component {
 
                             </div>
                             <div className='checkout-radio-button'>
-                                <input type="radio" name="shipping" value={30.93}/>
+                                <input onChange={this.props.changeShippingCost} type="radio" name='shipping' value={30.93} />
                                 <div className='checkout-radio-align'>
                                     <h2>Thursday April 20</h2>
                                     <p>$30.93 - One-Day Shipping</p>
@@ -67,6 +68,8 @@ class CheckoutProd extends Component {
 
                             </div>
                         </div>
+                    </form>
+
                 </div>
             </div>
         );
