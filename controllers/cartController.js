@@ -4,8 +4,6 @@ var db = app.get('db');
 
 var cart = {
   addProductToCart: function(req, res) {
-    console.log('add', req.body);
-
       var cartObj = req.body;
 
       if (Array.isArray(req.session.cart)) {

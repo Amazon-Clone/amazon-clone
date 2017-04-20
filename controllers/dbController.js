@@ -8,74 +8,75 @@ var dbController = {
             if (error) {
                 res.status(500).send(error);
             } else if (!result) {
-                res.status(501).send();
+                res.status(404).send();
             } else {
-                req.result = result;
-                next();
+                res.status(200).send(result);
             }
         });
     },
 
-    getCategories: function(req, res, next){
-        db.getCategories(function(error, result){
-            if(error){
+    getCategories: function (req, res, next) {
+        db.getCategories(function (error, result) {
+            if (error) {
                 res.status(500).send();
-            }else{
+            } else {
                 res.status(200).send(result);
-            }         
+            }
         });
     },
 
-    getProductById: function(req, res, next) {
+    getProductById: function (req, res, next) {
         db.getProductById([req.params.id], function (error, result) {
             if (error) {
                 res.status(500).send(error);
             } else if (!result) {
                 res.status(501).send();
             } else {
-                req.result = result;
-                next();
+                res.status(200).send(result);
             }
         });
     },
 
     checkoutCart: function (req, res, next) {
 
-        var cartid;
+        // var cartid;
 
-        console.log(req.session.passport);
+        // var result = db.carts.insertSync({
+        //     userid: req.session.passport.user
+        // }, function (error, result) {
+        //     if (error) {
+        //         console.log(error);
+        //         res.status(500).send(error);
+        //     }else{
+        //         return result;
+        //     }
+        // });
 
-        var result = db.carts.insertSync({
-            userid: req.session.passport.user
-        }, function (error, result) {
-            if (error) {
-                res.status(500).send(error);
-            }
-        });
+        // console.log('my', result);
 
-        var cartId = result[0].cartid;
+        db.createCart(req.session.passport.user, function(error, result){
 
-        db.createCart([req.session.passport.user], function (error, result) {
+            var cartid = result[0].cartid;
 
-            if (error) {
-                res.status(500).send(error);
-            } else {
-                req.session.cart.forEach(function (element) {
-                    db.checkoutCartElement([cartId, element.productid, element.optionid, element.quantity, element.discount], function (error, result) {
-                        if (error) {
-                            res.status(500).send(error);
-                        }
-                    });
+            req.session.cart.forEach(function (element) {
+
+                console.log('my ', cartid);
+                console.log('ement', element);
+
+
+                db.checkoutCartElement([cartid, element.productid, element.optionid, element.quantity, element.discount], function (error, result) {
+                    if (error) {
+                        res.status(500).send(error);
+                    }else{
+                        res.status(200).send(result);
+                    }
                 });
-            }
+            });
         });
-
-        res.status(200).send(cartId);
     },
 
     registerUser: function (req, res) {
 
-        console.log(req.body);
         var salt = bcrypt.genSaltSync(10);
         var hash = bcrypt.hashSync(req.body.userpassword);
 
@@ -89,14 +90,11 @@ var dbController = {
     },
 
     currentUser: function (req, res) {
-        console.log(req.session);
 
         db.getNames(req.session.passport.user, function (err, result) {
             if (err) {
                 res.status(404).send(err);
             } else {
-
-                console.log(result);
                 res.status(200).send(result[0]);
             }
         });

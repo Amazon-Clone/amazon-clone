@@ -1,4 +1,4 @@
-SELECT queryA.optionId, queryA.productName, queryA.optionName, queryA.productBrand, queryA.productPrime, queryA.productFreeShipping, jsonb_object_agg(OptionSpecs.optionSpecName, OptionSpecs.optionSpecText) AS optionSpecs, queryA.optionImageUrl, queryA.optionDimensions, queryA.optionWeight, queryA.optionLastPrice, queryA.optionPrice FROM
+SELECT $1 AS productId, queryA.optionId, queryA.productName, queryA.optionName, queryA.productBrand, queryA.productPrime, queryA.productFreeShipping, jsonb_object_agg(OptionSpecs.optionSpecName, OptionSpecs.optionSpecText) AS optionSpecs, queryA.optionImageUrl, queryA.optionDimensions, queryA.optionWeight, queryA.optionLastPrice, queryA.optionPrice FROM
 (SELECT Options.optionId, Products.productName, Options.optionName, Products.productBrand, Products.productPrime, Products.productFreeShipping , jsonb_agg(OptionImages.imageUrl) AS optionImageUrl, Options.optionDimensions, Options.optionWeight, Options.optionLastPrice, Options.optionPrice FROM Products
 INNER JOIN Options ON Options.productId = Products.productid
 RIGHT JOIN OptionImages ON OptionImages.optionId = Options.optionId
