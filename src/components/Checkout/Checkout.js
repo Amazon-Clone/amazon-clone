@@ -1,23 +1,49 @@
 import React, { Component } from 'react';
 import CheckoutUser from './CheckoutUser'
-import PlaceOrder from  './PlaceOrder'
+import PlaceOrder from './PlaceOrder'
 import CheckoutProd from './CheckoutProd'
 import './Checkout.css'
+import { connect } from 'react-redux'
 
 class Checkout extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {};
+
+        this.changeShippingCost.bind(this);
+    }
+
+    componentWillMount() {
+        if (!this.state.cart && this.props.cart && this.props.cart.length !== 0) {
+            this.setState(Object.assign({}, this.state, {shippingCost: 0}, { cart: this.props.cart }));
+        }
+    }
+
+    changeShippingCost(event){
+        this.setState({}, this.state, {shippingCost: event.target.value});
+    }
+
     render() {
+
+        var subTotal = this.state.cart ? this.state.cart.reduce(function (acum, cartItem) { return acum + cartItem.quantity * cartItem.optionprice }, 0) : 0;
+
+        var orderItems = this.state.cart ? this.state.cart.map(function (orderItem) {
+            return (<CheckoutProd key={orderItem.optionid} changeShippingCost = {this.changeShippingCost} orderItem={orderItem} />)
+        }) : [];
+
         return (
             <div className='checkout-main-container'>
                 <div className='checkout-center-box'>
-                    <img src="/images/checkout-images/confirm-banner.gif" alt=""/>
+                    <img src="/images/checkout-images/confirm-banner.gif" alt="" />
                     <h1 className='checkout-review-order'>Review your order</h1>
                     <div className='checkout-main-content'>
                         <div className='checkout-leftside'>
                             <CheckoutUser />
-                            <CheckoutProd />
+                            {orderItems}
                         </div>
                         <div className='checkout-rightside'>
-                            <PlaceOrder/>
+                            <PlaceOrder subTotal={subTotal} />
                         </div>
                     </div>
                     <div className='checkout-footer-container'>
@@ -34,5 +60,19 @@ class Checkout extends Component {
     }
 }
 
-export default Checkout;
+function mapStateToProps(state) {
+    return {
+        cart: state.cart.all
+    }
+}
+
+const mapDispatchToProps = dispatch => (
+    {
+        getCart: () => { dispatch(getCart()) }
+    }
+);
+
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Checkout);
 
