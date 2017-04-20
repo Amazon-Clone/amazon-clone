@@ -18,7 +18,7 @@ class TheDressShop extends Component {
 }
 
   onHo(target) {
-        if (this.props.user.userfirstname == 'JacobTheMagnificent'){
+        if (this.props.user.userfirstname == 'jacob'){
           console.log('mistana')
         this.setState({
             [target]: { 
@@ -51,7 +51,9 @@ class TheDressShop extends Component {
           <video style={this.state.fake} preload="auto" autoPlay='true' src="./images/homeimages/tinko.mp4" className='dress-shop-vid-cont1' loop>
           </video>
             <div className='leftcover-home'></div>
+            <div className='leftcover-home2'></div>
             <div className='rightcover-home'></div>
+            <div className='rightcover-home2'></div>
         </div>
         <div className='dress-shop-base-link'>
           <hr></hr>

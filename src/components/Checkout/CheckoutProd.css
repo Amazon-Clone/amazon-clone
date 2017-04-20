@@ -58,6 +58,8 @@
     width: 75%;
     margin-left: 18px;
     padding-right: 10px;
+    min-width: 300px;
+    margin-right: 10px;
 
 }
 .checkout-product-content h2{
