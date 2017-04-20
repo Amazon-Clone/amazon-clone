@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import RegisterForm from './RegisterForm'
 import { register } from '../../actions/signup'
-
+import { browserHistory } from 'react-router';
 
 class Register extends Component {
     // submit = (values) => {
@@ -13,7 +13,7 @@ class Register extends Component {
         register(values).payload.then((response)=>{
             if(response.status === 200) {
                 alert('Register Successful')
-                window.location.href = '#/login'
+                browserHistory.push('/login');
             }
             else {
                 alert('Username/Email Exists')
