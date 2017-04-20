@@ -11,17 +11,36 @@ class Checkout extends Component {
         super(props);
         this.state = {};
 
-        this.changeShippingCost.bind(this);
+        this.changeShippingCost = this.changeShippingCost.bind(this);
     }
 
     componentWillMount() {
         if (!this.state.cart && this.props.cart && this.props.cart.length !== 0) {
-            this.setState(Object.assign({}, this.state, {shippingCost: 0}, { cart: this.props.cart }));
+
+            var newCart = this.props.cart;
+
+            newCart.forEach(function(element){
+                    element.shippingCost = 0;
+            });
+
+            this.setState(Object.assign({}, this.state, { cart: newCart}));
         }
     }
 
-    changeShippingCost(event){
-        this.setState({}, this.state, {shippingCost: event.target.value});
+
+
+    changeShippingCost(optionid, event){
+        var newCart = this.state.cart;
+        
+        newCart.forEach(function(element){
+            if (element['optionid'] === optionid){
+                element.shippingCost = Number(event.target.value);
+            }
+        });
+
+        console.log(event.target.value, optionid);
+
+        this.setState(Object.assign({}, this.state, {cart: newCart}));
     }
 
     render() {
@@ -29,8 +48,10 @@ class Checkout extends Component {
         var subTotal = this.state.cart ? this.state.cart.reduce(function (acum, cartItem) { return acum + cartItem.quantity * cartItem.optionprice }, 0) : 0;
 
         var orderItems = this.state.cart ? this.state.cart.map(function (orderItem) {
-            return (<CheckoutProd key={orderItem.optionid} changeShippingCost = {this.changeShippingCost} orderItem={orderItem} />)
-        }) : [];
+            return (<CheckoutProd key={orderItem.optionid} changeShippingCost = {this.changeShippingCost.bind(this, orderItem.optionid)} orderItem={orderItem} />)
+        }.bind(this)) : [];
+
+        var shippingTotal = this.state.cart? this.state.cart.reduce(function(acum, cartItem){ return acum + cartItem.shippingCost}, 0) : 0;
 
         return (
             <div className='checkout-main-container'>
@@ -43,7 +64,7 @@ class Checkout extends Component {
                             {orderItems}
                         </div>
                         <div className='checkout-rightside'>
-                            <PlaceOrder subTotal={subTotal} />
+                            <PlaceOrder subTotal={subTotal} shippingTotal={shippingTotal}/>
                         </div>
                     </div>
                     <div className='checkout-footer-container'>
