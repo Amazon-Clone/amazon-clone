@@ -3,9 +3,29 @@ import CheckoutUser from './CheckoutUser'
 import PlaceOrder from  './PlaceOrder'
 import CheckoutProd from './CheckoutProd'
 import './Checkout.css'
+import {connect} from 'react-redux'
 
 class Checkout extends Component {
+
+    constructor(props){
+        super(props);
+        this.state = {shippingTotal: 0};
+    }
+
+    sumShippingCost(event){
+
+    }
+
     render() {
+
+        console.log(this.props.cart);
+
+        var subTotal = this.props.cart.reduce(function(acum, cartItem){return acum + cartItem.quantity * cartItem.optionprice}, 0);
+
+        var orderItems = this.props.cart.map(function(orderItem){
+            return(<CheckoutProd orderItem={orderItem}/>)
+        })
+
         return (
             <div className='checkout-main-container'>
                 <div className='checkout-center-box'>
@@ -14,10 +34,10 @@ class Checkout extends Component {
                     <div className='checkout-main-content'>
                         <div className='checkout-leftside'>
                             <CheckoutUser />
-                            <CheckoutProd />
+                            {orderItems}
                         </div>
                         <div className='checkout-rightside'>
-                            <PlaceOrder/>
+                            <PlaceOrder subTotal={subTotal}/>
                         </div>
                     </div>
                     <div className='checkout-footer-container'>
@@ -34,5 +54,19 @@ class Checkout extends Component {
     }
 }
 
-export default Checkout;
+function mapStateToProps(state) {
+    return {
+        cart: state.cart.all
+    }
+}
+
+const mapDispatchToProps = dispatch => (
+    {
+        getCart: () => { dispatch(getCart()) }
+    }
+);
+
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Checkout);
 
