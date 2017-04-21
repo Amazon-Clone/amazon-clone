@@ -150,9 +150,6 @@ class Product extends Component {
                         <SideNav className="sideNav" handleSetState={this.handleSetState} handleCheckboxSetState={this.handleCheckboxSetState} handleCheckbox={this.handleCheckbox} categories={this.props.categories}></SideNav>
                         <div className="itemContainer">
                             {products}
-                            {products}
-                            {products}
-
                         </div>
                     </div>
                     <div className='put-some-pad'>
