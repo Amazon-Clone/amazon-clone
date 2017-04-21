@@ -84,7 +84,7 @@ class DepartmentMenu extends Component {
                             <h1 onMouseOver={this.onHoverC.bind(this, 'v')} onMouseOut={this.onExitB.bind(this, 'v')}>Credit & Payment Products</h1>
                         </div>
 
-                        <div onMouseOver={this.onHoverB.bind(this, 'b')} onMouseOut={this.onExitB.bind(this, 'b')} className='sliding-slider' style={this.state.b}></div>
+                        <div onMouseOver={this.onHoverB.bind(this, 'b')} onMouseOut={this.onExitB.bind(this, 'b')} className='sliding-slider sliding-slider1' style={this.state.b}></div>
                         <div  onMouseOver={this.onHoverC.bind(this, 'c')} onMouseOut={this.onExitB.bind(this, 'c')} className='sliding-slider sliding-slider2' style={this.state.c}></div>
                         <div  onMouseOver={this.onHoverC.bind(this, 'd')} onMouseOut={this.onExitB.bind(this, 'd')} className='sliding-slider sliding-slider3' style={this.state.d}></div>
                         <div  onMouseOver={this.onHoverC.bind(this, 'e')} onMouseOut={this.onExitB.bind(this, 'e')} className='sliding-slider sliding-slider4' style={this.state.e}></div>
