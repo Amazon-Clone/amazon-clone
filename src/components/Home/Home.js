@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { getUser } from '../../actions/get_user'
+import { Link } from 'react-router'
 import './Home.css'
 
 import Carousel from './Carousel';
@@ -8,15 +11,21 @@ import TheDressShop from './The_dress_shop.js'
 import LastSection from './Last_Section'
 
 class Home extends Component {
+     componentDidMount() {
+        this.props.getUser();
+    }
+
     render() {
+        const user = this.props.user || {}
         return (
             <div className='home-main-everything'>
 
                 <Carousel />
-                <div className='homeAfterSignIn'>
+                <div className='homeAfterSignIn' >
                     <div className='initials'>AC</div>
                     {/************* Fill in with real data below *****************/}
-                    <div className='home-hi'>Hi, Nathan</div>
+                   
+                    <div className='home-hi' key={user}>Hi, {(user.userfirstname ? user.userfirstname : ' Sign in' )} </div>
                     <div className='home-orders'> 
                         <div className='your-orders'>Your Orders</div>
                         <div className='recent-orders'>0 recent orders</div>
@@ -45,4 +54,11 @@ class Home extends Component {
     }
 }
 
-export default Home;
+function mapStateToProps(state) {
+    return {
+        user: state.user.all
+    }
+}
+// export default Home;
+
+export default connect(mapStateToProps, { getUser })(Home);

@@ -26,9 +26,11 @@
 }
 .homeAfterSignIn{
   height: 65px;
-  width: 100%;
+  min-width: 1000px;
+  max-width: 1500px;
   background-color: #232F3E;
   display: flex;
+  margin: 0 auto;
 }
 .initials{
   height: 50px;
