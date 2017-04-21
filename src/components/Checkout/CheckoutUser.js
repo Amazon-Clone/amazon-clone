@@ -5,27 +5,30 @@ class CheckoutUser extends Component {
 
     render() {
 
-        
+        var last4 = this.props.formObj.cardnumber? this.props.formObj.cardnumber.slice(12) : 'XXXX';
+
 
         return (
             <div className='checkout-user-container'>
                 <div className='checkout-user-col-a'>
                     <ul className='checkout-user-address'>
-                        <h1>Shipping Address<a href='#'>Change</a></h1>
-                        <li>Sang Chun Ahn</li>
-                        <li>500N 500E</li>
-                        <li>PROVO, UT 84606-1427</li>
-                        <li>United States</li>
-                        <li>Phone: 8017035425 </li>
+                        <h1>Shipping Address<a onClick={this.props.openAddress}>Change</a></h1>
+                        <li>Recipient: {this.props.formObj.recipient}</li>
+                        <li>Address 1: {this.props.formObj.address1}</li>
+                        <li>Address 2: {this.props.formObj.address2}</li>
+                        <li>Postal Code: {this.props.zipcode}</li>
+                        <li>State: {this.props.formObj.state}</li>
+                        <li>Country: {this.props.formObj.country}</li>
+                        <li>Phone: {this.props.formObj.phone}</li>
                     </ul>
                 </div>
                 <div className='checkout-user-col-b'>
                     <ul className='checkout-user-payment'>
-                        <h1>Payment Method<a href='#'>Change</a></h1>
-                        <li><img src="/images/checkout-images/visa.gif" alt=""/><p>ending in 0059</p></li>
+                        <h1>Payment Method<a onClick={this.props.openCard}>Change</a></h1>
+                        <li><img src="/images/checkout-images/visa.gif" alt=""/><p>ending in {last4}</p></li>
                     </ul>
                     <ul className='checkout-user-billing'>
-                        <h1>Billing Address<a href='#'>Change</a></h1>
+                        <h1>Billing Address<a onClick={this.props.openCard}>Change</a></h1>
                         <li><p>Same as shipping address</p></li>
                     </ul>
                 </div>
