@@ -26,10 +26,10 @@ var massiveInstance = massive.connectSync({
 app.set('db', massiveInstance);
 var db = app.get('db');
 
-db.set_schema(function(err, data) {
-    if (err) console.log(err);
-    else console.log('All tables successfully reset');
-}) 
+// db.set_schema(function(err, data) {
+//     if (err) console.log(err);
+//     else console.log('All tables successfully reset');
+// }) 
 
 //ADD BODY PARSER
 
