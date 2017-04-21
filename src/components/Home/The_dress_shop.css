@@ -52,6 +52,15 @@
   left: 0px;
   top: 0px
 }
+.leftcover-home2 {
+  position: absolute;
+  background:#f6f6f5;
+  height: 100%;
+  width:10%;
+  left: 0px;
+  top: 0px;
+  z-index: 7;
+}
 .rightcover-home {
   position: absolute;
   background:#f6f6f5;
@@ -59,5 +68,14 @@
   width:27%;
   right: 0px;
   top: 0px;
-  z-index: 6;
+  z-index: 4;
+}
+.rightcover-home2 {
+  position: absolute;
+  background:#f6f6f5;
+  height: 110%;
+  width:10%;
+  right: 0px;
+  top: 0px;
+  z-index: 5;
 }

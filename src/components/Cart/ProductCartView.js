@@ -20,7 +20,7 @@ class ProductCartView extends Component {
                     <div className='disflex moblu'><h6 onClick = {this.props.deleteCartItem.bind(this, this.props.cartItem.optionid)}>Delete</h6>|<h6>Save for later</h6></div>
                 </div>
                 <div>
-                    <h3 className='money-pr'>{this.props.cartItem.optionprice}</h3>
+                    <h3 className='money-pr'>${this.props.cartItem.optionprice}</h3>
                 </div>
                 <div>
                     <select name="" id="" value={this.props.cartItem.quantity} onChange={this.props.quantityChange.bind(this, this.props.cartItem.optionid)}>

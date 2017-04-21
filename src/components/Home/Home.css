@@ -25,10 +25,11 @@
   font-weight: 100
 }
 .homeAfterSignIn{
-  height: 65px;
+  height: 75px;
   width: 100%;
   background-color: #232F3E;
   display: flex;
+  min-width: 1000px;
 }
 .initials{
   height: 50px;

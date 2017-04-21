@@ -9,4 +9,3 @@ module.exports = {
   localuserkey: 'postgres://postgres:25thnight@localhost/amazon-clone'
 
 };
-
