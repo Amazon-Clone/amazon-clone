@@ -16,6 +16,7 @@
 .productContainer{
     font-family: 'Arial';
     font-size: 14px;
+    width: 100%
 }
 
 .categoryGroup{
@@ -31,27 +32,34 @@
 }
 
 .mainBody{
-    /*display: flex;
-    justify-content: space-around;*/
-
     margin: 10px 0 0 0;
-
-    min-height: 1000px;
+    display: flex;
+    /*min-height: 1000px;*/
 }
 
 .sideNav{
     width: 220px;
-
+    min-width: 220px;
     float: left;
     display: inline-flex;
-    
-    
     border-right: 1px solid #DDDDDD;
 }
 
-
+.modified-wrap {
+    display: flex;
+    justify-content: space-between;
+    /*width: 50vw;*/
+    min-width: 500px;
+}
+.put-some-pad {
+    padding: 15px;
+}
 .itemContainer{
-    width: 75%;
     float: left;
 }
-
+@media(max-width:1200px){
+    .put-some-pad {
+        display: none;
+    }
+}
+    

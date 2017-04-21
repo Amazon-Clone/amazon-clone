@@ -13,6 +13,22 @@ class Item extends Component {
     }
 
     render(){
+
+        var d = new Date();
+        d.setDate(d.getDate() + 1);
+        var weekday = new Array(7);
+        weekday[0] =  "Sunday";
+        weekday[1] = "Monday";
+        weekday[2] = "Tuesday";
+        weekday[3] = "Wednesday";
+        weekday[4] = "Thursday";
+        weekday[5] = "Friday";
+        weekday[6] = "Saturday";
+        var n = weekday[d.getDay()];
+        var datee = new Date(), locale = "en-us", month = d.toLocaleString(locale, { month: "long" });
+        var guaranteeDeliv = (month + ' ' + d.getDate())
+
+
         return (
             <div className="Item">
                 <div className="itemPhotoContainer">
@@ -32,7 +48,7 @@ class Item extends Component {
                                 <p className="priceBox">$<sub>{Math.floor(this.props.productprice)}</sub> <sup>{Math.floor((this.props.productprice % 1) * 100)}</sup> </p>
 
                                 <NgIf show={this.props.productprime}><img id="primeLogo" src="https://s3-us-west-1.amazonaws.com/amazon-clone/logos/amazonprimelogo.jpg"></img></NgIf>
-                                <p className="getByText">Get it by <span className="greenText"><b>Tommorrow, April 5</b></span></p>
+                                <p className="getByText">Get it by <span className="greenText"><b>Tommorrow, {guaranteeDeliv}</b></span></p>
                                 <NgIf show={this.props.productfreeshipping}><p className="shipText">FREE Shipping on eligible orders</p></NgIf>
                             </div>
 

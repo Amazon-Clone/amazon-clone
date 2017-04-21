@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import './CheckoutUser.css'
 
 class CheckoutUser extends Component {
+
     render() {
+
+        
+
         return (
             <div className='checkout-user-container'>
                 <div className='checkout-user-col-a'>

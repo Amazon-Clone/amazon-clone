@@ -3,7 +3,7 @@
     height: 160px;
     margin: 12px 0 0 15px;
     border-top: 1px solid #DDDDDD;
-
+    min-width: 500px;
     display: flex;
 }
 
@@ -12,7 +12,8 @@
 }
 
 .itemPhoto {
-    width: 156px;
+    width: 15vw;
+    min-width: 150px;
     height: 156px;
 }
 
@@ -21,7 +22,7 @@
     display: inline-flex;
     flex-direction: column;
     justify-content: space-around;
-
+    min-width: 442px;
     background-color: white;
     height: 156px;
     width: 100%;

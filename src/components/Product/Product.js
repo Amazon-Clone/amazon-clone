@@ -6,6 +6,7 @@ import './Product.css';
 import Item from './Item/Item';
 import SideNav from './SideNav/SideNav.js';
 import { connect } from 'react-redux';
+import RecProducts from '../Cart/RecProducts'
 
 var _ = require('lodash');
 
@@ -144,10 +145,18 @@ class Product extends Component {
                 <div className="statusBar">
                     <p>Displaying <b>status</b> information</p>
                 </div>
-                <div className="mainBody">
-                    <SideNav className="sideNav" handleSetState={this.handleSetState} handleCheckboxSetState={this.handleCheckboxSetState} handleCheckbox={this.handleCheckbox} categories={this.props.categories}></SideNav>
-                    <div className="itemContainer">
-                        {products}
+                <div className='modified-wrap'>
+                    <div className="mainBody">
+                        <SideNav className="sideNav" handleSetState={this.handleSetState} handleCheckboxSetState={this.handleCheckboxSetState} handleCheckbox={this.handleCheckbox} categories={this.props.categories}></SideNav>
+                        <div className="itemContainer">
+                            {products}
+                            {products}
+                            {products}
+
+                        </div>
+                    </div>
+                    <div className='put-some-pad'>
+                    <RecProducts/>
                     </div>
                 </div>
             </div>

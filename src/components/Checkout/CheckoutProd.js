@@ -21,46 +21,23 @@ class CheckoutProd extends Component {
         weekday[4] = "Thursday";
         weekday[5] = "Friday";
         weekday[6] = "Saturday";
-
         var n = weekday[d.getDay()];
-
-        var datee = new Date(),
-            locale = "en-us",
-            month = d.toLocaleString(locale, { month: "long" });
-
+        var datee = new Date(), locale = "en-us", month = d.toLocaleString(locale, { month: "long" });
         var guaranteeDeliv = (n + ', ' + month + ' ' + d.getDate())
-
         var dgo = new Date();
         dgo.setDate(dgo.getDate() + 1);
-
         var np = weekday[dgo.getDay()];
-
-        var dateeee = new Date(),
-            locale = "en-us",
-            month1 = dgo.toLocaleString(locale, { month: "long" });
-
+        var dateeee = new Date(), locale = "en-us", month1 = dgo.toLocaleString(locale, { month: "long" });
         var choochoo= (np + ', ' + month1 + ' ' + dgo.getDate())
-
         var bongo = new Date();
         bongo.setDate(bongo.getDate() + 2);
-
         var drf = weekday[dgo.getDay()];
-
-        var bachu = new Date(),
-            locale = "en-us",
-            month2 = bongo.toLocaleString(locale, { month: "long" });
-
+        var bachu = new Date(), locale = "en-us", month2 = bongo.toLocaleString(locale, { month: "long" });
         var griffa= (drf + ', ' + month2 + ' ' + bongo.getDate())
-
         var wawa = new Date();
         wawa.setDate(wawa.getDate() + 15);
-
         var coco = weekday[wawa.getDay()];
-
-        var bachu = new Date(),
-            locale = "en-us",
-            month3 = wawa.toLocaleString(locale, { month: "long" });
-
+        var bachu = new Date(), locale = "en-us", month3 = wawa.toLocaleString(locale, { month: "long" });
         var sillo= (coco + ', ' + month3 + ' ' + wawa.getDate())
 
         console.log(this.props);
