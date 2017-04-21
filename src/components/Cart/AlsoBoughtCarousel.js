@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import HistoryRecProdItem from './HistoryRecProdItem'
 import './AlsoBought.css'
 
-class AlsoBoughtCarosel extends Component {
+class AlsoBoughtCarousel extends Component {
     render() {
 
         const arrowleft = '<';
@@ -31,4 +31,4 @@ class AlsoBoughtCarosel extends Component {
     }
 }
 
-export default AlsoBoughtCarosel;
+export default AlsoBoughtCarousel;

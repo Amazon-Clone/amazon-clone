@@ -7,7 +7,6 @@ class LastSection extends Component {
     return (
       <div className='last-section-body'>
         <div className='home-invisible-add'>
-          {/*<UpperRightAdd />*/}
         </div>
         <div className='home-deal-of-the-day'>
           <div className='home-deal-halfer'>

@@ -18,7 +18,7 @@ var connectionStringElephant = "postgres://jmmxkwaq:vo_av5qlV2z0AMVJu4WVlKDtpX8D
 var connectionStringLocal = keys.localuserkey
 
 var massiveInstance = massive.connectSync({
-    connectionString: connectionStringElephant,
+    connectionString: connectionStringLocal,
 });
 
 //SET db PROPERTY FOR BEING ABLE TO USE IT APPLICATION WIDE

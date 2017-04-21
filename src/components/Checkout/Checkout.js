@@ -98,6 +98,8 @@ class Checkout extends Component {
 
         console.log(this.state.formObj);
 
+
+
         var subTotal = this.state.cart ? this.state.cart.reduce(function (acum, cartItem) { return acum + cartItem.quantity * cartItem.optionprice }, 0) : 0;
 
         var orderItems = this.state.cart ? this.state.cart.map(function (orderItem) {

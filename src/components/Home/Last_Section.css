@@ -11,10 +11,11 @@
 .home-invisible-add{
   height:52%;
   width:100%;
-  background: white;
+  background-image: url(/images/homeimages/handofgod.jpg);
+  background-size: cover;
+  background-position: center;
 }
 .home-overflow {
-  /*width:200%;*/
   margin-bottom:50px;
 }
 .home-deal-of-the-day {

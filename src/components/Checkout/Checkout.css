@@ -37,6 +37,7 @@
     border-bottom-width: 1px;
     border-color: #E8E8E8;
     border-style: solid;
+    min-width: 1000px;
 }
 .checkout-footer-container p {
     margin-top: 15px;

@@ -9,11 +9,12 @@ class Carousel extends Component {
       infinite: true,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 5,
-      arrows: true,
+      slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 3000
+      autoplaySpeed: 3000,
+      // arrows:true
     }
+
     
     return (
       <Slider className='home-main-advertisement' {...settings}>

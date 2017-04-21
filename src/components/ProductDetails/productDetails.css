@@ -1,6 +1,6 @@
 .ProdDetailsBody {
     display: flex;
-
+    min-width: 1000px
 }
 
 .prodPhotos {
@@ -277,22 +277,26 @@ margin-top: 15px;
 .leftPhotosMain{
     width: 6vw;
     padding-left: 10px;
+    min-width: 60px;
 }
 .mainPhoto{
     width: 27vw;
     margin-top: 70px;
+    min-width: 242px;
 }
 .prodInfoMain{
     width: 48vw;
     padding-left: 30px;
     padding-top: 20px;
     font-family: arial;
+    min-width: 500px;
     
 }
 
 
 .prodMiscMain{
     width: 17vw;
+    min-width: 220px;
    ;
 }
 

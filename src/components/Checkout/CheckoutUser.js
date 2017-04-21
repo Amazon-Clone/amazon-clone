@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 import './CheckoutUser.css'
 
 class CheckoutUser extends Component {
-    render() {
+
+    render() {      
 
         var last4 = this.props.formObj.cardnumber? this.props.formObj.cardnumber.slice(12) : 'XXXX';
+
 
         return (
             <div className='checkout-user-container'>

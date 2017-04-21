@@ -2,3 +2,7 @@
     font-size: 14px;
     line-height: 18px;
 }
+.recprod {
+    max-width: 300px;
+    float: right;
+}
