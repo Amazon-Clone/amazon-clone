@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { getUser } from '../../actions/get_user'
+import { Link } from 'react-router'
 import './Home.css'
 
 import Carousel from './Carousel';
@@ -11,6 +14,9 @@ import { connect } from 'react-redux';
 import { getUser } from '../../actions/get_user';
 
 class Home extends Component {
+
+//      componentDidMount() {
+
     constructor(props) {
         super(props)
         
@@ -20,10 +26,14 @@ class Home extends Component {
     }
 
     componentDidMount() {
+
         this.props.getUser();
     }
 
     render() {
+
+//         const user = this.props.user || {}
+
 
         let show = null;
 
@@ -31,10 +41,12 @@ class Home extends Component {
             show = (<HomeAfterSignIn/>)
         }
 
+
         return (
             <div className='home-main-everything'>
 
                 <Carousel />
+
                 
                     {show}
 
@@ -54,5 +66,8 @@ function mapStateToProps(state) {
         user: state.user.all
     }
 }
+
+// export default Home;
+
 
 export default connect(mapStateToProps, { getUser })(Home);

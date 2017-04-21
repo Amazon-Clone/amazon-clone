@@ -25,11 +25,20 @@
   font-weight: 100
 }
 .homeAfterSignIn{
+
+/*   height: 65px; */
+  min-width: 1000px;
+  max-width: 1500px;
+/*   background-color: #232F3E;
+  display: flex; */
+  margin: 0 auto;
+
   height: 75px;
-  width: 100%;
+/*   width: 100%; */
   background-color: #232F3E;
   display: flex;
-  min-width: 1000px;
+/*   min-width: 1000px; */
+
 }
 .initials{
   height: 50px;
