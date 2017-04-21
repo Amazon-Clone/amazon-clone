@@ -31,7 +31,6 @@ class ProductDetails extends Component {
         return (
             
             <div className='fonts'>
-                <ProdDetailsNav/>
                 <div className='ProdDetailsBody'>
                     <LeftPhotos urlParams={this.props.params}/>
                     <MainPhoto urlParams={this.props.params}/>
