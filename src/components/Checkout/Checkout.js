@@ -6,38 +6,32 @@ import './Checkout.css'
 import { connect } from 'react-redux'
 import Modal from 'react-modal'
 import AddressForm from './AddressForm.js'
+import CreditCardForm from './CreditCardForm.js'
+import { payCart } from '../../actions/cart'
 
 class Checkout extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {formObj: {}};
 
         this.changeShippingCost = this.changeShippingCost.bind(this);
 
-        this.openModal = this.openAddress.bind(this);
-        this.afterOpenModal = this.afterOpenAddress.bind(this);
-        this.closeModal = this.closeAddress.bind(this);
+        this.openAddress = this.openAddress.bind(this);
+        this.afterOpenAddress = this.afterOpenAddress.bind(this);
+        this.closeAddress = this.closeAddress.bind(this);
+
+
+        this.openCard = this.openCard.bind(this);
+        this.afterOpenCard = this.afterOpenCard.bind(this);
+        this.closeCard = this.closeCard.bind(this);
+        this.handleChangeForm = this.handleChangeForm.bind(this);
+
+        this.payCart = this.props.payCart.bind(this, this.state.formObj);
+
     }
 
-
-
-
-    openAddress() {
-        this.setState({ addressOpen: true });
-    }
-
-    afterOpenAddress() {
-        // references are now sync'd and can be accessed.
-        this.refs.subtitle.style.color = '#f00';
-    }
-
-    closeAddress() {
-        this.setState({ addressOpen: false });
-    }
-
-
-    componentWillMount() {
+    componentDidMount() {
         if (!this.state.cart && this.props.cart && this.props.cart.length !== 0) {
 
             var newCart = this.props.cart;
@@ -48,6 +42,40 @@ class Checkout extends Component {
 
             this.setState(Object.assign({}, this.state, { cart: newCart }));
         }
+    }
+
+    handleChangeForm(key, event){
+
+        var tempObj = this.state.formObj;
+        tempObj[key] = event.target.value;
+
+        this.setState(Object.assign({}, this.state, {formObj: tempObj}));
+    }
+
+    openAddress() {
+        this.setState(Object.assign({}, this.state, { addressOpen: true }));
+    }
+
+    afterOpenAddress() {
+        // references are now sync'd and can be accessed.
+        this.refs.subtitle.style.color = '#f00';
+    }
+
+    closeAddress() {
+        this.setState(Object.assign({}, this.state, { addressOpen: false }));
+    }
+
+    openCard() {
+        this.setState(Object.assign({}, this.state, { cardOpen: true }));
+    }
+
+    afterOpenCard() {
+        // references are now sync'd and can be accessed.
+        this.refs.subtitle.style.color = '#f00';
+    }
+
+    closeCard() {
+        this.setState(Object.assign({}, this.state, { cardOpen: false }));
     }
 
 
@@ -68,7 +96,8 @@ class Checkout extends Component {
 
     render() {
 
-       
+        console.log(this.state.formObj);
+
 
         var subTotal = this.state.cart ? this.state.cart.reduce(function (acum, cartItem) { return acum + cartItem.quantity * cartItem.optionprice }, 0) : 0;
 
@@ -85,12 +114,13 @@ class Checkout extends Component {
                     <h1 className='checkout-review-order'>Review your order</h1>
                     <div className='checkout-main-content'>
                         <div className='checkout-leftside'>
-                            <CheckoutUser openAddress = {this.openAddress}/>
-                            <AddressForm isOpen={this.state.addressOpen} openAddress={this.openAddress} afterOpenAddress={this.afterOpenAddress} closeModal={this.closeModal}></AddressForm>
+                            <CheckoutUser formObj = {this.state.formObj} openAddress = {this.openAddress} openCard={this.openCard}/>
+                            <AddressForm handleChangeForm = {this.handleChangeForm} addressOpen={this.state.addressOpen} openAddress={this.openAddress} afterOpenAddress={this.afterOpenAddress} closeAddress={this.closeAddress}></AddressForm>
+                            <CreditCardForm handleChangeForm = {this.handleChangeForm} cardOpen={this.state.cardOpen} openCard={this.openCard} afterOpenCard={this.afterOpenCard} closeCard={this.closeCard}></CreditCardForm>
                             {orderItems}
                         </div>
                         <div className='checkout-rightside'>
-                            <PlaceOrder subTotal={subTotal} shippingTotal={shippingTotal} />
+                            <PlaceOrder payCart = {this.payCart}  subTotal={subTotal} shippingTotal={shippingTotal} />
                         </div>
                     </div>
                     <div className='checkout-footer-container'>
@@ -109,13 +139,15 @@ class Checkout extends Component {
 
 function mapStateToProps(state) {
     return {
-        cart: state.cart.all
+        cart: state.cart.all,
+        pay: state.cart.pay
     }
 }
 
 const mapDispatchToProps = dispatch => (
     {
-        getCart: () => { dispatch(getCart()) }
+        getCart: () => { dispatch(getCart()) },
+        payCart: () => { dispatch(payCart()) }
     }
 );
 

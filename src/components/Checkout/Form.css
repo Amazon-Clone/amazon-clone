@@ -1,0 +1,18 @@
+.closex{
+    height: 16px;
+    width: 16px;
+
+    align-self: flex-end;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: 'Arial';
+}
+
+.submit{
+    align-self: flex-end;
+}
