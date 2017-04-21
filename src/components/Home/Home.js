@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { getUser } from '../../actions/get_user'
 import { Link } from 'react-router'
 import './Home.css'
 
