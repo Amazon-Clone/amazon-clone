@@ -4,10 +4,7 @@ import { register } from '../../actions/signup'
 import { browserHistory } from 'react-router';
 
 class Register extends Component {
-    // submit = (values) => {
-    //     console.log(values);
-    //     register(value)
-    // }
+
     submit(values) {
         console.log(values)
         register(values).payload.then((response)=>{
