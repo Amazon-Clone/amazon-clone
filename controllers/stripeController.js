@@ -13,9 +13,6 @@ var stripeController = {
 
         useremail = user[0].useremail;
 
-        console.log(user);
-
-
         var amount = req.session.cart.reduce(function(sumTotal, currElement) {
             return sumTotal + currElement.quantity * currElement.optionprice;
         }, 0);
@@ -27,10 +24,10 @@ var stripeController = {
             return stripe.customers.createSource(customer.id, {
                 source: {
                     object: 'card',
-                    exp_month: req.body.exp_month,
-                    exp_year: req.body.exp_year,
+                    exp_month: req.body.cardexpmo,
+                    exp_year: req.body.cardexpyr,
                     number: req.body.cardnumber,
-                    cvc: req.body.cvc
+                    cvc: req.body.cardcvc
                 }
             });
         }).then(function(source) {
@@ -43,6 +40,8 @@ var stripeController = {
             res.status(200).send(charge);
         }).catch(function(err) {
             res.status(400).send(err);
+
+            console.log(err);
         });
 
     }
