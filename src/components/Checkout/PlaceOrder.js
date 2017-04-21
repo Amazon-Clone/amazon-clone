@@ -6,7 +6,7 @@ class PlaceOrder extends Component {
         return (
             <div className='place-order-container'>
                 <div className='place-order-inner-box'>
-                    <button>Place your order</button>
+                    <button onClick = {this.props.payCart}>Place your order</button>
                     <div className='order-condition'>By placing your order, you agree to Amazon's <a href='#'>privacy notice</a> and <a href='#'>conditions of use.</a></div>
                     <h1>Order Summary</h1>
                     <div className='order-price'>
