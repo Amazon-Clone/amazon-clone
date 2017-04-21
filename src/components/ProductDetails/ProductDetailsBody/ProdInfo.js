@@ -33,7 +33,6 @@ class ProdInfo extends Component {
 
     render() {
         // const product = this.state.product[0];
-        
 
         function create(){
             var i = 0;

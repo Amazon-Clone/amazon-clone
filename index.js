@@ -18,13 +18,18 @@ var connectionStringElephant = "postgres://jmmxkwaq:vo_av5qlV2z0AMVJu4WVlKDtpX8D
 var connectionStringLocal = keys.localuserkey
 
 var massiveInstance = massive.connectSync({
-    connectionString: connectionStringLocal,
+    connectionString: connectionStringElephant,
 });
 
 //SET db PROPERTY FOR BEING ABLE TO USE IT APPLICATION WIDE
 
 app.set('db', massiveInstance);
 var db = app.get('db');
+
+// db.set_schema(function(err, data) {
+//     if (err) console.log(err);
+//     else console.log('All tables successfully reset');
+// }) 
 
 //ADD BODY PARSER
 
