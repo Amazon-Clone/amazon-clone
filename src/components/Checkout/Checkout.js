@@ -4,6 +4,8 @@ import PlaceOrder from './PlaceOrder'
 import CheckoutProd from './CheckoutProd'
 import './Checkout.css'
 import { connect } from 'react-redux'
+import Modal from 'react-modal'
+import AddressForm from './AddressForm.js'
 
 class Checkout extends Component {
 
@@ -12,35 +14,56 @@ class Checkout extends Component {
         this.state = {};
 
         this.changeShippingCost = this.changeShippingCost.bind(this);
+
+        this.openModal = this.openAddress.bind(this);
+        this.afterOpenModal = this.afterOpenAddress.bind(this);
+        this.closeModal = this.closeAddress.bind(this);
     }
+
+
+
+
+    openAddress() {
+        this.setState({ addressOpen: true });
+    }
+
+    afterOpenAddress() {
+        // references are now sync'd and can be accessed.
+        this.refs.subtitle.style.color = '#f00';
+    }
+
+    closeAddress() {
+        this.setState({ addressOpen: false });
+    }
+
 
     componentWillMount() {
         if (!this.state.cart && this.props.cart && this.props.cart.length !== 0) {
 
             var newCart = this.props.cart;
 
-            newCart.forEach(function(element){
-                    element.shippingCost = 0;
+            newCart.forEach(function (element) {
+                element.shippingCost = 0;
             });
 
-            this.setState(Object.assign({}, this.state, { cart: newCart}));
+            this.setState(Object.assign({}, this.state, { cart: newCart }));
         }
     }
 
 
 
-    changeShippingCost(optionid, event){
+    changeShippingCost(optionid, event) {
         var newCart = this.state.cart;
-        
-        newCart.forEach(function(element){
-            if (element['optionid'] === optionid){
+
+        newCart.forEach(function (element) {
+            if (element['optionid'] === optionid) {
                 element.shippingCost = Number(event.target.value);
             }
         });
 
         console.log(event.target.value, optionid);
 
-        this.setState(Object.assign({}, this.state, {cart: newCart}));
+        this.setState(Object.assign({}, this.state, { cart: newCart }));
     }
 
     render() {
@@ -48,10 +71,10 @@ class Checkout extends Component {
         var subTotal = this.state.cart ? this.state.cart.reduce(function (acum, cartItem) { return acum + cartItem.quantity * cartItem.optionprice }, 0) : 0;
 
         var orderItems = this.state.cart ? this.state.cart.map(function (orderItem) {
-            return (<CheckoutProd key={orderItem.optionid} changeShippingCost = {this.changeShippingCost.bind(this, orderItem.optionid)} orderItem={orderItem} />)
+            return (<CheckoutProd key={orderItem.optionid} changeShippingCost={this.changeShippingCost.bind(this, orderItem.optionid)} orderItem={orderItem} />)
         }.bind(this)) : [];
 
-        var shippingTotal = this.state.cart? this.state.cart.reduce(function(acum, cartItem){ return acum + cartItem.shippingCost}, 0) : 0;
+        var shippingTotal = this.state.cart ? this.state.cart.reduce(function (acum, cartItem) { return acum + cartItem.shippingCost }, 0) : 0;
 
         return (
             <div className='checkout-main-container'>
@@ -60,11 +83,12 @@ class Checkout extends Component {
                     <h1 className='checkout-review-order'>Review your order</h1>
                     <div className='checkout-main-content'>
                         <div className='checkout-leftside'>
-                            <CheckoutUser />
+                            <CheckoutUser openAddress = {this.openAddress}/>
+                            <AddressForm isOpen={this.state.addressOpen} openAddress={this.openAddress} afterOpenAddress={this.afterOpenAddress} closeModal={this.closeModal}></AddressForm>
                             {orderItems}
                         </div>
                         <div className='checkout-rightside'>
-                            <PlaceOrder subTotal={subTotal} shippingTotal={shippingTotal}/>
+                            <PlaceOrder subTotal={subTotal} shippingTotal={shippingTotal} />
                         </div>
                     </div>
                     <div className='checkout-footer-container'>
