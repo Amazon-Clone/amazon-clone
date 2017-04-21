@@ -9,12 +9,66 @@ class CheckoutProd extends Component {
 
     render() {
 
+//dont ever touch this cause we will never fig it out again
+
+        var d = new Date();
+        d.setDate(d.getDate() + 7);
+        var weekday = new Array(7);
+        weekday[0] =  "Sunday";
+        weekday[1] = "Monday";
+        weekday[2] = "Tuesday";
+        weekday[3] = "Wednesday";
+        weekday[4] = "Thursday";
+        weekday[5] = "Friday";
+        weekday[6] = "Saturday";
+
+        var n = weekday[d.getDay()];
+
+        var datee = new Date(),
+            locale = "en-us",
+            month = d.toLocaleString(locale, { month: "long" });
+
+        var guaranteeDeliv = (n + ', ' + month + ' ' + d.getDate())
+
+        var dgo = new Date();
+        dgo.setDate(dgo.getDate() + 1);
+
+        var np = weekday[dgo.getDay()];
+
+        var dateeee = new Date(),
+            locale = "en-us",
+            month1 = dgo.toLocaleString(locale, { month: "long" });
+
+        var choochoo= (np + ', ' + month1 + ' ' + dgo.getDate())
+
+        var bongo = new Date();
+        bongo.setDate(bongo.getDate() + 2);
+
+        var drf = weekday[dgo.getDay()];
+
+        var bachu = new Date(),
+            locale = "en-us",
+            month2 = bongo.toLocaleString(locale, { month: "long" });
+
+        var griffa= (drf + ', ' + month2 + ' ' + bongo.getDate())
+
+        var wawa = new Date();
+        wawa.setDate(wawa.getDate() + 15);
+
+        var coco = weekday[wawa.getDay()];
+
+        var bachu = new Date(),
+            locale = "en-us",
+            month3 = wawa.toLocaleString(locale, { month: "long" });
+
+        var sillo= (coco + ', ' + month3 + ' ' + wawa.getDate())
+
         console.log(this.props);
 
         return (
             <div className='checkout-product-container'>
                 <div className='checkout-delivery-box'>
-                    <h1>Guaranteed delivery: April 21, 2017</h1>
+                    <h1>Guaranteed delivery: {guaranteeDeliv}</h1>
                     <p>If you order in the next 5 hours and 30 minutes</p> <span>(<a href='#'>Details</a>)</span>
                 </div>
                 <div className='checkout-product-bottom'>
@@ -38,7 +92,7 @@ class CheckoutProd extends Component {
                             <div className='checkout-radio-button'>
                                 <input onChange={this.props.changeShippingCost} type="radio" name='shipping' value={0} />
                                 <div className='checkout-radio-align'>
-                                    <h2>April 25-29</h2>
+                                    <h2>{sillo}</h2>
                                     <p>FREE Shipping</p>
                                 </div>
 
@@ -46,7 +100,7 @@ class CheckoutProd extends Component {
                             <div className='checkout-radio-button'>
                                 <input onChange={this.props.changeShippingCost} type="radio" name='shipping' value={12.22} />
                                 <div className='checkout-radio-align'>
-                                    <h2>Tuesday, April 25</h2>
+                                    <h2>{guaranteeDeliv}</h2>
                                     <p>$12.22 - Standard Shipping</p>
                                 </div>
 
@@ -54,7 +108,7 @@ class CheckoutProd extends Component {
                             <div className='checkout-radio-button'>
                                 <input onChange={this.props.changeShippingCost} type="radio" name='shipping' value={17.43} />
                                 <div className='checkout-radio-align'>
-                                    <h2>Friday, April 21</h2>
+                                    <h2>{griffa}</h2>
                                     <p>$17.43 - Two-Day Shipping</p>
                                 </div>
 
@@ -62,7 +116,7 @@ class CheckoutProd extends Component {
                             <div className='checkout-radio-button'>
                                 <input onChange={this.props.changeShippingCost} type="radio" name='shipping' value={30.93} />
                                 <div className='checkout-radio-align'>
-                                    <h2>Thursday April 20</h2>
+                                    <h2>{choochoo}</h2>
                                     <p>$30.93 - One-Day Shipping</p>
                                 </div>
 
