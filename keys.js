@@ -6,7 +6,6 @@ module.exports = {
   stripeSecretKey: stripeSecretKey,
   sessionSecretKey: sessionSecretKey,
 
-  localuserkey: 'postgres://postgres:@localhost/amazon-clone'
+  localuserkey: 'postgres://postgres:Testies1-1@localhost/front2back'
 
 };
-
