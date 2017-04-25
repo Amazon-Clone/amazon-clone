@@ -49,10 +49,12 @@ class NavRight extends Component {
                     <div className='tryPrimeMenu'><TryPrimeMenu/> </div>
                 </div>
                 <div className="words">
+
+                    <Link to='/cart'>
                     <div className='cart'>
                         <div className='cartCount'>0</div>
-                    </div>
-                    <Link to='/cart'><h1>Cart</h1></Link>
+                    </div></Link>
+                    
                 </div>  
             </div>
             <div className='languageMenu'><LanguageMenu/> </div>

@@ -11,7 +11,7 @@ var port = 9876;
 
 //REQUIRING GITIGNORED SECRET KEYS
 
-// var keys = require('./keys.js');
+var keys = require('./keys.js');
 
 //CONNECT db USING connectionString
 var connectionStringElephant = "postgres://jmmxkwaq:vo_av5qlV2z0AMVJu4WVlKDtpX8DQ-Sd@stampy.db.elephantsql.com:5432/jmmxkwaq";
@@ -26,10 +26,10 @@ var massiveInstance = massive.connectSync({
 app.set('db', massiveInstance);
 var db = app.get('db');
 
-// db.set_schema(function(err, data) {
-//     if (err) console.log(err);
-//     else console.log('All tables successfully reset');
-// }) 
+db.set_schema(function(err, data) {
+    if (err) console.log(err);
+    else console.log('All tables successfully reset');
+}) 
 
 //ADD BODY PARSER
 
@@ -43,7 +43,7 @@ app.use(bodyParser.urlencoded({
 app.use(session({
     saveUninitialized: false,
     resave: false,
-    secret: process.env.sessionSecretKey
+    secret: keys.sessionSecretKey
 }));
 
 
@@ -68,7 +68,7 @@ var stripeController = require('./controllers/stripeController.js');
 
 //ADD STATIC SERVE
 
-// app.use(express.static(__dirname + '/public-alt'));
+app.use(express.static('/public'));
 
 //AUTH METHODS
 
@@ -99,9 +99,9 @@ app.get('/api/user', authController.authorize, dbController.currentUser);
 
 //TEST METHODS
 
-// app.post('/api/cart/charge', authController.authorize, stripeController.makePayment); //AUTHORIZE MAKES IT REQUIRE LOGIN
+app.post('/api/cart/charge', authController.authorize, stripeController.makePayment); //AUTHORIZE MAKES IT REQUIRE LOGIN
 
 //LISTEN TO PORT X
-app.listen( process.env.PORT || port, function() {
+app.listen(port, function() {
     console.log('Listening on port: ', port);
 });

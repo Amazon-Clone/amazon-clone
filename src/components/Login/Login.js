@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import LoginForm from './LoginForm'
 import { login } from '../../actions/login'
-import { browserHistory } from 'react-router';
+import { hashHistory } from 'react-router';
 
 
 class Login extends Component {
@@ -13,7 +13,7 @@ class Login extends Component {
             console.log(response)
                 if( response.data === 'auth successful') {
                     alert('Login Successful') 
-                browserHistory.push('/');
+                hashHistory.push('/');
             }   else {
                 return alert('Incorrect Username or Password')
             }
