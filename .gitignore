@@ -11,7 +11,7 @@ importCsvFiles.sql
 /coverage
 
 # production
-/build
+
 
 # misc
 .DS_Store
