@@ -27,9 +27,7 @@
     "redux-promise-middleware": "^4.2.0",
     "slick-carousel": "^1.6.0",
     "stripe": "^4.16.0",
-    "stripe.js": "0.0.1"
-  },
-  "devDependencies": {
+    "stripe.js": "0.0.1",
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.1",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
@@ -44,6 +42,9 @@
     "webpack": "^2.3.3",
     "webpack-dev-server": "^2.4.2",
     "xlsx": "^0.9.9"
+  },
+  "devDependencies": {
+
   },
   "scripts": {
     "build": "webpack"
