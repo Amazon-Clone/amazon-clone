@@ -102,6 +102,6 @@ app.get('/api/user', authController.authorize, dbController.currentUser);
 app.post('/api/cart/charge', authController.authorize, stripeController.makePayment); //AUTHORIZE MAKES IT REQUIRE LOGIN
 
 //LISTEN TO PORT X
-app.listen(port, function() {
+app.listen(process.env.PORT || port, function() {
     console.log('Listening on port: ', port);
 });
