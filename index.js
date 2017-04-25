@@ -15,10 +15,10 @@ var keys = require('./keys.js');
 
 //CONNECT db USING connectionString
 var connectionStringElephant = "postgres://jmmxkwaq:vo_av5qlV2z0AMVJu4WVlKDtpX8DQ-Sd@stampy.db.elephantsql.com:5432/jmmxkwaq";
-var connectionStringLocal = keys.localuserkey
+// var connectionStringLocal = keys.localuserkey
 
 var massiveInstance = massive.connectSync({
-    connectionString: connectionStringLocal,
+    connectionString: connectionStringElephant,
 });
 
 //SET db PROPERTY FOR BEING ABLE TO USE IT APPLICATION WIDE
