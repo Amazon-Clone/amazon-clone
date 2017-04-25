@@ -46,7 +46,7 @@
     "xlsx": "^0.9.9"
   },
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "build": "webpack"
   }
 }
