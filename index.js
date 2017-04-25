@@ -11,7 +11,7 @@ var port = 9876;
 
 //REQUIRING GITIGNORED SECRET KEYS
 
-var keys = require('./keys.js');
+// var keys = require('./keys.js');
 
 //CONNECT db USING connectionString
 var connectionStringElephant = "postgres://jmmxkwaq:vo_av5qlV2z0AMVJu4WVlKDtpX8DQ-Sd@stampy.db.elephantsql.com:5432/jmmxkwaq";
@@ -43,7 +43,7 @@ app.use(bodyParser.urlencoded({
 app.use(session({
     saveUninitialized: false,
     resave: false,
-    secret: keys.sessionSecretKey
+    secret: process.env.sessionSecretKey
 }));
 
 
@@ -99,9 +99,9 @@ app.get('/api/user', authController.authorize, dbController.currentUser);
 
 //TEST METHODS
 
-app.post('/api/cart/charge', authController.authorize, stripeController.makePayment); //AUTHORIZE MAKES IT REQUIRE LOGIN
+// app.post('/api/cart/charge', authController.authorize, stripeController.makePayment); //AUTHORIZE MAKES IT REQUIRE LOGIN
 
 //LISTEN TO PORT X
-app.listen(port, function() {
+app.listen( process.env.PORT || port, function() {
     console.log('Listening on port: ', port);
 });
