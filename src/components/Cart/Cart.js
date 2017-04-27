@@ -9,7 +9,7 @@ import AlsoBoughtCarousel from './AlsoBoughtCarousel'
 import AlsoBoughtCarousel2 from './AlsoBoughtCarousel2'
 import { getCart, checkoutCart } from '../../actions/cart'
 import { connect } from 'react-redux'
-import {browserHistory} from 'react-router'
+import {hashHistory} from 'react-router'
 
 class Cart extends Component {
     constructor(props) {
@@ -32,7 +32,7 @@ class Cart extends Component {
 
     checkoutCart(){
         this.props.checkoutCart();
-        browserHistory.push('/checkout');
+        hashHistory.push('/checkout');
     }
 
     quantityChange(optionid, event){
